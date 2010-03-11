@@ -22,9 +22,6 @@ http://effbot.org/downloads/Imaging-1.1.6.tar.gz
 # Filebrowser
 -e svn+http://django-filebrowser.googlecode.com/svn/trunk#egg=filebrowser
 
-# Debug toolbar
--e git+git://github.com/robhudson/django-debug-toolbar.git#egg=debug_toolbar
-
 # Markdown
 -e git+git://gitorious.org/python-markdown/mainline.git#egg=markdown
 
