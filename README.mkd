@@ -6,7 +6,7 @@ the us at [Bread and Pepper](http://breadandpepper). We also still use it to
 manage our own project.
 
 Recently Busylissy was blogged about and reached a new high of 2.000 users.
-Because we are very busy workning on othher web applications we have decided to
+Because we are very busy working on other web applications we have decided to
 open source it.
 
 # Credits
