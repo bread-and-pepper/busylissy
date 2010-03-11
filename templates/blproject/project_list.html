@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% load i18n milestones message projects feed time activities %}
+
+{% block title %}{% trans 'Projects' %}{% endblock %}
+
+{% block module-title %}<h2 class="module-title">{% trans 'Projects' %}</h2>{% endblock %}
+
+{% block body_id %}{% if active %}{{ active }}{% else %}projects-active{% endif %}{% endblock %}
+
+{% block submenu %}
+<header class="content-header"><nav><ul>
+    {% if active or project_list %}
+    <li id="status-active" class="first"><a href="{% url project-list %}">{% trans 'Active' %} <span>({% count_projects request.user "active" %})</span></a></li>
+    <li id="status-hold" ><a href="{% url project-status "hold" %}">{% trans 'On Hold' %} <span>({% count_projects request.user "hold" %})</span></a></li>
+    <li id="status-finished" ><a href="{% url project-status "finished" %}">{% trans 'Finished' %} <span>({% count_projects request.user "finished" %})</span></a></li>
+    {% endif %}
+    {% for notice in notices %}
+      <p class="notif-text">{{ notice }}. <a href="{% url invite-response-answer notice.sha 'y' %}"  class="notif-accept">{% trans 'Accept' %}</a> or <a href="{% url invite-response-answer notice.sha 'y' %}"  class="notif-decline">{% trans 'Decline' %}</a></p>
+    {% endfor %}
+	{% comment %}
+ 	<li id="search">
+		<form>
+			<input type="text" value=""/>
+			<button>GO</button>
+		</form>
+	</li>
+	{% endcomment %}
+</ul></nav></header>
+{% endblock %}
+
+{% block content %}
+
+
+{% if project_list %}
+<aside id="content-sidebar">
+	<a href="{% url project-add %}" class="add-button">{% trans '+ New Project' %}</a>
+	{% include "blproject/filter.html" %}
+</aside>
+{% endif %}
+
+<h2 id="content-title">
+  {% if project_list or active %}
+  {% if active %}
+		{% ifequal active "projects-hold" %}
+			{% trans 'Projects on hold' %}
+		{% else %}
+			{% trans 'Finished projects' %}
+		{% endifequal %}
+	{% else %}
+		{% trans 'Active projects' %}
+	{% endif %}
+  {% endif %}
+</h2>
+
+<div id="list-wrapper">
+	<ul id="projects-list" class="column">
+	    {% for project, value in project_list %}
+        {% get_latest_activities_project project.slug 1 as activity %}
+	    <li class="main"><div class="block">
+			<h3><a href="{% url project-detail project.slug %}">{{ project.name }}</a><span><a href="{% rss_feed_token 'project' project %}" class="rss">Rss</a></span></h3>
+			<ul>
+			  	<li class="project-list-task"><a href="{% url task-list project.slug %}">{% trans 'Your tasks' %}<span>{% your_tasks project request.user %}</span></a></li>
+			  	<li class="project-list-message"><a href="{% url project-messages project.slug %}">{% trans 'New messages' %}<span>{% your_messages project request.user %}</span></a></li>
+              	<li><div class="progbar"><div class="progress" style="width:{% project_progress project.slug %}">{% project_progress project.slug 'string' %}</div></div></li>
+                <li class="project-list-activity">
+                {% if activity %}
+                <p>{% trans 'Latest activity' %} {% humanize_timesince activity.time %} {% trans 'ago' %} {% trans 'by' %} {{ activity.actor }}</p>
+                {% else %}
+                <p>{% trans 'No activities yet.' %}</p>
+                {% endif %}
+                </li>		
+			</ul>
+		</div></li>
+	    {% empty %}
+          {% if not active %}
+            {% include "blproject/intro.html" %}
+          {% endif %}
+        {% endfor %}
+	</ul>
+</div>
+{% endblock %}
+
+
+	{% block extra_scripts %}
+
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			function smartColumns() {
+
+				$("ul.column").css({ 'width' : "100%"});
+
+				var colWrap = $("ul.column").width();
+				var colNum = Math.floor(colWrap / 290);
+				var colFixed = Math.floor(colWrap / colNum);
+
+
+				$("ul.column").css({ 'width' : colWrap});
+				$("ul.column li.main").css({ 'width' : colFixed});
+
+
+
+			}	
+
+			smartColumns();	
+
+			$(window).resize(function () {
+				smartColumns();
+
+			}); 
+
+
+		});
+
+		</script
+	   
+	{% endblock %}

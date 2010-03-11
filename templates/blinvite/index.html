@@ -1,0 +1,38 @@
+{% extends "blinvite/base.html" %}
+{% load i18n avatar %}
+
+{% block content %}
+<h2 id="content-title">{% trans 'Invite people' %}</h2>
+<section id="invite-box">
+		<div class="left">
+		<div class="invite">
+		<h4>{% trans 'Invite by username' %}</h4>
+		<form action="" method="post" id="invite-user" class="invite-form">
+		  {{ user_form.as_p }}
+		  <div>
+		    <input type="submit" value="{% trans 'invite' %}" />
+		  </div>
+		</form>
+		{% if members %}
+		<h5>{% trans 'Click avatar to invite' %}</h5>
+		 <ul id="member">
+		   {% for member in members %}
+		   <li><a href="#" class="insert-tag-link" ><img src="{% avatar member %}" alt="{{ member.username }}" />{{ member.username }} </a></li>
+		   {% endfor %}
+		 </ul>
+		{% endif %}
+		</div></div>
+
+		<div class="right">
+		<div class="invite">
+		<h4>{% trans 'Invite by email' %}</h4>
+		<form action="" method="post" id="invite-email" class="invite-form">
+		  <input type="hidden" name="invite" value="" />
+		  {{ email_form.as_p }}		
+		  <div>
+		    <input type="submit" value="{% trans 'invite' %}" />
+		  </div>
+		</form>
+		</div></div>
+</section>
+{% endblock %}

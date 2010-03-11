@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block submenu %}
+{% if user.is_authenticated %}
+<nav><ul>
+	<li><a href="{% url profile-edit %}">{% trans 'Edit my profile' %}</a></li>
+	<li><a href="{% url auth_password_change %}">{% trans 'Change password' %}</a></li>
+	<li><a href="{% url profile-delete %}">{% trans 'Delete my profile' %}</a></li>
+</ul></nav>
+{% endif %}
+{% endblock %}

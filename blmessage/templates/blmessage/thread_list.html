@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<h2>{% trans 'Messages for' %} {{ request.user }}</h2>
+<ul>
+{% for thread in thread_list %}
+<li><a href="{% url message-detail thread.id %}">{{ thread.title }}</a><br />
+Total of {{ thread.message_count }} message(s), latest {{ thread.latest_message_time|timesince }} ago.</li>
+<p>
+  <a href="{% url message-edit thread.id %}">{% trans 'Edit' %}</a>
+  <a href="{% url message-delete thread.id %}">{% trans 'Delete' %}</a>
+</p>
+{% endfor %}
+</ul>
+{% include "blmessage/includes/filter.html" %}
+{% endblock %}

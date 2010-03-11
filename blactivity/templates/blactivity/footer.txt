@@ -1,0 +1,9 @@
+<p>Project: {{ project }}</p>
+<p>
+You can always check the Overview for the latest project activity:<br />
+<a href="http://busylissy.com{% url project-detail project.slug %}">http://busylissy.com{% url project-detail project.slug %}</a>
+</p>
+<p>
+To stop receiving notifications on updates of {{ project }}, visit:<br />
+<a href="http://busylissy.com{% url profile-settings %}">http://busylissy.com{% url profile-settings %}</a>
+</p>

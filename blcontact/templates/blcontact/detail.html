@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<h1>{{ contact.first_name }} {{ contact.last_name }} in {{ model }} "{{ object.name }}"</h1>
+<p>{% trans 'Phone' %}: {{ contact.phone }}</p>
+<p>{% trans 'Email' %}: {{ contact.email }}</p>
+<p><a href="edit/">{% trans 'Edit' %}</a> | <a href="delete/">{% trans 'Delete' %}</a></p>
+{% endblock %}

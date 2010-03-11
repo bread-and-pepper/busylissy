@@ -1,0 +1,9 @@
+{% load i18n %}
+
+<h1>{% trans 'Contacts' %}</h1>
+<ul>
+{% for contact in object.contacts.all %}
+<li><a href="{{ contact.slug }}/">{{ contact.first_name }} {{ contact.last_name }}</a></li>
+{% endfor %}
+</ul>
+<a href="add">{% trans 'Add contact' %}</a>

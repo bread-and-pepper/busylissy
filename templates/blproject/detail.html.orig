@@ -1,0 +1,53 @@
+{% extends "blproject/base.html" %}
+{% load i18n milestones activities projects %}
+
+{% block body_id %}dashboard{% endblock %}
+
+{% block content %}
+
+<aside id="dashboard-sidebar">
+  {% include "blproject/sidebar.html" %}
+</aside>
+
+<h2 id="content-title">{% trans 'Dashboard' %}</h2>
+
+<div id="dashboard-content">
+	
+		<ul id="dash-items">			
+		    	<li>
+					<h5>{% trans 'Milestones' %}</h5>
+					<ul id="calender">
+				     	{% week_cal project %}
+					</ul>
+					 <a href="" class="next">&rarr;</a><a href="" class="prev">&larr;</a> 
+				</li>
+
+<<<<<<< local
+		    	<li>
+					<div id="activity-collapse">
+					<h5>{% trans 'Latest activities ' %}</h5>
+				    {% get_latest_activities_project project.slug 30 as activities %}
+				    <ul id="activity">
+				    {% for a in activities %}
+				        <li>{{ a.humanize }}</li>
+				    {% endfor %}
+				    <ul>
+					</div>
+					<a href="#" class="more">More &darr;</a>
+				</li>
+			</ul>	
+=======
+    	<li>
+			<h5>{% trans 'Latest activities ' %}</h5>
+		    {% get_latest_activities_project project.slug 99 as activities %}
+		    <ul id="activity">
+		    {% for a in activities %}
+		        <li>{{ a.humanize }}</li>
+		    {% endfor %}
+		    <ul>
+		</li>
+
+	</ul>
+>>>>>>> other
+</div>
+{% endblock %}

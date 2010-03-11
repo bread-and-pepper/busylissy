@@ -1,0 +1,9 @@
+{% extends "blprofile/base.html" %}
+
+{% block content %}
+<ul>
+{% for profile in profile_list %}
+<li><a href="{{ profile.get_absolute_url }}">{{ profile.user.username }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

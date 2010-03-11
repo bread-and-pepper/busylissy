@@ -1,0 +1,91 @@
+/*========================
+^$(^$($(&^&))&(^)) Microsoft 		
+==========================*/
+
+
+/* dropdown user overlap dashboard  */
+nav li#user:hover div dl dd a{
+	border: none;
+	height: 1.4em;
+	display: block;
+	margin: 3px 0px;
+	border-bottom: 1px dotted #c6c7b7;
+	width: 120px;
+	line-height: 1.4em;
+	font-size: 0.9em;
+	letter-spacing: 0px;
+}
+
+
+/* calender forms  */
+div.ui-datepicker{
+    width:; 300px;
+}
+
+/* tagline promo website  */
+#banner img{
+	margin: 24px 0 0 0;
+
+}
+#banner h1{
+	padding: 30px 0 24px 0;
+	width: 320px;
+	float:left;
+}
+
+a span{
+	display:none;
+}
+
+
+/* mouse over tasks  */
+.parent, .child{
+    padding: 8px 8px 8px 8px ;
+}
+.actions{
+	z-index:11;
+}
+
+
+/* activity c0llapse overflow  */
+ul#dash-items li{
+	position:relative;
+	overflow: hidden;
+	
+}
+
+#activity-collapse{
+	overflow: hidden;
+}
+
+a.more{display: none;}
+
+
+
+
+/* calender  */
+div.ui-datepicker{
+	width: 225px;
+	display: none;
+}
+
+a.ui-datepicker-prev, a.ui-datepicker-next{
+	text-indent: 3px;
+	display: block;
+	height: 21px;
+	width: 40px;
+	overflow: auto;
+	margin-top: 4px;
+	background-color: #efefef;
+}
+
+
+/* button */
+
+input[type=submit]{
+	min-width: 180px;
+	
+}
+
+
+	

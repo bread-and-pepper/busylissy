@@ -1,0 +1,3 @@
+{% load i18n time %}
+{{ actor }} {{ action }} {% if indirect_object %}{{ indirect_object }}{% else %}{% if object %}{{ object }}{% else %}{{ object_type }}{% endif %}{% endif %} {% humanize_timesince time %} ago.
+

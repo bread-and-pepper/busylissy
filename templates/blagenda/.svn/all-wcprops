@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/6/trunk/demo/templates/swingtime
+END
+daily_view.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4/trunk/demo/templates/swingtime/daily_view.html
+END
+event_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4/trunk/demo/templates/swingtime/event_list.html
+END
+yearly_view.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/5/trunk/demo/templates/swingtime/yearly_view.html
+END
+event_detail.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/4/trunk/demo/templates/swingtime/event_detail.html
+END
+monthly_view.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/4/trunk/demo/templates/swingtime/monthly_view.html
+END
+add_event.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/6/trunk/demo/templates/swingtime/add_event.html
+END
+recurring_form_part.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/6/trunk/demo/templates/swingtime/recurring_form_part.html
+END
+occurrence_detail.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/5/trunk/demo/templates/swingtime/occurrence_detail.html
+END
+event_form_part.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/6/trunk/demo/templates/swingtime/event_form_part.html
+END

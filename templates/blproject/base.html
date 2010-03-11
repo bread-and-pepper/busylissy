@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ project.name }}{% endblock %}
+
+{% block body_id %}page-projects{% endblock %}
+
+{% block content_title %}
+{% endblock %}
+
+{% block module-title %}<h2 class="module-title"><a href="{% url project-list %}">Projects </a> {{ project.name }}</h2>{% endblock %}
+
+{% block submenu %}
+<header class="content-header"><nav><ul> 
+   <li id="nav-dashboard"  class="first"><a href="{% url project-detail project.slug %}"  class="first">{% trans 'Dashboard' %}</a></li> 
+   <li id="nav-agenda"><a href="{% url agenda-index project.slug %}">{% trans 'Agenda' %}</a></li> 
+   <li id="nav-tasks"><a href="{% url task-list project.slug %}">{% trans 'Tasks' %}</a></li> 
+   <li id="nav-messages"><a href="{% url project-messages project.slug %}">{% trans 'Messages' %}</a></li>
+   <li id="nav-files"><a href="{% url file-list project.slug %}">{% trans 'Files' %}</a></li> 
+	{% comment %}
+	<li id="search">
+		<form>
+			<input type="text" value=""/>
+			<button>GO</button>
+		</form>
+	</li>
+	{% endcomment %}
+</ul></nav></header>
+{% endblock %}

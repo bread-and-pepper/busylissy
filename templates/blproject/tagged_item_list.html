@@ -1,0 +1,33 @@
+{% extends "blproject/base.html" %}
+{% load i18n %}
+
+{% block content %}
+<aside id="dashboard-sidebar">
+  {% include "blproject/sidebar.html" %}
+</aside>
+
+<h2 id="content-title">{% trans 'Dashboard' %}</h2>
+
+<div id="dashboard-content">
+  <ul id="dash-items">
+		<li>
+			<h5>{% ifequal tagged_items.0.type "thread" %}messages{% else %}{{ tagged_items.0.type }}{% endifequal %}</h5>
+			<ul class="tagged-list">
+    		{% for item in tagged_items %}
+            {% ifchanged item.type %}
+    	    {% if not forloop.first %}
+            </ul>
+            <h5>{% ifequal item.type "thread" %}messages{% else %}{{ item.type }}{% endifequal %}</h5>
+            <ul class="tagged-list">
+            {% endif %}
+            {% endifchanged %}
+    		{% ifequal item.type "thread" %}
+      		<li><img src="{{ MEDIA_URL }}img/icons/activity-message.png" alt="{{ item.type }}"/><a href="{% url project-thread-detail project.slug item.id %}">{{ item }}</a> <span>{{ item.created_by }}</span></li>
+    		{% else %}
+      		<li><img src="{{ MEDIA_URL }}img/icons/activity-{{ item.type }}.png" alt="{{ item.type }}"/><a href="{% url task-list project.slug %}">{{ item }}</a> <span>{{ item.assigned_to|default:"Everybody" }}</span></li>
+    		{% endifequal %}
+    		{% endfor %}
+  			</ul>
+		</li>
+</div>
+{% endblock %}

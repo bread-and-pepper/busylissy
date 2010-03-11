@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% load i18n  projects %}
+
+{% block module-title %}<h2 class="module-title"><a href="{% url project-list %}">{% trans 'Projects'%} </a> {{ project.name }}</h2>{% endblock %}
+
+{% block submenu %}
+<header class="content-header"><nav><ul>
+    <li id="status-active" class="first"><a href="{% url project-list %}">{% trans 'Active' %} <span>({% count_projects request.user "active" %})</span></a></li>
+    <li id="status-hold" ><a href="{% url project-status "hold" %}">{% trans 'On Hold' %} <span>({% count_projects request.user "hold" %})</span></a></li>
+    <li id="status-finished" ><a href="{% url project-status "finished" %}">{% trans 'Finished' %} <span>({% count_projects request.user "finished" %})</span></a></li>
+    {% for notice in notices %}
+      <p class="notif-text">{{ notice.message }}. <a href="{% url notification_answer notice.id 'accept' %}"  class="notif-accept">{% trans 'Accept' %}</a> or <a href="{% url notification_answer notice.id 'decline' %}"  class="notif-decline">{% trans 'Decline' %}</a></p>
+    {% endfor %}
+	{% comment %}
+ 	<li id="search">
+		<form>
+			<input type="text" value=""/>
+			<button>GO</button>
+		</form>
+	</li>
+	{% endcomment %}
+</ul></nav></header>
+{% endblock %}
+
+{% block content %}
+
+<h2 id="content-title">{% trans 'Project info' %}</h2>
+{% if tags %}
+<aside id="content-sidebar">
+  {% if project %}
+	<div class="delete">
+	    <a href="{% url project-delete project.slug %}" id="delete-button" class="action-delete">{% trans 'Delete project' %}</a>
+	  </div>
+  {% endif %}
+<div class="filters">
+	<h4>{% trans 'Used tags' %}</h4>
+	<ul id="js-addtask">
+	  {% for tag in tags %}
+      {% ifnotequal tag.name project.slug %}
+      <li><a href="#" title="{% trans "Add tag to task" %}" class="tag beige insert-tag-link">{{ tag.name }}</a><span>{{ tag.count }}</span></li>
+      {% endifnotequal %}
+	  {% endfor %}
+	</ul>
+</div>
+</aside>
+ {% endif %}
+<form action="" method="post">
+  {{ form.as_p }}
+  <div>
+    <input type="submit" value="{% trans 'submit' %}" />
+  </div>
+  {% if project %}
+  
+  {% endif %}
+</form>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans 'Groups' %}{% endblock %}
+{% block submenu %}
+<p>
+  <a href="{% url group-detail group.slug %}">{% trans 'Group dashboard' %}</a>
+  <a href="{% url group-messages group.slug %}">{% trans 'Messages' %}</a>
+</p>
+<hr />
+{% endblock %}

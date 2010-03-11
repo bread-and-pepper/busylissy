@@ -1,0 +1,31 @@
+{% load comments i18n avatar %}
+
+<h2>{% trans 'Post your comment' %}</h2>
+<div class="post-body">
+  <form action="{% comment_form_target %}" method="post">
+    <input type="hidden" name="next" value="{{ object.get_absolute_url }}" />
+    {% for field in form %}
+    {% if field.is_hidden %}
+    {{ field }}
+    {% endif %}
+    {% endfor %}
+    {% if field.errors %}{{ field.errors }}{% endif %}
+    {% if not request.user.is_authenticated %}
+    <p>
+      <label for="id_name">{% trans 'Name' %}</label> <input id="id_name" type="text" name="name" maxlength="50" />
+    </p>
+    <p>
+      <label for="id_email">{% trans 'Email address' %}</label> <input type="text" name="email" id="id_email" />
+    </p>
+    {% endif %}
+    <p>
+      <label for="id_comment">{% trans 'Comment' %}</label> <textarea id="id_comment" rows="10" cols="40" name="comment"></textarea>
+    </p>
+    <p style="display:none;">
+      <label for="id_honeypot">If you enter anything in this field your comment will be treated as spam</label> <input type="text" name="honeypot" id="id_honeypot" />
+    </p>
+    <p class="submit">
+      <input type="submit" name="post" class="button" value="{% trans "Post" %}" />
+    </p>
+  </form>
+</div>

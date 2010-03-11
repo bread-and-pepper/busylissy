@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans 'Projects' %} - {{ project.name }}{% endblock %}
+
+{% block content_title %}
+<h1>{{ project.name }}</h1>(<a href="{% url project-list %}">{% trans 'Back to all projects' %}</a>)
+{% endblock %}
+
+{% block submenu %}
+<p>
+  <a href="{% url project-detail project.slug %}">{% trans 'Project dashboard' %}</a> | 
+  <a href="{% url file-list project.slug %}">{% trans 'Files' %}</a> | 
+  <a href="{% url task-list project.slug %}">{% trans 'Tasks' %}</a> |
+  <a href="{% url project-messages project.slug %}">{% trans 'Messages' %}</a>
+</p>
+<hr />
+{% endblock %}

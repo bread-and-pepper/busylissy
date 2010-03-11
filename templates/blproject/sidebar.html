@@ -1,0 +1,59 @@
+{% load i18n markup permissions avatar projects %}
+<div class="project-info">
+  <h4>{% trans 'Project info' %}	<span>
+				{% ifhasperm "project_permission.change_project" request.user project %}
+			  <a href="{% url project-edit project.slug %}"  class="edit-project">{% trans 'Edit' %}</a> {% comment %}
+			  {% ifhasperm "project_permission.delete_project %}" request.user project %}
+			  | <a href="{% url project-delete project.slug %}">{% trans 'Delete project' %}</a>
+			  {% endifhasperm %}{% endcomment %}{% endifhasperm %}</span></h4>
+	<h5>{% trans 'Progress' %} </h5>
+	<div class="progbar"><div class="progress" style="width:{% project_progress project.slug %}%">{% project_progress project.slug %}</div></div>
+
+  <h5>{% trans 'description' %} </h5>
+  <p>{{ project.description|markdown }}</p>
+	
+	<h5>{% trans 'Tags' %} </h5>
+	<div id="selected-tags">
+	  {% for tag in selected_tags %}
+	  <a href="{% url project-tagged-items project.slug tag %}"  class="tag beige">{{ tag }}</a>
+	  {% endfor %}
+	</div>
+	
+	<ul id="cloud">
+	  {% for tag in tag_cloud %}
+	  <li class=" cloud_{{ tag.font_size }}"><a href="{% url project-tagged-items project.slug tag_url %}{{ tag }}"  class="tag beige">{{ tag }}</a></li>
+		{% empty %}
+		<p>- {% trans 'no tags yet' %} -</p>
+	  {% endfor %}
+	</ul>
+</div>
+
+<div class="project-info">
+  <h4>{% trans 'Project Team' %} <span>{% ifhasperm "project_permission.change_project" request.user project %}
+	  <a href="{% url invite-index project.slug %}" class="add-member">{% trans 'Add People' %}</a>
+	  {% endifhasperm %}</span></h4>	
+  <ul id="team">
+	{% for member in project.members.all %}
+	<li><img src="{% avatar member %}" alt="{{ member.username }}" />{{ member.username }} 
+	   	
+	  {% ifhasperm "project_permission.change_project" request.user project %}
+	  <div class="member-edit">
+	    {% get_permission "project_permission.change_project" for member and project as "has_permission" %}
+	    {% if not has_permission %}
+	    <a href="{% url project-member-admin project.slug member.username %}">{% trans 'Make admin' %}</a>
+	    {% endif %}
+	    <a href="{% url project-member-delete project.slug member.username %}">{% trans 'Delete' %}</a>
+	  </div>
+	  {% else %}
+      {% ifequal request.user member %}
+      <div class="member-edit">
+        <a href="{% url project-member-delete project.slug member.username %}">{% trans 'Delete' %}</a>
+      </div>
+      {% endifequal %}
+      {% endifhasperm %}
+		
+	</li>
+	{% endfor %}
+  </ul>
+</div>
+

@@ -1,0 +1,14 @@
+{% load i18n %}
+
+<h2>{% trans 'Filters' %}</h2>
+{{ thread_list.count }}
+{% for tag in selected_tags %}
+<a href="{% project-thread-tag project.slug tag %}">{{ tag }}</a>
+{% endfor %}
+<ul>
+  {% for tag in thread_tags %}
+  {% ifnotequal tag.name project.slug %}
+  <li><a href="{% url project-thread-tag project.slug tag_url %}{{ tag }}">{{ tag.name }}({{ tag.count }})</a></li>
+  {% endifnotequal %}
+  {% endfor %}
+</ul>

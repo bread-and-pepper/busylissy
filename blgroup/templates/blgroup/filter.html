@@ -1,0 +1,12 @@
+{% load i18n %}
+
+<h2>Filter</h2>
+{{ group_list.count }}
+{% for tag in selected_tags %}
+<a href="{% url group-tag tag %}">{{ tag }}</a>
+{% endfor %}
+<ul>
+  {% for tag in group_tags %}
+  <li><a href="{% url group-tag tag_url %}{{ tag }}">{{ tag.name }}({{ tag.count }})</a></li>
+  {% endfor %}
+</ul>

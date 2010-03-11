@@ -1,0 +1,21 @@
+# BusyLissy
+
+This is the software that is running the site
+[busylissy](http://busylissy.com). Busylissy started as a learning project for
+the us at [Bread and Pepper](http://breadandpepper). We also still use it to
+manage our own project.
+
+Recently Busylissy was blogged about and reached a new high of 2.000 users.
+Because we are very busy workning on othher web applications we have decided to
+open source it.
+
+# Credits
+- [Django](www.djangoproject.com) is the foundation on which Busylissy is
+build.
+- [django-swingtime](http://dakrauth.com/blog/entry/announcing-django-swingtime/) is
+used in BLAgenda.
+- [django-filebrowser](http://code.google.com/p/django-filebrowser/) is used in
+BLFile.
+
+Then there is also django-tagging, django-registration, tagging, markdown,
+django-locale-url, sorl-thumbnail, django-treebeard.

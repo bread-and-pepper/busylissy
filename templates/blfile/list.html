@@ -1,0 +1,40 @@
+{% extends "blfile/base.html" %}
+{% load i18n %}
+
+{% block content %}
+{% comment %}{% block breadcrumbs %}{% include "blfile/include/breadcrumbs.html" %}{% endblock %}{% endcomment %}
+
+
+
+<aside id="content-sidebar">
+	<a href="upload/"  class="add-button">{% trans "+ New file" %}</a>
+	
+	 {% comment %}<a href="mkdir/"  class="add-button folder">{% trans " + New Folder" %}</a> {% endcomment %}
+		
+	{% include "blfile/include/filter.html" %}
+	
+</aside>
+
+
+<h2 id="content-title">{% trans 'Files' %} </h2>
+        
+
+        <div>
+	
+        <table id="file-table">
+            {% if results_var.results_current %}
+                {% include "blfile/include/tableheader.html" %}
+            {% endif %}
+            <tbody>
+            {% for file in files %}
+                {% include "blfile/include/filelisting.html" %}
+				{% empty %}
+				<h6>{% trans 'No files found' %}.</a></h6>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        </div>
+        {% comment %}{% include "blfile/include/paginator.html" %}{% endcomment %}
+
+{% endblock %}

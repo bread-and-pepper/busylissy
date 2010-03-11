@@ -1,0 +1,30 @@
+{% load time %}
+{{ obj.project }}:
+{% ifequal obj.get_action_display "created" %}
+new
+{% endifequal %}
+{% ifequal obj.get_action_display "invited" %}
+invite in
+{% endifequal %}
+{% ifequal obj.get_action_display "joined" %}
+new member in
+{% endifequal %}
+{% ifequal obj.get_action_display "permissions" %}
+new administrator in
+{% endifequal %}
+{% ifequal obj.get_action_display "closed" %}
+completed {{ content_object.name }}
+{% endifequal %}
+{% ifequal obj.get_action_display "commented on" %}
+commented on {{ content_object.title }}
+{% endifequal %}
+{% ifequal obj.get_action_display "started" %}
+started
+{% endifequal %}
+{% ifequal obj.get_action_display "deleted" %}
+deleted
+{% endifequal %}
+{% ifequal obj.get_action_display "updated" %}
+updated
+{% endifequal %}
+{{ obj.content_type.name }}

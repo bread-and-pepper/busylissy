@@ -1,0 +1,160 @@
+<!DOCTYPE html>  
+{% load i18n avatar feed %}
+<html lang="en">  
+<head>  
+<meta charset="utf-8" /> 
+ 
+<title>Busylissy - super simple project management</title>  
+<meta name="description" content="BusyLissy is a super simple free projectmanagement system. Work together, organise stuff and keep track of the developments within your projects. Let's get busy" />
+<meta name="keywords" content="project management, organise, tool, free, project, todo, tasks, file sharing, busy, lissy, bread and pepper, collaborate"/>
+<meta name="robots" content="index, nofollow"> 
+<meta name="revisit-after" content="1 month" />
+  
+<link rel="stylesheet" href="{{ MEDIA_URL }}css/promo.css" type="text/css" />
+
+<!--[if IE]>  
+		<script src="{{ MEDIA_URL }}js/html5.js"></script>	
+<![endif]-->
+<!--[if IE 8]>  
+		<link rel="stylesheet" href="{{ MEDIA_URL }}css/ie8.css" type="text/css" />  
+<![endif]-->
+<!--[if IE 7]>  
+		<link rel="stylesheet" href="{{ MEDIA_URL }}css/ie7.css" type="text/css" />  
+<![endif]--> 
+<!--[if IE 6]>  
+	    <script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="{{ MEDIA_URL }}css/ie6.css" type="text/css" /> 
+<![endif]-->
+
+<link rel="shortcut icon" href="{{ MEDIA_URL }}img/icons/favicon.ico" type="image/x-icon" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script src="{{ MEDIA_URL }}js/cufon-yui.js"></script>
+<script src="{{ MEDIA_URL }}js/Creampuff_400.font.js"></script>
+<script src="{{ MEDIA_URL }}js/facebox.js"></script>
+<script type="text/javascript">
+    Cufon.replace('h1, h2',{
+        hover: 'true',
+        textShadow: '1px 1px 1px rgba(255, 255, 255, 0.3)'
+    });
+
+	jQuery(document).ready(function($) {
+	  $('a[rel*=facebox]').facebox() 
+	})
+</script>
+
+ 
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="container">
+		
+		<header>
+			<h1 id="logo"><a href="{% url busylizzy-home %}">BusyLissy</a><span>beta</span></h1>
+			<nav><ul>
+				{% load localeurl_tags %}
+				{% for lang in LANGUAGES %}
+				    {% ifequal lang.0 LANGUAGE_CODE %}
+				        <li class="selected">{{ lang.1 }}</li>
+				    {% else %}
+				        <li class="flag"><a href="{{ request.path|chlocale:lang.0 }}"><img src="{{ MEDIA_URL }}img/icons/{{ lang.0 }}.png" alt="{{ lang.1 }}" /></a></li>
+				    {% endifequal %}
+				{% endfor %}
+                {% if not request.user.is_authenticated %}
+				<li><a href="{% url user_signin %}">{% trans 'Sign in' %}</a></li>
+				<li class="signup"><a href="{% url registration_register %}">{% trans 'Sign up' %}</a></li>
+                {% else %}
+                <li id="top-projects" class="top-nav"><a href="{% url project-list %}">{% trans 'Back to Projects' %}</a></li>
+                {% endif %}
+				<li><a href="{% url blog_index %}">Blog</a></li>
+			</ul></nav>
+		</header>
+		<div id="content">
+			<!--[if lt IE 7]> 
+				<h3 id="ie6-hell">I am terribly sorry, but you are using a very old and unsafe browser. <br/>
+					Please update your browser or ask the IT guy to do this.<br/>
+				Please come back with your brand new browser :)</h3>
+			<![endif]-->
+            {% block top_section %}
+			<section id="banner">
+				<img src="{{ MEDIA_URL }}img/promo/screenshot.png" alt="busylissy - super simple projectmanagement tool" />
+				<h1>{% trans "Super simple" %}<br/>{% trans "project management" %}</h1>
+				<a href="{% url registration_register %}" class="button">{% trans 'Sign up now' %} <span>&#8227;</span></a>
+				<p class="free">( {% trans "Don't worry. It's free." %} )</p>
+			</section>
+            {% endblock %}
+
+            {% block content %}
+			<section id="about" class="blocks">
+				<ul>
+					<li>
+						<h2>{% trans 'What is it' %}?</h2>
+						<p>{% blocktrans %}BusyLissy is a super simple project management tool. Work together, organise stuff and keep track of the developments within your projects.{% endblocktrans %} </p>
+					</li>
+					<li>
+						<h2>{% trans 'Who is it for' %}?</h2>
+						<p>{% blocktrans %}BusyLissy is for everybody who want to organise stuff together. Small businesses, student groups, sports clubs, you name it. Let's get Busy{% endblocktrans %}! </p>
+					</li>
+					<li>
+						<h2>{% trans 'Why use it' %}?</h2>
+						<p>{% blocktrans %}BusyLissy makes organising and project management super simple. All the messages, tasks and files in one place makes your lve easier.{% endblocktrans %}</p>
+					</li>
+				</ul>
+			</section>
+			
+			<section id="features" class="blocks">
+				<ul>
+					<li>
+						<a title="Task list" href="{{ MEDIA_URL }}img/promo/screenshot-tasks-big.jpg" class="facebox" rel="facebox"><img src="{{ MEDIA_URL }}img/promo/screenshot-tasks-small.jpg"  title="Task lists" alt="busylissy - super simple projectmanagement tool" /></a>
+						<h2>{% trans 'Task lists' %}</h2>
+						<p>{% blocktrans %}Create tasks and sub-tasks for any project. Assign tasks to certain project members and keep track of what has to be done. {% endblocktrans %}</p>
+					</li>
+					<li>
+						<a title="Messages" href="{{ MEDIA_URL }}img/promo/screenshot-messages-big.jpg" class="facebox" rel="facebox"><img src="{{ MEDIA_URL }}img/promo/screenshot-messages-small.jpg"  title="Messages" alt="busylissy - super simple projectmanagement tool" /></a>
+						<h2>{% trans 'Messages' %}</h2>
+						<p>{% blocktrans %}Discuss your project and keep al your messages in one place. Keep a good overview of what is happening in your project.{% endblocktrans %}</p>
+					</li>
+					<li>
+						<a title="Files" href="{{ MEDIA_URL }}img/promo/screenshot-files-big.jpg" class="facebox" rel="facebox"><img src="{{ MEDIA_URL }}img/promo/screenshot-files-small.jpg" title="File Sharing" alt="busylissy - super simple projectmanagement tool" /></a>
+						<h2>{% trans 'File sharing' %}</h2>
+						<p>{% blocktrans %}Store all your files and documents in one place. forget emailing eachother with attachements Lissy organises the files for you.  {% endblocktrans %}</p>
+					</li>
+					<li>
+						<a title="Task list" href="{{ MEDIA_URL }}img/promo/screenshot-tasks-big.jpg" class="facebox" rel="facebox"><img src="{{ MEDIA_URL }}img/promo/screenshot-tasks-small.jpg"  title="Task lists" alt="busylissy - super simple projectmanagement tool" /></a>
+						<h2>{% trans 'Agenda' %}</h2>
+						<p>{% blocktrans %}Create tasks and sub-tasks for any project. Assign tasks to certain project members and keep track of what has to be done. {% endblocktrans %}</p>
+					</li>
+					<li class="blog">
+						<h2>{% trans 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.' %}</h2>
+						<p>{% blocktrans %}Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.{% endblocktrans %}</p>
+					</li>
+				</ul>
+			</section>
+			
+			<section id="trigger">
+				<h4>{% trans 'Start organising stuff together.' %} <a href="{% url registration_register %}">{% trans 'Sign up for free' %}</a></h4>
+			</section>
+            {% endblock %}
+			
+		</div><!--/content-->
+		
+		<footer>
+			<p>BusyLissy is a product of <a href="http://breadandpepper.com">Bread &amp; Pepper</a></p>
+		</footer>
+		
+	</div><!--/container-->
+	
+	
+</div><!--/wrapper-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8888610-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

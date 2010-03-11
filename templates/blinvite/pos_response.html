@@ -1,0 +1,62 @@
+{% extends "naked_base.html" %}
+{% load i18n %}
+
+{% block title %}Busylissy - {% trans 'Sign up' %}{% endblock %}
+
+{% block head %}{% endblock %}
+{% block content %}
+
+<h3 class="login-switch">{% trans 'To join' %} {{ project.name }}, {% trans 'please sign up' %}</h3>
+
+<section class="login-box shade">
+	<div class="wrapper">
+		<h2>{% trans 'Sign up' %}</h2>
+
+		<form action="{% url registration_register %}" method="post">
+		    <fieldset>
+				   {% for field in form %}
+				        <div>
+				            {{ field.errors }}
+				            {{ field.label_tag }} {{ field }}
+				        </div>
+				    {% endfor %}
+			    <p><input type="submit" name="bsignup'" value="{% trans "Sign up" %}"> </p>
+			 </fieldset>
+		</form>
+	</div>
+</section>
+<h3 class="or">{% trans "or even easier" %}..</h3>
+		<section class="login-box shade">
+			<div class="wrapper">		
+		
+				<h2>{% trans "Sign up with your OpenID" %}</h2>
+
+				<!-- Simple OpenID Selector -->
+				<form id="openid_form" name="openid_form" action="{% url user_signin %}" method="post">
+				    <input type="hidden" name="action" value="verify" />
+				    <input type="hidden" name="next" value="{{ next }}" />
+					<fieldset>
+						<div id="openid_choice">
+				    		<div id="openid_btns"></div>
+				    	</div>
+				    	    <div id="openid_input_area">
+				                <label for="id_openid_url">{% trans "OpenId URL :" %}</label>
+				                <input id="openid_url" type="text" class="required openid" name="openid_url" maxlength="255" />
+				                <input name="openid_submit" type="submit" value="{% trans "Sign in with OpenID" %}">
+				            </div>
+					</fieldset>
+				</form>
+		
+			</div>
+		</section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script type="text/javascript" src="{{ MEDIA_URL }}/js/openid-jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    openid.init('openid_url');
+});
+</script>
+<!-- /Simple OpenID Selector -->
+{% endblock %}

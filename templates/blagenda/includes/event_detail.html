@@ -1,0 +1,21 @@
+{% load i18n dates %}
+
+<h4>{% trans 'Edit event' %} <span><a href="#" class="remove-form">{% trans 'Close' %}</a></span></h4>
+{{ event_form.non_field_errors }}
+{{ recurring_form.non_field_errors }}
+{% if event_form.errors or recurrence_form.errors %}
+<p>{% trans 'Please fix any errors.' %}</p>
+{% endif %}
+
+<form action="{% if project %}{% url agenda-event project.slug event.pk %}{% else %}{% url agenda-event event.pk %}{% endif %}" method="post">
+  {% include "blagenda/event_form_part.html" %}
+  {% include "blagenda/date_form_part.html" %}
+  <div>
+	<input type="submit" name="_update" value="{% trans 'Submit' %}" />
+  </div>
+</form>
+<div class="delete-event">
+<p>{% trans 'or' %}</p>
+
+<p><a href="{% if project %}{% url agenda-delete-event project.slug event.pk %}{% else %}{% url agenda-delete-event event.pk %}{% endif %}">{% trans 'Delete this event' %}</a></p>
+</div>

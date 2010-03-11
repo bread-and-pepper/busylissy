@@ -1,0 +1,48 @@
+{% extends 'bltask/base.html' %}
+
+{% block content %}
+<div class="task-list">
+{% for node, count in nodes %}
+{% if node.new_level %}<ul>{% else %}</li>{% endif %}
+{% if node.parent %}
+      	<div class="parent">
+			<div class="actions">
+		    	<a href="" class="action-delete">Delete</a> 
+		    	<a href="" class="action-edit">Edit</a>
+				<a href="{% url task-add node.project.slug node.id %}" class="action-add">Add</a>
+		    </div>	
+			
+			<div class="task-info">
+				 {% if node.due_date %}{{ node.due_date|timeuntil }} left | {% endif %}{% if node.assigned_to %}{{ node.assigned_to }} {% else %} Everybody {% endif %}
+			</div>
+			
+			<a href="">{% if node.completed %}<div class="task-done"></div>{% else %}<div class="task-open"></div>{% endif %}</a> <p>{{ node.name }}</p> 
+			
+			
+			{% if node.note %}<p><em>{{ node.note }}</em></p>{% endif %}
+				
+		</div>
+      {% else %}
+		<div class="child">
+
+			<div class="actions">
+		    	<a href="" class="action-delete">Delete</a> 
+		    	<a href="" class="action-edit">Edit</a>
+				<a href="{% url task-add node.project.slug node.id %}" class="action-add">Add</a>
+		    </div>	
+			
+			<div class="task-info">
+				 {% if node.due_date %}{{ node.due_date|timeuntil }} left | {% endif %} {% if node.assigned_to %}{{ node.assigned_to }} {% else %} Everybody {% endif %}
+			</div>
+			
+			<a href="">{% if node.completed %}<div class="task-done"></div>{% else %}<div class="task-open"></div>{% endif %}</a> <p>{{ node.name }}</p> 
+			
+			
+			{% if node.note %}<p><em>{{ node.note }}</em></p>{% endif %}
+					
+		</div>
+      {% endif %}
+{% for level in node.closed_levels %}</li></ul>{% endfor %}
+{% endfor %}
+</div>
+{% endblock %}

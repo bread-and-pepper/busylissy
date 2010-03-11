@@ -1,0 +1,17 @@
+{% load i18n %}
+
+{{ project_list.count }}
+{% for tag in selected_tags %}
+<a href="{% url project-tag tag %}">{{ tag }}</a>
+{% endfor %}
+<h2>Filters</h2>
+<ul>
+  <li><a href="{% url project-status active %}">{% trans 'Active' %}</a></li>
+  <li><a href="{% url project-status hold %}">{% trans On Hold' %}</a></li>
+  <li><a href="{% url project-status finished %}">{% trans Finished' %}</a></li>
+</ul>
+<ul>
+  {% for tag in project_tags %}
+  <li><a href="{% url project-tag tag_url %}{{ tag }}">{{ tag.name }}({{ tag.count }})</a></li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,2 @@
+{% load time %}
+{{ obj.actor }} {% ifequal obj.get_action_display "permissions" %}granted admin permissions to{% else %}{{ obj.get_action_display }}{% endifequal %} {% if obj.indirect_content_object %}{{ obj.indirect_content_object }}{% else %}{% if obj.content_object %}{{ obj.content_object }}{% endif %}{% endif %} {% humanize_timesince obj.time %} ago.

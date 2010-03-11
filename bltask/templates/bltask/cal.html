@@ -1,0 +1,9 @@
+{% for day in days %}
+<li>
+  <h6>{{ day.day|date:"D d/n" }}</h6>
+  {% if day.milestone %}
+  <a href="{% url task-detail project.slug day.event.id %}">{{ day.event.name }}</a>
+	{% else %}
+  {% endif %}
+</li>
+{% endfor %}

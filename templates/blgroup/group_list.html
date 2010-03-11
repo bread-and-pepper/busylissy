@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block module-title %}<h2 class="module-title">Groups</h2>{% endblock %}
+
+{% block submenu %}
+<header class="content-header"><nav><ul> 
+  <li id="nav-dashboard"  class="first"><a href="#">{% trans 'Overview' %}</a></li> 
+</ul></nav></header>
+{% endblock %}
+
+{% block content %}
+
+<aside id="content-sidebar">
+	<a href="{% url group-add %}" class="add-button">+ {% trans 'Add group' %}</a>
+	{% include "blgroup/filter.html" %}
+</aside>
+
+<h2 id="content-title">	{% trans 'Overview' %}</h2>
+
+<div id="list-wrapper">
+	<ul id="projects-list" class="column">
+	    {% for group in group_list %}
+	    <li class="main"><div class="block">
+			<h3><a href="{{ group.get_absolute_url }}">{{ group.name }}</a></h3>
+			<ul>
+			  	<li><a href="#">Members<span>3</span></a></li>
+				<li><a href="#">Projects<span>6</span></a></li>
+			  	<li><a href="#">New messages<span>3</span></a></li>		
+			</ul>
+		</div></li>
+	    {% endfor %}
+	</ul>
+</div>
+
+
+{% endblock %}
+
+
+{% block extra_scripts %}
+
+	<script type="text/javascript">
+
+	$(document).ready(function(){
+
+		function smartColumns() {
+
+			$("ul.column").css({ 'width' : "100%"});
+
+			var colWrap = $("ul.column").width();
+			var colNum = Math.floor(colWrap / 290);
+			var colFixed = Math.floor(colWrap / colNum);
+
+
+			$("ul.column").css({ 'width' : colWrap});
+			$("ul.column li.main").css({ 'width' : colFixed});
+
+
+
+		}	
+
+		smartColumns();	
+
+		$(window).resize(function () {
+			smartColumns();
+
+		}); 
+
+
+	});
+
+	</script>
+   
+{% endblock %}

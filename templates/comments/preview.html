@@ -1,0 +1,56 @@
+{% extends "static/base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Error in your comment" %}{% endblock %}
+
+{% block content %}
+<section id="posts" class="blocks">
+  <aside>
+    {% include "blog/sidebar.html" %}
+  </aside>
+  {% load comments %}
+  <ul>
+    <li class="blog">
+      <form action="{% comment_form_target %}" method="post">
+        {% if next %}<input type="hidden" name="next" value="{{ next }}" />{% endif %}
+        {% if form.errors %}
+        <h2>{% blocktrans count form.errors|length as counter %}Please correct the error below{% plural %}Please correct the errors below{% endblocktrans %}</h2>
+        {% else %}
+        <h1>{% trans "Preview your comment" %}</h1>
+        <blockquote>{{ comment|linebreaks }}</blockquote>
+        <p>
+          {% trans "and" %} <input type="submit" name="submit" class="submit-post" value="{% trans "Post your comment" %}" id="submit" /> {% trans "or make changes" %}:
+        </p>
+        {% endif %}
+        {% if form.errors %}
+        {% endif %}
+        {% for field in form %}
+        {% if field.errors %}
+        <p class="error">{{ field.name|capfirst }}: {{ field.errors.0 }}</p>
+        {% endif %}
+        {% if field.is_hidden %}
+        {{ field }}
+        {% endif %}
+        {% endfor %}
+        {% if not request.user.is_authenticated %}
+        <p>
+          <label for="id_name">{% trans 'Name' %}</label> <input id="id_name" type="text" name="name" maxlength="50" />
+        </p>
+        <p>
+          <label for="id_email">{% trans 'Email address' %}</label> <input type="text" name="email" id="id_email" />
+        </p>
+        {% endif %}
+        <p>
+          <label for="id_comment">{% trans 'Comment' %}</label> <textarea id="id_comment" rows="10" cols="40" name="comment"></textarea>
+        </p>
+        <p style="display:none;">
+          <label for="id_honeypot">If you enter anything in this field your comment will be treated as spam</label> <input type="text" name="honeypot" id="id_honeypot" />
+        </p>
+        <p class="submit">
+          <input type="submit" name="submit" class="button" value="{% trans "Post" %}" />
+        </p>
+      </form>
+    </li>
+  </ul>
+</section>
+{% endblock %}

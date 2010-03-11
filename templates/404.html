@@ -1,0 +1,16 @@
+{% extends "naked_base.html" %}
+{% load i18n avatar %}
+
+{% block content %}
+
+<p class="login-switch">{% trans 'Back to' %} <a href="{% url project-list %}">{% trans 'home' %}</a></p>
+
+<section id="error" class="login-box shade">
+	<div class="wrapper">
+
+		<h2>404 terror</h2>
+		<h3>{% trans 'Oops! Something went wrong!' %}</h3>
+	</div>
+</section>
+
+{% endblock %}

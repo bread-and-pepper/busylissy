@@ -1,0 +1,11 @@
+<h2>Hi,</h2>
+<p>{{ actor }} {{ action }} {{ project.name }}</p>
+<p><a href="http://busylissy.com{% url project-detail project.slug %}">Click here</a> to view</p>
+<p>ciao ciao,</p>
+<p>Lissy</p>
+<hr/>
+{% include "blactivity/footer.txt" %}
+<hr/>
+
+<p>This message was sent automatically by <a href="http://busylissy.com">BusyLissy.com</a></p>
+

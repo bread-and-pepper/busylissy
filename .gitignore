@@ -1,0 +1,11 @@
+#*
+*.pyc
+.DS_Store
+*.beam
+*~
+.bzr/
+*.elc
+*.swp
+*.db
+
+settings_production.py

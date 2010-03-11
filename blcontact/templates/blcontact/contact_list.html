@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<h1>{% trans 'Contacts' %}</h1>
+<ul>
+{% for contact in contact_list %}
+<li><a href="{% url contact-detail contact.id %}">{{ contact.first_name }} {{ contact.last_name }}</a></li>
+{% endfor %}
+</ul>
+{% include "blcontact/filter.html" %}
+{% endblock %}

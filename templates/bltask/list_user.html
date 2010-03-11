@@ -1,0 +1,33 @@
+{% extends "blprofile/base.html" %}
+{% load i18n %}
+
+{% block content %}
+<aside id="content-sidebar">
+  {% include "bltask/user_filter.html" %}
+</aside>
+
+<h2 id="content-title">{% trans 'My tasks' %} </h2>
+
+<div class="task-list">
+{% for node, count in nodes %}
+{% ifchanged node.project %}
+<h3>{{ node.project }}</h3>
+{% endifchanged %}
+{% if node.new_level %}<ul>{% else %}</li>{% endif %}
+<li>
+{% if node.parent %}<div class="parent">{% else %}<div class="child">{% endif %}
+	  <div class="actions">
+        <a href="{% url task-delete node.project.slug node.id %}" class="action-delete">Delete</a> 
+        <a href="{% url task-edit node.project.slug node.id %}" class="action-edit">Edit</a>
+		<a href="{% url task-add node.project.slug node.id %}" class="action-add">Add</a>
+	  </div>		
+	  <div class="task-info">
+		{% if node.due_date %}{{ node.due_date|timeuntil }} left | {% endif %}{% if node.assigned_to %}{{ node.assigned_to }}{% else %} Everybody {% endif %}
+	  </div>
+      <a href="{% url task-toggle node.project.slug node.id %}">{% if node.completed %}<div class="task-done"></div>{% else %}<div class="task-open"></div>{% endif %}</a>{% if node.note %}<a href="#" class="task-note" title="{{ node.note }}"></a>{% endif %}
+      <p><a name="task-{{ node.id }}"></a>{{ node.name }}{% if node.parent %} ({{ count }}){% endif %}</p> 
+	</div>
+{% for level in node.closed_levels %}</li></ul>{% endfor %}
+{% endfor %}
+</div>
+{% endblock %}

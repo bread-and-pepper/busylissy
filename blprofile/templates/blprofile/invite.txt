@@ -1,0 +1,17 @@
+Hi,
+
+{% if user.first_name %}{{ user.first_name }}{% if user.last_name %} {{ user.last_name }}{% endif %}{% else %}{{ user.username }}{% endif %} wants to work with you on {{ instance.name }}.
+
+Click on the link below to work on the project with him/her:
+http://busylissy.com/account/signup/
+
+To find out more about BusyLissy visit: http://busylissy.com.
+
+Good luck!
+
+BusyLissy
+
+---------------
+This message was sent by a BusyLissy user who entered your email address. We will never use your e-mail address for any other purposes.
+
+Please do not reply to this message; it was sent from an unmonitored email address. This message is a service email related to your use of BusyLissy.

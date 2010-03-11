@@ -1,0 +1,31 @@
+{% extends "blproject/base.html" %}
+{% load i18n %}
+{% block body_id %}tasks{% endblock %}
+{% block title %}{{ project.name }} - {% trans 'Tasks' %}{% endblock %}
+{% block extra_scripts %}
+<script type="text/javascript" src="{{ MEDIA_URL }}js/busylissy-tooltip.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+   $('ul li a[title]').qtip({
+      position: {
+         corner: {
+            target: 'topRight',
+            tooltip: 'bottomLeft'
+         }
+      },
+      style: {
+         name: 'cream',
+         padding: '7px 13px',
+         width: {
+            max: 310,
+            min: 0
+         },
+         tip: true
+      }
+   });
+
+   //$('.task-list ul').sortable({ items: "li", revert: true, tree: true, connectWith: [".ui-sortable",".task-list",] });
+});
+</script>
+{% endblock %}

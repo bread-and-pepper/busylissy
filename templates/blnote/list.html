@@ -1,0 +1,12 @@
+{% extends "blnote/base.html" %}
+
+{% block content %}
+<a href="{% url note-add project.slug %}">Add new message</a>
+{% for item in note_list %}
+<div>
+  <a href="{% url note-detail project.slug item.slug %}"><h3>{{ item.name }}</h3></a>
+  <p>{{ item.message|truncatewords:20 }}</p>
+  <p>{{ item.created_by }} at {{ item.created_at|date:"d M Y" }}</p>
+</div>
+{% endfor %}
+{% endblock %}

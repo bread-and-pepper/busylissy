@@ -1,0 +1,2 @@
+{% load time i18n %}
+<img src="{{ MEDIA_URL }}img/icons/activity-team.png" alt="project"/><a href="{% url profile-detail actor %}">{{ actor }}</a> {{ action }} {% if object %}"<a href="{% url project-detail project.slug %}">{{ object.name }}"</a>{% else %}{5 trans 'our' %}{% endif %} {% trans 'project' %} <span>{% humanize_timesince time %} {% trans 'ago' %}</span>

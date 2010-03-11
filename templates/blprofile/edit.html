@@ -1,0 +1,21 @@
+{% extends "blprofile/base.html" %}
+{% load i18n localeurl_tags %}
+
+{% block title %}{% trans 'Edit profile' %}{% endblock %}
+
+{% block module-title %}<h2 class="module-title">{{ request.user }}</h2>{% endblock %}
+{% block content %}
+
+<aside id="content-sidebar">
+	<a href="{% url profile-delete %}" id="delete-button"  class="action-delete">Delete my profile</a>
+</aside>
+
+<h2 class="content-title">{% trans 'Edit profile' %}</h2>
+<form action="" method="post" enctype="multipart/form-data" id="edit-profile">
+  {{ form.as_p }}
+  <div>
+    <input type="submit" value="{% trans 'Submit' %}" />
+  </div>
+</form>
+
+{% endblock %}
