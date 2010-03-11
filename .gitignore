@@ -9,3 +9,5 @@
 *.db
 
 settings_production.py
+media/avatars/
+media/projects/
