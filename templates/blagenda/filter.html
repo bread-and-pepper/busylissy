@@ -1,0 +1,17 @@
+{% load i18n dates %}
+
+<div class="filters">
+	<h4>{% trans 'Filter agenda' %}</h4>
+	<h5>{% trans 'By type' %}</h5>
+	<ul class="types-calendar">
+      	<li><a href="" class="checked"></a><p>{% trans 'Event' %}</p></li>
+	     <li><a href="" class="checked"></a><p>{% trans 'Task' %}</p></li>
+	</ul>
+
+    <h5>{% trans 'By member' %}</h5>
+    <ul class="member-calendar">
+      {% for member in project.members.all %}
+		<li><a href="#" class="checked">x</a><p>{{ member }}</p></li>
+      {% endfor %}
+    </ul>
+</div>

@@ -1,0 +1,38 @@
+{% load i18n %}
+
+  <table id="agenda" class="month-view">
+    <thead>
+      <tr>
+        {% for day, item in calendar %}
+        <th class="table-top">{{ day|date:"D" }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        {% for day,items in calendar  %}
+        <td{% ifequal day today.day  %}{% ifequal this_month.month today.month %} class="today"{% endifequal %}{% endifequal %}>
+			<div class="day-ordinal">{{ day|date:"d" }}</div>
+          {% if items %}
+          <ul class="week-items">
+            {% for item in items %}
+            <li>
+              <a href="{% url agenda-monthly-view project.slug item.start_time|date:"Y" item.start_time|date:"m"  %}" name="{{ item.event.created_by }} {{ item.event_type.label }}" class="event">
+			  {% ifequal item.event_type.label "task" %}
+              <span class="event_times">{% trans 'Task' %}:</span>
+              {% else %}
+              <span class="event_times">{{ item.start_time|time:"H" }}:{{ item.start_time|time:"i" }} -</span>
+              {% endifequal %}
+              <span {% if item.event.object.completed %}class="done"{% endif %}>
+              {% if item.event.object %}{{ item.event.object.name }}{% else %}{{ item.title }}{% endif %}{% if item.event.location %} {% trans 'at' %} {{ item.event.location }}{% endif %}</a>
+              </span>
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+    </tbody>
+  </table>
+

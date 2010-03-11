@@ -1,0 +1,21 @@
+{% extends 'blproject/base.html' %}
+{% load i18n %}
+{% block content_title %}{% endblock %}
+{% block content %}
+<h2>{{ thread.title }}</h2>
+{% for m in message_list %}
+{{ m.body }}
+<p>----------------------------------------</p>
+{% ifequal m.author request.user %}
+  <a href="">Edit</a>
+  <a href="">Delete</a>
+{% endifequal %}
+{% endfor %}
+
+<form action="" method="post">
+  {{ form.as_p }}
+  <div>
+    <input type="submit" value="{% trans 'submit' %}" />
+  </div>
+</form>
+{% endblock %}

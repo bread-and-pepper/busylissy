@@ -1,0 +1,6 @@
+{% load time i18n %}
+{% ifequal actor indirect_object.username %}
+<img src="{{ MEDIA_URL }}img/icons/activity-project.png" alt="project"/><a href="{% url profile-detail actor %}">{{ actor }}</a> {% trans 'resigned from' %} {{ object.name }}<span>{% humanize_timesince time %} {% trans 'ago' %}</span>
+{% else %}
+<img src="{{ MEDIA_URL }}img/icons/activity-project.png" alt="project"/><a href="{% url profile-detail actor %}">{{ actor }}</a> {{ action }} {% if indirect_object %}<a href="{% url profile-detail indirect_object %}">"{{ indirect_object }}"</a>{% else %}{% trans 'a member' %}{% endif %} {% trans 'from' %} {{ object }}<span>{% humanize_timesince time %} {% trans 'ago' %}</span>
+{% endifequal %}

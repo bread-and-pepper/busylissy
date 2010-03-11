@@ -1,0 +1,51 @@
+{% extends "blproject/base.html" %}
+{% load i18n permissions tasks messages %}
+
+{% block content %}
+<p>{{ project.description }}</p>
+
+{% ifhasperm "project_permission.change_project" request.user project %}
+<p>
+  <a href="edit/">{% trans 'Edit project' %}</a>
+  {% ifhasperm "project_permission.delete_project" request.user project %}
+  <a href="delete/">{% trans 'Delete project' %}</a>
+  {% endifhasperm %}
+</p>
+{% endifhasperm %}
+
+<h5>{% trans 'Activities' %}</h5>
+{% get_types project as type_list %}
+<ul>
+  <li><a href="{% url project-detail project.slug %}">{% trans 'All' %}</a></li>
+  {% for type in type_list %}
+  <li><a href="{% url project-activities project.slug type.content_type.id %}">{{ type.content_type }}</a></li>
+  {% endfor %}
+</ul>
+
+<ul>
+  {% for activity in activity_list %}
+  <li>
+	<p>{{ activity.date|timesince }} {% trans 'ago' %}</p>
+	<h6>{{ activity.user }}</h6> {{ activity.description }} <a href="{% get_url activity.content_type activity.object_id %}">{% name_for_object activity.content_type activity.object_id %}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>{% trans 'Project members' %}</h2>
+{% ifhasperm "project_permission.change_project" request.user project %}
+<a href="{% url invite-add project.slug %}">{% trans 'Add member' %}</a>
+{% endifhasperm %}
+<ul>
+  {% for member in project.members.all %}
+  <li>{{ member.username }} 
+      {% ifhasperm "project_permission.change_project" request.user project %}
+      {% get_permission "project_permission.change_project" for member and project as "has_permission" %}
+      {% if not has_permission %}
+      <a href="{% url project-member-admin project.slug member.username %}">{% trans 'Make admin' %}</a>
+      {% endif %}
+      <a href="{% url project-member-delete project.slug member.username %}">{% trans 'Delete' %}</a>
+      {% endifhasperm %}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

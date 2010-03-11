@@ -1,0 +1,10 @@
+{% load i18n %}
+
+{% block content %}
+<form action="" method="post">
+  {{ form.as_p }}
+  <div>
+    <input type="submit" value="{% trans 'submit' %}" />
+  </div>
+</form>
+{% endblock %}

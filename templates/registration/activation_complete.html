@@ -1,0 +1,51 @@
+{% extends "naked_base.html" %}
+{% load i18n avatar %}
+
+{% block title %}Busylissy - {% trans 'Activation complete' %}{% endblock %}
+
+{% block content %}
+
+<p class="login-switch">{% trans 'Your account has been activated, please sign in.' %}</p>
+
+<section class="login-box shade">
+	<div class="wrapper">
+
+		{% if msg %}
+		<p class="warning">{{ msg }}</p>
+		{% endif %}
+		{% if form2.errors %}
+		<div class="errors"><p>{% trans "Please correct errors below:" %}<br />
+		{% if form2.username.errors %}
+			<span class="error">{{ form2.username.errors|join:", " }}</span>
+		{% endif %}
+		{% if form2.password.errors %} 
+			<span class="error">{{ form2.password.errors|join:", " }}</span>
+		{% endif %}
+		</p></div>
+		<br/>
+		{% endif %}
+
+		{% if form1.errors %}
+		<div class="errors">
+		    <p><span class="error">{{ form1.openid_url.errors|join:", " }}</span></p>
+		</div>
+		<br/>
+		{% endif %}
+	
+		<h2 class="top">{% trans "Sign in" %}</h2>
+	      
+	    <form id="auth_form" name="auth_form" action="{% url user_signin %}" method="post">
+	    	<input type="hidden" name="next" value="{{ next }}" />
+			<fieldset>
+			<div class="form-row"><label for="id_username">{% trans "Username" %}</label><br />{{ form2.username }}</div>
+			<div class="form-row"><label for="id_password">{% trans "Password" %}</label><br />{{ form2.password }}<span><a href="{% url auth_password_reset %}" class="forgot">{% trans 'Forgot password' %}?</a></span></div>
+	        <div class="submit-row"><input type="submit" name="blogin" value="{% trans "Sign in" %}"> </div>
+			</fieldset>	
+          	
+		</form>
+		</div>
+	</section>
+
+{% endblock %}
+
+

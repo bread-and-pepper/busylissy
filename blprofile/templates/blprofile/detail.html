@@ -1,0 +1,37 @@
+{% extends "blprofile/base.html" %}
+{% load i18n %}
+{% load avatar %}
+
+{% block content %}
+{% if profile %}
+<img src="{% avatar profile.user %}" alt="{{ profile.user.username }}" />
+{% trans 'Profile of' %} {{ profile.user.username }}
+
+<p>Er moet hier gecontroleerd worden of het profiel wel publiek is.
+Dat kan met ``profile.is_public``.</p>
+
+{% if profile.is_public %}
+<table>
+    <tr>
+        <td>{% trans 'Gender' %}</td>
+        <td>{{ profile.get_gender_display }}</td>
+    </tr>
+    <tr>
+        <td>{% trans 'Website' %}</td>
+        <td>{{ profile.website }}</td>
+    </tr>
+    <tr>
+        <td>{% trans 'Age' %}</td>
+        <td>{{ profile.age }}</td>
+    </tr>
+</table>
+<h2>{% trans 'About me' %}</h2>
+{{ profile.about_me }}
+
+{% else %}
+    Private profile.
+{% endif %}
+{% else %}
+    {% trans 'User has no profile' %}
+{% endif %}
+{% endblock %}

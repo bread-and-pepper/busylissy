@@ -1,0 +1,18 @@
+{% load i18n %}
+
+
+<div class="filters">
+	<h4>{% trans 'Filter Groups' %}<span>{{ group_list.count }}</span></h4>
+		<div id="selected-tags">
+    {% for tag in selected_tags %}
+	<a href="{% url group-tag tag %}"   class="tag beige">{{ tag }}</a>
+	{% endfor %}
+	</div>
+
+	<h5>Related tags</h5>
+	<ul>
+	  {% for tag in group_tags %}
+	  <li><a href="{% url group-tag tag_url %}{{ tag }}"  class="tag beige">{{ tag.name }}</a><span>{{ tag.count }}</span></li>
+	  {% endfor %}
+	</ul>
+</div>

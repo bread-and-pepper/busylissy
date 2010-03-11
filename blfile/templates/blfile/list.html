@@ -1,0 +1,28 @@
+{% extends "blfile/base.html" %}
+{% load i18n %}
+
+{% block content %}
+{% block breadcrumbs %}{% include "blfile/include/breadcrumbs.html" %}{% endblock %}
+<div>
+    <ul>
+        <li><a href="mkdir/">{% trans "New Folder" %}</a></li>
+        <li><a href="upload/" class="focus">{% trans "Upload" %}</a></li>
+    </ul>
+    <div>
+        {% include "blfile/include/filter.html" %}
+        <div>
+        <table>
+            {% if results_var.results_current %}
+                {% include "blfile/include/tableheader.html" %}
+            {% endif %}
+            <tbody>
+            {% for file in files %}
+                {% include "blfile/include/filelisting.html" %}
+            {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        {% include "blfile/include/paginator.html" %}
+    </div>
+</div>
+{% endblock %}

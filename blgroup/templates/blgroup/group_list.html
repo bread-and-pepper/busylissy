@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<a href="{% url group-add %}">{% trans 'Add group' %}</a>
+
+<ul>
+{% for group in group_list %}
+<li><a href="{{ group.get_absolute_url }}">{{ group.name }}</a></li>
+{% endfor %}
+</ul>
+{% include "blgroup/filter.html" %}
+{% endblock %}

@@ -1,0 +1,5 @@
+Hi,
+
+Thank you for your registration. To activate your account lick on the link below:
+
+http://busylissy.com{% url registration_activate activation_key %}

@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load i18n dates %}
+
+{% block body_id %}agenda-all{% endblock %}
+
+{% block title %}{% trans 'Agenda' %} {{ this_month|date:"F" }} {{ this_month|date:"Y" }}{% endblock %}
+{% block module-title %}<h2 class="module-title">{% trans 'Agenda' %}</h2>{% endblock %}
+{% block content %}
+<aside id="content-sidebar">
+  <a href="{% url agenda-add-event %}" class="add-button remote">+ {% trans 'New Event' %}</a>
+  {% include "blagenda/user/filter.html" %}
+</aside>
+
+<h2 id="content-title">{% trans 'All projects' %}</h2>
+	<div id="agenda-wrapper">
+    <table id="agenda" class="month-view">
+        <thead>
+			<tr>
+				<th colspan="7" class="table-top"><h5><a href="{% url agenda-monthly-view last_month.year last_month.month %}" title="Last Month">&larr; prev</a> {{ this_month|date:"F" }} {{ this_month.year }} <a href="{% url agenda-monthly-view next_month.year next_month.month %}" title="Next Month">next &rarr; </a></h5></th>
+			</tr>
+            <tr>
+                <th>{% trans 'Sun' %}</th><th>{% trans 'Mon' %}</th><th>{% trans 'Tue' %}</th><th>{% trans 'Wed' %}</th><th>{% trans 'Thu' %}</th><th>{% trans 'Fri' %}</th><th>{% trans 'Sat' %}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in calendar %}
+            <tr>
+                {% for day,items in row  %}
+                <td{% ifequal day today.day  %}{% ifequal this_month.month today.month %} class="today"{% endifequal %}{% endifequal %}>
+                {% if day %}
+                    <div class="day-ordinal">
+                        <a href="{% url agenda-add-event %}?dtstart={{ this_month.year }}-{{ this_month.month }}-{{ day }}">{{ day }}</a>
+                    </div>
+                    {% if items %}
+                    <ul class="event-items">
+                        {% for item in items %}
+                        <li>
+                          <a href="{% url agenda-event item.event.pk %}" name="{{ item.event.project.slug }} {{ item.event_type.label }}" class="event">
+					      {% ifequal item.event_type.label "task" %}
+                          <span class="event_times">{% trans 'Task' %}:</span>
+                          {% else %}
+                          <span class="event_times">{{ item.start_time|time:"H" }}:{{ item.start_time|time:"i" }} -</span>
+                          {% endifequal %}
+                          <span {% if item.event.object.completed %}class="done"{% endif %}>
+                          {% if item.event.object %}{{ item.event.object.name }}{% else %}{{ item.title }}{% endif %}{% if item.event.location %} {% trans 'at' %} {{ item.event.location }}{% endif %}</a>
+                          </span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                {% endif %}
+                </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+	</div>
+{% endblock %}

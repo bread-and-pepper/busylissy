@@ -1,0 +1,37 @@
+{% load i18n %}
+{% load fb_tags %}
+
+<tr>
+    <!-- FileIcon -->
+    <td class="fb_icon"><img src="{{ file.icon_url }}" /></td>
+    <td class="fb_icon">
+        {% ifequal file.filetype 'Image' %}
+        <a href="{{ file.link }}"><img src="{{ file.link|thumbnail }}" title="{% trans 'View Image' %}" /></a>
+        {% endifequal %}
+    </td>
+    <!-- Filename/Dimensions -->
+    {% ifequal file.filetype 'Folder' %}
+    <td><b><a href="{{ file.filename }}">{{ file.filename }}</a></b></td>
+    {% else %}
+    <td><b><a href="{{ file.link }}">{{ file.filename }}</a></b>{% if file.image_dimensions %}<br /><span class="tiny">{{ file.image_dimensions.0 }} x {{ file.image_dimensions.1 }} px</span>{% endif %}</td>
+    {% endifequal %}    
+    <!-- Rename -->
+    <td class="fb_icon"><a href="rename/{{ file.filename }}/{% query_string %}" title="{% trans 'Rename' %}">Rename</a></td>
+    <!-- Size -->
+    <td>{{ file.filesize|filesizeformat }}</td>
+    <!-- Date -->
+    <td>{{ file.date_formatted }}</td>
+    <!-- Delete -->
+    {% if results_var.delete_total %}
+    <td class="fb_icon">
+        {% ifnotequal file.filetype 'Folder' %}
+        <a href="delete/{% query_string %}&amp;filename={{ file.filename }}&amp;filetype={{ file.filetype }}" class="fb_deletelink" onclick="return confirm('{% trans "Are you sure you want to delete this file?" %}');" title="{% trans 'Delete File' %}">Delete</a>
+        {% else %}
+        {% if file.folder_is_empty %}
+        <a href="delete/{% query_string %}&amp;filename={{ file.filename }}&amp;filetype={{ file.filetype }}" class="fb_deletelink" onclick="return confirm('{% trans "Are you sure you want to delete this Folder?" %}');" title="{% trans 'Delete Folder' %}">Delete</a>
+        {% endif %}
+        {% endifnotequal %}
+    </td>
+    {% endif %}
+</tr>
+ 

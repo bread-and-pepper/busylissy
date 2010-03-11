@@ -1,0 +1,6 @@
+{% load i18n %}
+
+<h1>{{ object.first_name }} {{ object.last_name }}</h1>
+<p>{% trans 'Phone' %}: {{ object.phone }}</p>
+<p>{% trans 'Email' %}: {{ object.email }}</p>
+<p><a href="edit/">{% trans 'Edit' %}</a> | <a href="delete/">{% trans 'Delete' %}</a></p>

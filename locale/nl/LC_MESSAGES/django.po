@@ -1,0 +1,2527 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-11-26 11:33+0100\n"
+"PO-Revision-Date: 2009-11-26 11:37+0100\n"
+"Last-Translator: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: settings.py:32
+msgid "English"
+msgstr "Engels"
+
+#: settings.py:33
+msgid "Dutch"
+msgstr "Nederlands"
+
+#: blactivity/__init__.py:47
+#, python-format
+msgid "The model %s has already been registered."
+msgstr "Het model %s staat al geregistreerd"
+
+#: blactivity/models.py:32
+#: blagenda/models.py:30
+msgid "created"
+msgstr "creeert"
+
+#: blactivity/models.py:33
+msgid "updated"
+msgstr "wijzigt"
+
+#: blactivity/models.py:34
+msgid "deleted"
+msgstr "verwijdert"
+
+#: blactivity/models.py:35
+#: blmessage/models.py:14
+msgid "closed"
+msgstr "sluit"
+
+#: blactivity/models.py:36
+msgid "commented on"
+msgstr "reageert op"
+
+#: blactivity/models.py:37
+msgid "invited"
+msgstr "verstuurt uitnodiging naar"
+
+#: blactivity/models.py:38
+msgid "started"
+msgstr "start"
+
+#: blactivity/models.py:39
+msgid "permissions"
+msgstr "permissie"
+
+#: blactivity/models.py:40
+msgid "joined"
+msgstr "wordt lid van"
+
+#: blactivity/models.py:44
+msgid "action"
+msgstr "actie"
+
+#: blactivity/models.py:46
+msgid "time"
+msgstr "tijd"
+
+#: blactivity/models.py:75
+msgid "activity"
+msgstr "activiteit"
+
+#: blactivity/models.py:76
+msgid "activities"
+msgstr "activiteiten"
+
+#: blagenda/forms.py:19
+#: templates/blagenda/monthly_view.html:21
+#: templates/blagenda/user/monthly_view.html:22
+msgid "Sun"
+msgstr "Zon"
+
+#: blagenda/forms.py:20
+#: templates/blagenda/monthly_view.html:21
+#: templates/blagenda/user/monthly_view.html:22
+msgid "Mon"
+msgstr "Ma"
+
+#: blagenda/forms.py:21
+#: templates/blagenda/monthly_view.html:21
+#: templates/blagenda/user/monthly_view.html:22
+msgid "Tue"
+msgstr "Di"
+
+#: blagenda/forms.py:22
+#: templates/blagenda/monthly_view.html:21
+#: templates/blagenda/user/monthly_view.html:22
+msgid "Wed"
+msgstr "Wo"
+
+#: blagenda/forms.py:23
+#: templates/blagenda/monthly_view.html:21
+#: templates/blagenda/user/monthly_view.html:22
+msgid "Thu"
+msgstr "Do"
+
+#: blagenda/forms.py:24
+#: templates/blagenda/monthly_view.html:21
+#: templates/blagenda/user/monthly_view.html:22
+msgid "Fri"
+msgstr "Vr"
+
+#: blagenda/forms.py:25
+#: templates/blagenda/monthly_view.html:21
+#: templates/blagenda/user/monthly_view.html:22
+msgid "Sat"
+msgstr "Za"
+
+#: blagenda/forms.py:29
+msgid "Sunday"
+msgstr "Zondag"
+
+#: blagenda/forms.py:30
+msgid "Monday"
+msgstr "Maandag"
+
+#: blagenda/forms.py:31
+msgid "Tuesday"
+msgstr "Dinsdag"
+
+#: blagenda/forms.py:32
+msgid "Wednesday"
+msgstr "Woensdag"
+
+#: blagenda/forms.py:33
+msgid "Thursday"
+msgstr "Donderdag"
+
+#: blagenda/forms.py:34
+msgid "Friday"
+msgstr "Vrijdag"
+
+#: blagenda/forms.py:35
+msgid "Saturday"
+msgstr "Zaterdag"
+
+#: blagenda/forms.py:39
+msgid "January"
+msgstr "Januari"
+
+#: blagenda/forms.py:40
+msgid "February"
+msgstr "Februari"
+
+#: blagenda/forms.py:41
+msgid "March"
+msgstr "Maart"
+
+#: blagenda/forms.py:42
+msgid "April"
+msgstr "April"
+
+#: blagenda/forms.py:43
+#: blagenda/forms.py:58
+msgid "May"
+msgstr "Mei"
+
+#: blagenda/forms.py:44
+msgid "June"
+msgstr "Juni"
+
+#: blagenda/forms.py:45
+msgid "July"
+msgstr "Juli"
+
+#: blagenda/forms.py:46
+msgid "August"
+msgstr "Augustus"
+
+#: blagenda/forms.py:47
+msgid "September"
+msgstr "September"
+
+#: blagenda/forms.py:48
+msgid "October"
+msgstr "Oktober"
+
+#: blagenda/forms.py:49
+msgid "November"
+msgstr "November"
+
+#: blagenda/forms.py:50
+msgid "December"
+msgstr "December"
+
+#: blagenda/forms.py:54
+msgid "Jan"
+msgstr "Jan"
+
+#: blagenda/forms.py:55
+msgid "Feb"
+msgstr "Feb"
+
+#: blagenda/forms.py:56
+msgid "Mar"
+msgstr "Mar"
+
+#: blagenda/forms.py:57
+msgid "Apr"
+msgstr "Apr"
+
+#: blagenda/forms.py:59
+msgid "Jun"
+msgstr "Jun"
+
+#: blagenda/forms.py:60
+msgid "Jul"
+msgstr "Jul"
+
+#: blagenda/forms.py:61
+msgid "Aug"
+msgstr "Aug"
+
+#: blagenda/forms.py:62
+msgid "Sep"
+msgstr "Sep"
+
+#: blagenda/forms.py:63
+msgid "Oct"
+msgstr "Okt"
+
+#: blagenda/forms.py:64
+msgid "Nov"
+msgstr "Nov"
+
+#: blagenda/forms.py:65
+msgid "Dec"
+msgstr "Dec"
+
+#: blagenda/forms.py:70
+msgid "first"
+msgstr "eerste"
+
+#: blagenda/forms.py:71
+msgid "second"
+msgstr "tweede"
+
+#: blagenda/forms.py:72
+msgid "third"
+msgstr "derde"
+
+#: blagenda/forms.py:73
+msgid "fourth"
+msgstr "vierde"
+
+#: blagenda/forms.py:74
+msgid "last"
+msgstr "laatste"
+
+#: blagenda/forms.py:78
+msgid "Day(s)"
+msgstr "dag(en)"
+
+#: blagenda/forms.py:79
+msgid "Week(s)"
+msgstr "wek(en)"
+
+#: blagenda/forms.py:80
+msgid "Month(s)"
+msgstr "Maand(en)"
+
+#: blagenda/forms.py:81
+msgid "Year(s)"
+msgstr "ja(a)r(en)"
+
+#: blagenda/forms.py:85
+msgid "By count"
+msgstr "Op aantal"
+
+#: blagenda/forms.py:86
+msgid "Until date"
+msgstr "tot datum"
+
+#: blagenda/forms.py:199
+#: blagenda/forms.py:420
+#: blfile/templates/blfile/include/tableheader.html:26
+#: blfile/templates/blfile/include/tableheader.html:27
+#: templates/blfile/include/tableheader.html:26
+#: templates/blfile/include/tableheader.html:27
+msgid "Date"
+msgstr "Datum"
+
+#: blagenda/forms.py:205
+#: blagenda/forms.py:425
+msgid "Start time"
+msgstr "Begin tijd"
+
+#: blagenda/forms.py:210
+msgid "End time"
+msgstr "Eind tijd"
+
+#: blagenda/forms.py:218
+msgid "Occurrences"
+msgstr "Gebeurtenissen"
+
+#: blagenda/forms.py:223
+msgid "Total Occurrences"
+msgstr "Totaal aantal gebeurtenissen"
+
+#: blagenda/forms.py:236
+msgid "Frequency"
+msgstr "Veelvuldig"
+
+#: blagenda/forms.py:250
+msgid "Weekly options"
+msgstr "Weekelijkse opties"
+
+#: blagenda/forms.py:256
+msgid "On the"
+msgstr "op de"
+
+#: blagenda/forms.py:256
+msgid "Each:"
+msgstr "Elke:"
+
+#: blagenda/forms.py:259
+msgid "Monthly options"
+msgstr "Maandelijkse opties:"
+
+#: blagenda/forms.py:272
+msgid "Yearly options"
+msgstr "Jaarlijkse opties"
+
+#: blagenda/forms.py:371
+#, python-format
+msgid "Unknown interval rule %s"
+msgstr "Onbekende interval regel %s"
+
+#: blagenda/forms.py:389
+msgid "Project"
+msgstr "Project"
+
+#: blagenda/models.py:29
+#: blagenda/models.py:37
+#: bltask/models.py:59
+msgid "note"
+msgstr "notitie"
+
+#: blagenda/models.py:32
+#: blagenda/models.py:75
+#: blcontact/models.py:19
+#: blmessage/models.py:18
+msgid "content type"
+msgstr "content type"
+
+#: blagenda/models.py:33
+#: blcontact/models.py:20
+#: blmessage/models.py:19
+msgid "object id"
+msgstr "object id"
+
+#: blagenda/models.py:38
+#: blagenda/models.py:67
+#: blagenda/models.py:192
+msgid "notes"
+msgstr "notities"
+
+#: blagenda/models.py:49
+msgid "abbreviation"
+msgstr "afkorting"
+
+#: blagenda/models.py:50
+msgid "label"
+msgstr "label"
+
+#: blagenda/models.py:53
+#: blagenda/models.py:66
+msgid "event type"
+msgstr "afspraak type"
+
+#: blagenda/models.py:54
+msgid "event types"
+msgstr "afspraak typen"
+
+#: blagenda/models.py:64
+#: blmessage/models.py:13
+msgid "title"
+msgstr "titel"
+
+#: blagenda/models.py:65
+msgid "location"
+msgstr "locatie"
+
+#: blagenda/models.py:69
+#: blproject/models.py:62
+#: bltask/models.py:82
+msgid "project"
+msgstr "project"
+
+#: blagenda/models.py:80
+#: blagenda/models.py:191
+msgid "event"
+msgstr "afspraak"
+
+#: blagenda/models.py:81
+msgid "events"
+msgstr "afspraken"
+
+#: blagenda/models.py:189
+msgid "start time"
+msgstr "begin tijd"
+
+#: blagenda/models.py:190
+msgid "end time"
+msgstr "eind tijd"
+
+#: blagenda/models.py:197
+msgid "occurrence"
+msgstr "gebeurtenis"
+
+#: blagenda/models.py:198
+msgid "occurrences"
+msgstr "gebeurtenissen"
+
+#: blagenda/views.py:65
+#, python-format
+msgid "Event '%(event)s' has been updated"
+msgstr "Afspraak '%(event)s' is gewijzigd"
+
+#: blagenda/views.py:112
+#, python-format
+msgid "Event '%(event)s' has been created"
+msgstr "Afspraak '%(event)s' is toegevoegd"
+
+#: blagenda/views.py:284
+#, python-format
+msgid "Event '%(event)s' has been deleted"
+msgstr "Afspraak '%(event)s' is verwijderd"
+
+#: blcontact/models.py:10
+msgid "first name"
+msgstr "voornaam"
+
+#: blcontact/models.py:11
+msgid "last name"
+msgstr "achternaam"
+
+#: blcontact/models.py:12
+#: blgroup/models.py:15
+#: blproject/models.py:48
+msgid "slug"
+msgstr "slug"
+
+#: blcontact/models.py:13
+msgid "phone"
+msgstr "telefoonnummer"
+
+#: blcontact/models.py:14
+msgid "email"
+msgstr "e-mail"
+
+#: blcontact/models.py:15
+msgid "extra information"
+msgstr "extra informatie"
+
+#: blcontact/templates/blcontact/contact_list.html:5
+#: blcontact/templates/blcontact/includes/list.html:3
+msgid "Contacts"
+msgstr "Contacten"
+
+#: blcontact/templates/blcontact/detail.html:6
+#: blcontact/templates/blcontact/includes/detail.html:4
+msgid "Phone"
+msgstr "Telefoonnummer"
+
+#: blcontact/templates/blcontact/detail.html:7
+#: blcontact/templates/blcontact/includes/detail.html:5
+#: blprofile/forms.py:36
+#: templates/authopenid/complete.html:36
+#: templates/comments/moderation_queue.html:36
+msgid "Email"
+msgstr "E-mail"
+
+#: blcontact/templates/blcontact/detail.html:8
+#: blcontact/templates/blcontact/includes/detail.html:6
+#: blmessage/templates/blmessage/list_model.html:11
+#: blmessage/templates/blmessage/thread_list.html:11
+#: templates/blmessage/list_message_model.html:23
+#: templates/blmessage/list_model.html:33
+#: templates/blproject/sidebar.html:5
+msgid "Edit"
+msgstr "Wijzig"
+
+#: blcontact/templates/blcontact/detail.html:8
+#: blcontact/templates/blcontact/includes/detail.html:6
+#: blgroup/templates/blgroup/detail.html:28
+#: blmessage/templates/blmessage/list_model.html:12
+#: blmessage/templates/blmessage/thread_list.html:12
+#: blproject/templates/blproject/detail.html:46
+#: templates/blgroup/detail.html:28
+#: templates/blmessage/list_message_model.html:24
+#: templates/blmessage/list_model.html:34
+#: templates/blproject/sidebar.html:45
+#: templates/blproject/sidebar.html:50
+msgid "Delete"
+msgstr "Verwijder"
+
+#: blcontact/templates/blcontact/filter.html:3
+#: blmessage/templates/blmessage/filter.html:3
+#: blmessage/templates/blmessage/includes/filter.html:3
+msgid "Filters"
+msgstr "Filters"
+
+#: blcontact/templates/blcontact/includes/form.html:7
+#: blgroup/templates/blgroup/form.html:8
+#: blgroup/templates/blgroup/form_project.html:8
+#: blgroup/templates/blgroup/messages/detail.html:22
+#: blgroup/templates/blgroup/messages/form_thread.html:8
+#: blmessage/templates/blmessage/detail.html:18
+#: blmessage/templates/blmessage/form_message.html:8
+#: blmessage/templates/blmessage/list_message_model.html:18
+#: blprofile/templates/blprofile/edit.html:8
+#: blprofile/templates/blprofile/includes/form.html:6
+#: blproject/templates/blproject/form.html:8
+#: blproject/templates/blproject/message_list.html:22
+#: templates/blgroup/form.html:8
+#: templates/blgroup/form_project.html:8
+#: templates/blgroup/messages/detail.html:22
+#: templates/blgroup/messages/form_thread.html:8
+#: templates/blmessage/form_message.html:12
+#: templates/blmessage/list_message_model.html:42
+#: templates/blproject/form.html:51
+msgid "submit"
+msgstr "verstuur"
+
+#: blcontact/templates/blcontact/includes/list.html:9
+msgid "Add contact"
+msgstr "Voeg contact toe"
+
+#: blfile/forms.py:20
+#: templates/comments/form.html:15
+#: templates/comments/moderation_queue.html:34
+#: templates/comments/preview.html:37
+msgid "Name"
+msgstr "Naam"
+
+#: blfile/forms.py:20
+#: blfile/forms.py:108
+msgid "The Name will automatically be converted to lowercase. Only letters, numbers, underscores and hyphens are allowed."
+msgstr "De naam zal automatisch worden omgezet naar kleine letters.Alleen letters, cijfer en streepjes zijn toegestaan."
+
+#: blfile/forms.py:27
+#: blfile/forms.py:115
+msgid "Only letters, numbers, underscores and hyphens are allowed."
+msgstr "Alleen letters, cijfers en streepjes zijn toegestaan."
+
+#: blfile/forms.py:30
+msgid "The Folder already exists."
+msgstr "Deze map bestaat reeds."
+
+#: blfile/forms.py:33
+msgid "Disallowed Folder Name."
+msgstr "Deze naam is niet toegestaan."
+
+#: blfile/forms.py:69
+msgid "File"
+msgstr "Bestand"
+
+#: blfile/forms.py:70
+msgid "Use Image Generator"
+msgstr "Gebruik plaatjes generator"
+
+#: blfile/forms.py:79
+msgid "File already exists."
+msgstr "Dit bestand bestaat al."
+
+#: blfile/forms.py:85
+msgid "Filename is not allowed."
+msgstr "Deze bestandsnaam is niet toegestaan."
+
+#: blfile/forms.py:90
+msgid "File extension is not allowed."
+msgstr "Bestandstype is niet toegestaan."
+
+#: blfile/forms.py:95
+msgid "Filesize exceeds allowed Upload Size."
+msgstr "Het bestand is te groot."
+
+#: blfile/forms.py:108
+msgid "New Name"
+msgstr "Nieuwe naam"
+
+#: blfile/forms.py:118
+msgid "The File/Folder already exists."
+msgstr "Bestand/map bestaat al."
+
+#: blfile/functions.py:105
+#: blfile/templates/blfile/base.html:4
+#: blproject/templates/blproject/base.html:12
+#: templates/blfile/base.html:4
+#: templates/blfile/list.html:19
+#: templates/blproject/base.html:19
+msgid "Files"
+msgstr "Bestanden"
+
+#: blfile/views.py:187
+msgid "FileBrowser"
+msgstr "Verkenner"
+
+#: blfile/views.py:208
+#, python-format
+msgid "The Folder %s was successfully created."
+msgstr "De map %s is aangemaakt."
+
+#: blfile/views.py:219
+msgid "Permission denied."
+msgstr "Toegang geweigerd."
+
+#: blfile/views.py:221
+msgid "Error creating directory."
+msgstr "Er is fout opgetreden."
+
+#: blfile/views.py:230
+#: blfile/views.py:231
+#: blfile/templates/blfile/list.html:8
+msgid "New Folder"
+msgstr "Nieuwe map"
+
+#: blfile/views.py:266
+msgid "Upload successful."
+msgstr "Bestand toegevoegd."
+
+#: blfile/views.py:284
+#: blfile/templates/blfile/list.html:9
+#: blfile/templates/blfile/upload.html:37
+#: templates/blfile/upload.html:37
+msgid "Upload"
+msgstr "Toevoegen"
+
+#: blfile/views.py:285
+msgid "Select files to upload"
+msgstr "Selecteer bestanden om toe te voegen."
+
+#: blfile/views.py:313
+#, python-format
+msgid "The file %s was successfully deleted."
+msgstr "Het bestand %s is verwijderd."
+
+#: blfile/views.py:329
+#, python-format
+msgid "The directory %s was successfully deleted."
+msgstr "De map %s is verwijderd."
+
+#: blfile/views.py:370
+msgid "Renaming was successful."
+msgstr "Naam is gewijzigd."
+
+#: blfile/views.py:378
+msgid "Error."
+msgstr "Terror."
+
+#: blfile/views.py:388
+#: blfile/templates/blfile/include/filelisting.html:19
+#: templates/blfile/include/filelisting.html:22
+msgid "Rename"
+msgstr "Naam wijzigen"
+
+#: blfile/views.py:389
+#, python-format
+msgid "Rename \"%s\""
+msgstr "Hernoem \"%s\""
+
+#: blfile/templates/blfile/makedir.html:9
+#: blfile/templates/blfile/rename.html:9
+#: templates/blfile/makedir.html:9
+#: templates/blfile/rename.html:9
+msgid "Please correct the following errors."
+msgstr "Oeps! Er is iets misgegaan. Controleer de velden."
+
+#: blfile/templates/blfile/makedir.html:19
+#: blfile/templates/blfile/rename.html:20
+#: templates/blagenda/add_event.html:17
+#: templates/blagenda/event_detail.html:18
+#: templates/blagenda/includes/add_event.html:13
+#: templates/blagenda/includes/event_detail.html:14
+#: templates/blfile/makedir.html:19
+#: templates/blfile/rename.html:20
+#: templates/blprofile/edit.html:17
+#: templates/blprofile/settings.html:13
+msgid "Submit"
+msgstr "Verstuur"
+
+#: blfile/templates/blfile/upload.html:22
+#: templates/blfile/upload.html:22
+msgid "Help"
+msgstr "Help"
+
+#: blfile/templates/blfile/upload.html:26
+#: templates/blfile/upload.html:26
+msgid "Allowed"
+msgstr "Toegestaan"
+
+#: blfile/templates/blfile/upload.html:32
+#: templates/blfile/upload.html:32
+msgid "Max. Filesize"
+msgstr "Max. Bestandsgrootte"
+
+#: blfile/templates/blfile/include/filelisting.html:9
+#: templates/blfile/include/filelisting.html:11
+msgid "View Image"
+msgstr "Bekijk afbeelding"
+
+#: blfile/templates/blfile/include/filelisting.html:28
+#: templates/blfile/include/filelisting.html:31
+msgid "Are you sure you want to delete this file?"
+msgstr "Weet je zeker dat dit bestand wilt verwijderen?"
+
+#: blfile/templates/blfile/include/filelisting.html:28
+#: templates/blfile/include/filelisting.html:31
+msgid "Delete File"
+msgstr "Verwijder bestand"
+
+#: blfile/templates/blfile/include/filelisting.html:31
+#: templates/blfile/include/filelisting.html:34
+msgid "Are you sure you want to delete this Folder?"
+msgstr "Weet je zeker dat je deze map wilt verwijderen?"
+
+#: blfile/templates/blfile/include/filelisting.html:31
+#: templates/blfile/include/filelisting.html:34
+msgid "Delete Folder"
+msgstr "Verwijder map"
+
+#: blfile/templates/blfile/include/filter.html:17
+msgid "Filter"
+msgstr "Filter"
+
+#: blfile/templates/blfile/include/filter.html:23
+#: templates/blfile/include/filter.html:26
+msgid "By Date"
+msgstr "Datum"
+
+#: blfile/templates/blfile/include/filter.html:25
+#: templates/blfile/include/filter.html:28
+msgid "Any Date"
+msgstr "Elke datum"
+
+#: blfile/templates/blfile/include/filter.html:27
+#: templates/blfile/include/filter.html:30
+msgid "Today"
+msgstr "Vandaag"
+
+#: blfile/templates/blfile/include/filter.html:29
+#: templates/blfile/include/filter.html:32
+msgid "Past 7 days"
+msgstr "Afgelopen 7 dagen"
+
+#: blfile/templates/blfile/include/filter.html:31
+#: templates/blfile/include/filter.html:34
+msgid "Past 30 days"
+msgstr "Afgelopen 30 dagen"
+
+#: blfile/templates/blfile/include/filter.html:33
+#: templates/blfile/include/filter.html:36
+msgid "This year"
+msgstr "Afgelopen jaar"
+
+#: blfile/templates/blfile/include/filter.html:41
+#: templates/blfile/include/filter.html:44
+msgid "By Type"
+msgstr "Type"
+
+#: blfile/templates/blfile/include/filter.html:43
+#: blproject/templates/blproject/detail.html:19
+#: templates/blfile/include/filter.html:46
+msgid "All"
+msgstr "Allen"
+
+#: blfile/templates/blfile/include/paginator.html:5
+#: templates/blfile/include/paginator.html:5
+msgid "No Items Found."
+msgstr "Niets gevonden."
+
+#: blfile/templates/blfile/include/paginator.html:10
+#: templates/blfile/include/paginator.html:10
+#, python-format
+msgid "%(counter)s Item"
+msgid_plural "%(counter)s Items"
+msgstr[0] "%(counter)s Item"
+msgstr[1] "%(counter)s Items"
+
+#: blfile/templates/blfile/include/paginator.html:16
+#: templates/blfile/include/paginator.html:16
+msgid "No Items."
+msgstr "Geen items."
+
+#: blfile/templates/blfile/include/tableheader.html:16
+#: blfile/templates/blfile/include/tableheader.html:17
+#: templates/blfile/include/tableheader.html:16
+#: templates/blfile/include/tableheader.html:17
+msgid "Filename"
+msgstr "Bestandsnaam"
+
+#: blfile/templates/blfile/include/tableheader.html:23
+#: blfile/templates/blfile/include/tableheader.html:24
+#: templates/blfile/include/tableheader.html:23
+#: templates/blfile/include/tableheader.html:24
+msgid "Size"
+msgstr "Bestandsgrootte"
+
+#: blfile/templates/blfile/include/toolbar.html:16
+#: templates/blfile/include/toolbar.html:16
+msgid "Go"
+msgstr "Zoek"
+
+#: blfile/templates/blfile/include/toolbar.html:19
+#: templates/blfile/include/toolbar.html:19
+#, python-format
+msgid "%(counter)s Item found"
+msgid_plural "%(counter)s Items found"
+msgstr[0] "%(counter)s items gevonden."
+msgstr[1] "%(counter)s items gevonden."
+
+#: blfile/templates/blfile/include/toolbar.html:20
+#: templates/blfile/include/toolbar.html:20
+#, python-format
+msgid "%(counter)s Item total"
+msgid_plural "%(counter)s Items total"
+msgstr[0] "%(counter)s items totaal"
+msgstr[1] "%(counter)s items totaal"
+
+#: blgroup/forms.py:66
+#: blproject/forms.py:27
+#: blproject/models.py:49
+#: templates/blproject/sidebar.html:12
+msgid "description"
+msgstr "omschrijving"
+
+#: blgroup/models.py:14
+#: blproject/models.py:47
+#: bltask/models.py:58
+msgid "name"
+msgstr "naam"
+
+#: blgroup/models.py:16
+#: blproject/models.py:52
+msgid "members"
+msgstr "leden"
+
+#: blgroup/models.py:21
+msgid "group"
+msgstr "groep"
+
+#: blgroup/models.py:22
+msgid "groups"
+msgstr "groepen"
+
+#: blgroup/views.py:54
+#, python-format
+msgid "Group '%(group)s' has been updated"
+msgstr "Groep '%(group)s' is gewijzigd"
+
+#: blgroup/views.py:55
+#, python-format
+msgid "Group '%(group)s' has been created"
+msgstr "Groep '%(group)s' is aangemaakt"
+
+#: blgroup/views.py:74
+#, python-format
+msgid "Group '%(group)s' has been deleted"
+msgstr "Groep '%(group)s' is verwijderd"
+
+#: blgroup/templates/blgroup/base.html:4
+#: templates/blgroup/base.html:4
+msgid "Groups"
+msgstr "Groepen"
+
+#: blgroup/templates/blgroup/base.html:7
+#: templates/blgroup/detail.html:39
+msgid "Group dashboard"
+msgstr "Groep dashboard"
+
+#: blgroup/templates/blgroup/base.html:8
+#: blproject/templates/blproject/base.html:14
+#: templates/blgroup/detail.html:40
+#: templates/blmessage/base.html:4
+#: templates/blmessage/list_message_model.html:7
+#: templates/blmessage/list_model.html:11
+#: templates/blproject/base.html:18
+#: templates/static/base.html:111
+#: templates/static/index.html:108
+msgid "Messages"
+msgstr "Berichten"
+
+#: blgroup/templates/blgroup/detail.html:5
+#: templates/blgroup/detail.html:5
+msgid "Group"
+msgstr "Groep"
+
+#: blgroup/templates/blgroup/detail.html:8
+#: templates/blgroup/detail.html:8
+msgid "Edit group"
+msgstr "Wijzig groep"
+
+#: blgroup/templates/blgroup/detail.html:10
+#: templates/blgroup/detail.html:10
+msgid "Delete group"
+msgstr "Verwijder groep"
+
+#: blgroup/templates/blgroup/detail.html:13
+#: templates/blgroup/detail.html:13
+msgid "Start project"
+msgstr "Start project"
+
+#: blgroup/templates/blgroup/detail.html:16
+#: templates/blgroup/detail.html:16
+msgid "Members"
+msgstr "Leden"
+
+#: blgroup/templates/blgroup/detail.html:18
+#: blproject/templates/blproject/detail.html:36
+#: templates/blgroup/detail.html:18
+msgid "Add member"
+msgstr "Voeg leden toe"
+
+#: blgroup/templates/blgroup/detail.html:26
+#: blproject/templates/blproject/detail.html:44
+#: templates/blgroup/detail.html:26
+#: templates/blproject/sidebar.html:43
+msgid "Make admin"
+msgstr "Admin maken"
+
+#: blgroup/templates/blgroup/group_list.html:5
+#: templates/blgroup/group_list.html:15
+msgid "Add group"
+msgstr "Groep toevoegen"
+
+#: blgroup/templates/blgroup/messages/detail.html:10
+#: blproject/templates/blproject/message_list.html:10
+#: templates/blgroup/messages/detail.html:10
+msgid "By"
+msgstr "Op"
+
+#: blgroup/templates/blgroup/messages/list.html:5
+#: blmessage/templates/blmessage/list_model.html:5
+#: templates/blgroup/messages/list.html:5
+msgid "Messages in"
+msgstr "Berichten in"
+
+#: blgroup/templates/blgroup/messages/list.html:12
+#: blmessage/templates/blmessage/list_model.html:16
+#: templates/blgroup/messages/list.html:12
+msgid "Add thread"
+msgstr "Bericht toevoegen"
+
+#: blinvite/forms.py:16
+msgid "Enter at least one username"
+msgstr "Vul minimaal een gebruikersnaam in"
+
+#: blinvite/forms.py:23
+#, python-format
+msgid "%(username)s is not registered at BusyLissy"
+msgstr "%(username)s is niet bekend bij BusyLissy"
+
+#: blinvite/forms.py:28
+msgid "usernames"
+msgstr "gebruikersnamen"
+
+#: blinvite/forms.py:38
+#, python-format
+msgid "%(username)s is already a member of %(project)s."
+msgstr "%(username)s is al lid van %(project)s."
+
+#: blinvite/forms.py:42
+#, python-format
+msgid "%(username)s already got an invite for this project."
+msgstr "%(username)s heeft al een uitnodiging voor dit project."
+
+#: blinvite/forms.py:64
+#, python-format
+msgid "%(email)s is not a valid e-mail address."
+msgstr "%(email)s is geen e-mailadres."
+
+#: blinvite/forms.py:71
+msgid "email_addresses"
+msgstr "e-mailadressen"
+
+#: blinvite/forms.py:72
+msgid "personal message"
+msgstr "Persoonlijk bericht"
+
+#: blinvite/forms.py:83
+#, python-format
+msgid "%(email)s already got an invite for this project."
+msgstr "%(email)s heeft al een uitnodiging voor dit project."
+
+#: blinvite/forms.py:86
+#, python-format
+msgid "%(email)s is already a member of this project"
+msgstr "%(email)s is al lid van dit project"
+
+#: blinvite/models.py:17
+msgid "None"
+msgstr "Geen"
+
+#: blinvite/models.py:18
+msgid "Accepted"
+msgstr "Geaccepteerd"
+
+#: blinvite/models.py:19
+msgid "Declined"
+msgstr "Geweigerd"
+
+#: blinvite/models.py:49
+#: blinvite/models.py:68
+#, python-format
+msgid "You received an invitation to join %(project)s"
+msgstr "Je bent uitgenodigd voor %(project)s"
+
+#: blinvite/models.py:102
+msgid "sha"
+msgstr "sha"
+
+#: blinvite/models.py:103
+#: blproject/models.py:53
+msgid "date"
+msgstr "datum"
+
+#: blinvite/views.py:17
+msgid "I would like to add you to my project on BusyLissy."
+msgstr "Ik wil je graag toevoegen aan mijn project op BusyLissy"
+
+#: blinvite/views.py:44
+#, python-format
+msgid "%(amount)s invite(s) has been sent out."
+msgstr "%(amount)s uitnodiging(en) zijn er verstuurd."
+
+#: blinvite/views.py:52
+#, python-format
+msgid "Your invite to %(invited)s has been sent out."
+msgstr "Uitnodiging is verstuurd naar %(invited)s."
+
+#: blinvite/views.py:54
+#, python-format
+msgid "%(amount)s invites has been sent out."
+msgstr "%(amount)s uitnodigingen zijn er verstuurd."
+
+#: blinvite/views.py:77
+#, python-format
+msgid "You have been added to %(project)s."
+msgstr "Je bent uitgenodigd voor %(project)s"
+
+#: blinvite/views.py:82
+#, python-format
+msgid "%(username)s has been added to %(project)s.                                                       Login as him to go to this project."
+msgstr "%(username)s is toegevoegd aan %(project)s. Login op dit account om naar het project te gaan."
+
+#: blinvite/views.py:104
+#, python-format
+msgid "You have declined the invitation to %(project)s."
+msgstr "Je hebt de uitnodiging voor %(project)s geweigerd."
+
+#: blmessage/forms.py:12
+#: blmessage/models.py:91
+msgid "message"
+msgstr "bericht"
+
+#: blmessage/forms.py:16
+#: blmessage/forms.py:82
+msgid "Message should be longer than 5 characters."
+msgstr "Bericht moet minimaal 5 karakters bevatten."
+
+#: blmessage/forms.py:74
+#: blmessage/forms.py:100
+#: blmessage/models.py:44
+msgid "body"
+msgstr "bericht"
+
+#: blmessage/models.py:15
+msgid "latest message time"
+msgstr "laatste bericht"
+
+#: blmessage/models.py:16
+msgid "total amount of messages"
+msgstr "totaal aantal berichten"
+
+#: blmessage/models.py:37
+msgid "thread"
+msgstr "bericht"
+
+#: blmessage/models.py:38
+msgid "threads"
+msgstr "berichten"
+
+#: blmessage/models.py:45
+msgid "created_at"
+msgstr "aangemaakt op"
+
+#: blmessage/models.py:92
+msgid "messages"
+msgstr "berichten"
+
+#: blmessage/views.py:77
+msgid "Your message has been posted"
+msgstr "Bericht is geplaatst."
+
+#: blmessage/views.py:160
+#, python-format
+msgid "Thread '%(thread)s' has been created"
+msgstr "Bericht '%(thread)s' is aangemaakt"
+
+#: blmessage/views.py:163
+#: blmessage/views.py:337
+#, python-format
+msgid "Thread '%(thread)s' has been updated"
+msgstr "Bericht '%(thread)s' is gewijzigd"
+
+#: blmessage/views.py:195
+#: blmessage/views.py:355
+#, python-format
+msgid "Thread '%(thread)s' has been deleted"
+msgstr "Bericht '%(thread)s' is verwijderd"
+
+#: blmessage/views.py:225
+#: blmessage/views.py:371
+msgid "Your message has been updated"
+msgstr "Bericht is gewijzigd"
+
+#: blmessage/views.py:246
+#: blmessage/views.py:387
+msgid "Your message has been deleted"
+msgstr "Bericht is verwijderd"
+
+#: blmessage/views.py:437
+msgid "Thank you for your feedback"
+msgstr "Dankjewel voor de feedback"
+
+#: blmessage/templates/blmessage/thread_list.html:5
+msgid "Messages for"
+msgstr "Berichten voor"
+
+#: blprofile/forms.py:21
+#: blprofile/forms.py:28
+msgid "Can only contain letters, numbers and spaces"
+msgstr "Mag alleen letters, cijfers en spaties bevatten"
+
+#: blprofile/forms.py:25
+msgid "First name"
+msgstr "Voornaam"
+
+#: blprofile/forms.py:32
+msgid "Last name"
+msgstr "Achternaam"
+
+#: blprofile/forms.py:65
+msgid "Username contains only letters and numbers"
+msgstr "Gebruikersnaam mag alleen letters en cijfers bevatten"
+
+#: blprofile/forms.py:67
+msgid "username"
+msgstr "gebruikersnaam"
+
+#: blprofile/forms.py:88
+msgid "One of the usernames does not exist"
+msgstr "Een van de gebruikersnamen bestaat niet"
+
+#: blprofile/forms.py:89
+msgid "Username does not exist"
+msgstr "Sorry, deze gebruikersnaam kan ik echt niet vinden"
+
+#: blprofile/forms.py:110
+msgid "email address"
+msgstr "e-mailadres"
+
+#: blprofile/forms.py:120
+msgid "BusyLissy: Invite for"
+msgstr "Busylissy: uitnodiging voor"
+
+#: blprofile/models.py:38
+msgid "Male"
+msgstr "Mannetje"
+
+#: blprofile/models.py:39
+msgid "Female"
+msgstr "Vrouwtje"
+
+#: blprofile/models.py:44
+msgid "gender"
+msgstr "Geslacht"
+
+#: blprofile/models.py:48
+msgid "website"
+msgstr "website"
+
+#: blprofile/models.py:49
+msgid "birth date"
+msgstr "geboortedatum"
+
+#: blprofile/models.py:50
+msgid "about me"
+msgstr "over mij"
+
+#: blprofile/models.py:51
+msgid "notifications"
+msgstr "notificaties"
+
+#: blprofile/models.py:51
+msgid "I want to receive notifications of activities in my projects"
+msgstr "notificaties ontvangen per e-mail"
+
+#: blprofile/models.py:52
+msgid "language"
+msgstr "taal"
+
+#: blprofile/models.py:53
+msgid "is public"
+msgstr "is publiek"
+
+#: blprofile/models.py:53
+msgid "Profile is visible for others."
+msgstr "Profiel is zichtbaar voor anderen."
+
+#: blprofile/models.py:56
+msgid "avatar"
+msgstr "avatar"
+
+#: blprofile/views.py:70
+msgid "Your profile has been updated"
+msgstr "Profiel is spiksplinternieuw"
+
+#: blprofile/views.py:93
+msgid "Profile has been deleted"
+msgstr "Profiel is verwijderd"
+
+#: blprofile/views.py:134
+#, python-format
+msgid "Invite for '%(project)s' has been send to '%(invite)s'"
+msgstr "Uitnodigin voor '%(project)s' is verstuurd naar '%(invite)s'"
+
+#: blprofile/views.py:144
+#, python-format
+msgid "Members '%(member)s' have been invited to '%(project)s'"
+msgstr "Gebruikers '%(member)s' zijn uitgenodigd voor '%(project)s'"
+
+#: blprofile/views.py:147
+#, python-format
+msgid "Member '%(member)s' has been invited to '%(project)s'"
+msgstr "Gebruiker '%(member)s' is uitgenodigd voor '%(project)s'"
+
+#: blprofile/views.py:173
+#, python-format
+msgid "Member '%(member)s' has been removed from '%(project)s'"
+msgstr "Gebruiker '%(member)s' is verwijderd van '%(project)s'"
+
+#: blprofile/views.py:189
+#, python-format
+msgid "You have resigned from '%(project)s'"
+msgstr "Je bent afgemeld voor '%(project)s'"
+
+#: blprofile/views.py:235
+#, python-format
+msgid "Member '%(member)s' has been granted admin permissions for '%(project)s'"
+msgstr "'%(member)s' heeft admin rechten gekregen voor '%(project)s'"
+
+#: blprofile/views.py:256
+msgid "Your settings have been updated"
+msgstr "Instellingen zijn gewijzigd"
+
+#: blprofile/templates/blprofile/base.html:7
+msgid "Edit my profile"
+msgstr "Wijzig profiel"
+
+#: blprofile/templates/blprofile/base.html:8
+#: templates/base.html:45
+#: templates/authopenid/password_change_form.html:4
+msgid "Change password"
+msgstr "Wijzig wachtwoord"
+
+#: blprofile/templates/blprofile/base.html:9
+msgid "Delete my profile"
+msgstr "Verwijder profiel"
+
+#: blprofile/templates/blprofile/detail.html:8
+msgid "Profile of"
+msgstr "Profiel van"
+
+#: blprofile/templates/blprofile/detail.html:16
+msgid "Gender"
+msgstr "Geslacht"
+
+#: blprofile/templates/blprofile/detail.html:20
+msgid "Website"
+msgstr "Website"
+
+#: blprofile/templates/blprofile/detail.html:24
+msgid "Age"
+msgstr "Leeftijd"
+
+#: blprofile/templates/blprofile/detail.html:28
+msgid "About me"
+msgstr "Over mij"
+
+#: blprofile/templates/blprofile/detail.html:35
+msgid "User has no profile"
+msgstr "Gebruiker heeft geen profiel"
+
+#: blproject/forms.py:35
+msgid "Project name is not allowed"
+msgstr "Projectnaam niet toegestaan"
+
+#: blproject/models.py:20
+#: templates/blproject/form.html:10
+#: templates/blproject/project_list.html:14
+msgid "On Hold"
+msgstr "Gepauzeerd"
+
+#: blproject/models.py:20
+msgid "In Progress"
+msgstr "Actief"
+
+#: blproject/models.py:20
+#: templates/blproject/form.html:11
+#: templates/blproject/project_list.html:15
+msgid "Finished"
+msgstr "Afgerond"
+
+#: blproject/models.py:50
+msgid "url"
+msgstr "url"
+
+#: blproject/models.py:54
+msgid "status"
+msgstr "status"
+
+#: blproject/models.py:63
+msgid "projects"
+msgstr "projecten"
+
+#: blproject/views.py:104
+#, python-format
+msgid "Project '%(project)s' has been updated"
+msgstr "Project '%(project)s' is gewijzigd"
+
+#: blproject/views.py:107
+#, python-format
+msgid "Project '%(project)s' has been created"
+msgstr "Project '%(project)s' is spiksplinternieuw"
+
+#: blproject/views.py:127
+#, python-format
+msgid "Project '%(project)s' has been deleted"
+msgstr "Project '%(project)s' is verwijderd"
+
+#: blproject/templates/blproject/base.html:3
+#: templates/base.html:37
+#: templates/blproject/form.html:5
+#: templates/blproject/project_list.html:4
+#: templates/blproject/project_list.html:6
+msgid "Projects"
+msgstr "Projecten"
+
+#: blproject/templates/blproject/base.html:6
+msgid "Back to all projects"
+msgstr "Terug naar overzicht projecten"
+
+#: blproject/templates/blproject/base.html:11
+msgid "Project dashboard"
+msgstr "Project dashboard"
+
+#: blproject/templates/blproject/base.html:13
+#: bltask/templates/bltask/base.html:4
+#: templates/blproject/base.html:17
+#: templates/bltask/base.html:4
+#: templates/bltask/list.html:10
+msgid "Tasks"
+msgstr "Taken"
+
+#: blproject/templates/blproject/detail.html:9
+msgid "Edit project"
+msgstr "Wijzig project"
+
+#: blproject/templates/blproject/detail.html:11
+#: templates/blproject/form.html:33
+#: templates/blproject/sidebar.html:7
+msgid "Delete project"
+msgstr "Verwijder project"
+
+#: blproject/templates/blproject/detail.html:16
+msgid "Activities"
+msgstr "Activiteiten"
+
+#: blproject/templates/blproject/detail.html:28
+#: templates/blmessage/list_message_model.html:29
+#: templates/blmessage/list_model.html:30
+#: templates/blproject/project_list.html:67
+msgid "ago"
+msgstr "geleden"
+
+#: blproject/templates/blproject/detail.html:34
+msgid "Project members"
+msgstr "Projectleden"
+
+#: blproject/templates/blproject/filter.html:9
+#: templates/blproject/form.html:9
+#: templates/blproject/project_list.html:13
+msgid "Active"
+msgstr "Actief"
+
+#: blproject/templates/blproject/project_list.html:5
+msgid "Add project"
+msgstr "Project toevoegen"
+
+#: blproject/templatetags/time.py:11
+msgid "year"
+msgstr "jaar"
+
+#: blproject/templatetags/time.py:13
+msgid "week"
+msgstr "week"
+
+#: blproject/templatetags/time.py:15
+msgid "day"
+msgstr "dag"
+
+#: blproject/templatetags/time.py:17
+msgid "hour"
+msgstr "uur"
+
+#: blproject/templatetags/time.py:19
+msgid "minute"
+msgstr "minuut"
+
+#: blproject/templatetags/time.py:22
+msgid "years"
+msgstr "jaar"
+
+#: blproject/templatetags/time.py:24
+msgid "weeks"
+msgstr "weken"
+
+#: blproject/templatetags/time.py:26
+msgid "days"
+msgstr "dagen"
+
+#: blproject/templatetags/time.py:28
+msgid "hours"
+msgstr "uur"
+
+#: blproject/templatetags/time.py:30
+msgid "minutes"
+msgstr "minuten"
+
+#: blproject/templatetags/time.py:57
+#: blproject/templatetags/time.py:84
+msgid "a few seconds"
+msgstr "een aantal seconden"
+
+#: bltask/models.py:60
+msgid "completed"
+msgstr "afgerond"
+
+#: bltask/models.py:61
+msgid "completed date"
+msgstr "afrondingsdatum"
+
+#: bltask/models.py:63
+msgid "due date"
+msgstr "afronden voor"
+
+#: bltask/models.py:74
+msgid "assigned to"
+msgstr "toegewezen aan"
+
+#: bltask/models.py:78
+msgid "created by"
+msgstr "gecreeerd door"
+
+#: bltask/views.py:71
+#, python-format
+msgid "Task '%(name)s' has been updated"
+msgstr "Taak '%(name)s' is gewijzigd"
+
+#: bltask/views.py:74
+#, python-format
+msgid "Task '%(name)s' has been created"
+msgstr "Taak '%(name)s' is aangemaakt"
+
+#: bltask/views.py:106
+#, python-format
+msgid "Task '%(name)s' has been deleted"
+msgstr "Taak '%(name)s' is verwijderd"
+
+#: bltask/views.py:143
+#, python-format
+msgid "Task '%(name)s' has been completed"
+msgstr "Taak '%(name)s' is afgerond"
+
+#: bltask/views.py:153
+#, python-format
+msgid "Task '%(name)s' has been marked as incomplete"
+msgstr "Taak '%(name)s' is nog lang niet af"
+
+#: bltask/templates/bltask/task_form.html:6
+#: templates/blmessage/form_thread.html:7
+#: templates/bltask/task_form.html:7
+msgid "Tags used in project"
+msgstr "Tags gebruikt in dit project"
+
+#: bltask/templates/bltask/task_form.html:17
+#: templates/bltask/task_form.html:21
+msgid "Add todo"
+msgstr "Voeg taak toe"
+
+#: bltask/templatetags/milestones.py:69
+msgid " days left"
+msgstr " dagen te gaan"
+
+#: bltask/templatetags/milestones.py:72
+msgid " days late"
+msgstr " dagen te laat"
+
+#: bltask/templatetags/milestones.py:74
+msgid "no milestones"
+msgstr "geen mijlpalen"
+
+#: templates/404.html:6
+msgid "Back to"
+msgstr "Terug naar"
+
+#: templates/404.html:6
+msgid "home"
+msgstr "home"
+
+#: templates/404.html:12
+msgid "Oops! Something went wrong!"
+msgstr "Oeps! Er is een fout opgetreden!"
+
+#: templates/base.html:38
+#: templates/blagenda/add_event.html:6
+#: templates/blagenda/event_detail.html:4
+#: templates/blagenda/event_detail.html:6
+#: templates/blagenda/monthly_view.html:6
+#: templates/blagenda/monthly_view.html:13
+#: templates/blagenda/user/monthly_view.html:6
+#: templates/blagenda/user/monthly_view.html:7
+#: templates/blproject/base.html:16
+#: templates/static/base.html:121
+#: templates/static/index.html:118
+msgid "Agenda"
+msgstr "Agenda"
+
+#: templates/base.html:44
+msgid "Edit Profile"
+msgstr "Wijzig Profiel"
+
+#: templates/base.html:46
+#: templates/blprofile/settings.html:4
+#: templates/blprofile/settings.html:5
+#: templates/blprofile/settings.html:8
+msgid "Settings"
+msgstr "Instellingen"
+
+#: templates/base.html:47
+msgid "Sign out"
+msgstr "Uitloggen"
+
+#: templates/base.html:68
+msgid "Give us feedback"
+msgstr "Geef feedback"
+
+#: templates/base.html:69
+msgid "X Close"
+msgstr "X Sluiten"
+
+#: templates/base.html:85
+msgid "BusyLissy is a product of"
+msgstr "Busylissy is een product van"
+
+#: templates/authopenid/associate.html:4
+msgid "Associate account"
+msgstr "Koppel account"
+
+#: templates/authopenid/associate.html:21
+msgid "Add a new OpenID URL"
+msgstr "Voeg een nieuwe OpenID URL toe"
+
+#: templates/authopenid/associate.html:23
+msgid "Please click your account provider"
+msgstr "Klik op je openID provider"
+
+#: templates/authopenid/associate.html:27
+#: templates/authopenid/signin.html:62
+#: templates/blinvite/pos_response.html:43
+#: templates/registration/activate.html:39
+#: templates/registration/registration_form.html:53
+msgid "OpenId URL :"
+msgstr "OpenID URL :"
+
+#: templates/authopenid/associate.html:28
+msgid "Add OpenID"
+msgstr "Voeg OpenID toe"
+
+#: templates/authopenid/complete.html:8
+msgid "Your OpenID is verified! "
+msgstr "OpenID is geverifieerd! "
+
+#: templates/authopenid/complete.html:12
+msgid "Associate your OpenID"
+msgstr "Koppel OpenID"
+
+#: templates/authopenid/complete.html:13
+msgid ""
+"\n"
+"\t<h5 class=\"associate-text\">Your OpenID can now be associated with a <strong>new</strong> or <strong>existing</strong> account.</h5>\n"
+"\t"
+msgstr ""
+"\n"
+"\t<h5 class=\"associate-text\">Jouw OpenID kan vanaf nu gekoppeld worden aan een <strong>nieuw</strong> of <strong>bestaand</strong> BusyLissy account.</h5>\n"
+"\t"
+
+#: templates/authopenid/complete.html:21
+msgid "Create a new account"
+msgstr "Regsistreer"
+
+#: templates/authopenid/complete.html:23
+#: templates/authopenid/complete.html:47
+#: templates/authopenid/signin.html:17
+#: templates/registration/activation_complete.html:17
+msgid "Please correct errors below:"
+msgstr "Oeps! Er gaat wat mis:"
+
+#: templates/authopenid/complete.html:35
+#: templates/authopenid/complete.html:59
+#: templates/authopenid/signin.html:40
+#: templates/registration/activate.html:16
+#: templates/registration/activation_complete.html:40
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: templates/authopenid/complete.html:45
+msgid "Associate with existing account"
+msgstr "Koppel account"
+
+#: templates/authopenid/complete.html:60
+#: templates/authopenid/signin.html:41
+#: templates/registration/activate.html:17
+#: templates/registration/activation_complete.html:41
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: templates/authopenid/dissociate.html:21
+msgid "Dissociate OpenID URL"
+msgstr "Ontkoppel OpenID URL"
+
+#: templates/authopenid/dissociate.html:23
+msgid "Dissociate OpenID"
+msgstr "Ontkoppel OpenID"
+
+#: templates/authopenid/password_change_form.html:16
+#: templates/authopenid/password_change_form.html:32
+#: templates/registration/password_reset_confirm.html:18
+msgid "New password:"
+msgstr "Nieuw wachtwoord:"
+
+#: templates/authopenid/password_change_form.html:18
+#: templates/authopenid/password_change_form.html:34
+#: templates/registration/password_reset_confirm.html:20
+msgid "Confirm password:"
+msgstr "Bevestig wachtwoord:"
+
+#: templates/authopenid/password_change_form.html:19
+#: templates/authopenid/password_change_form.html:36
+#: templates/registration/password_reset_confirm.html:21
+msgid "Change my password"
+msgstr "Wachtwoord wijzigen"
+
+#: templates/authopenid/password_change_form.html:24
+msgid "Password change"
+msgstr "Wachtwoord wijzigen"
+
+#: templates/authopenid/password_change_form.html:25
+msgid "Please enter your old password, for security's sake, and then enter your new password twice so we can verify you typed it in correctly."
+msgstr "Please enter your old password, for security's sake, and then enter your new password twice so we can verify you typed it in correctly."
+
+#: templates/authopenid/password_change_form.html:30
+msgid "Old password:"
+msgstr "Huidig wachtwoord:"
+
+#: templates/authopenid/signin.html:4
+#: templates/authopenid/signin.html:35
+#: templates/authopenid/signin.html:42
+#: templates/registration/activate.html:4
+#: templates/registration/activate.html:18
+#: templates/registration/activation_complete.html:35
+#: templates/registration/activation_complete.html:42
+#: templates/static/base.html:64
+#: templates/static/index.html:64
+msgid "Sign in"
+msgstr "Inloggen"
+
+#: templates/authopenid/signin.html:8
+msgid "Not yet an account?"
+msgstr "Nog geen account?"
+
+#: templates/authopenid/signin.html:8
+msgid "Sign Up"
+msgstr "Registreren"
+
+#: templates/authopenid/signin.html:41
+#: templates/registration/activation_complete.html:41
+#: templates/registration/password_reset_form.html:4
+#: templates/registration/password_reset_form.html:19
+msgid "Forgot password"
+msgstr "Wachtwoord vergeten"
+
+#: templates/authopenid/signin.html:48
+#: templates/blinvite/pos_response.html:28
+#: templates/registration/activate.html:25
+#: templates/registration/registration_form.html:38
+msgid "or even easier"
+msgstr "of nog makkelijker"
+
+#: templates/authopenid/signin.html:51
+#: templates/registration/activate.html:28
+msgid "Sign in with your OpenID"
+msgstr "Inloggen met OpenID"
+
+#: templates/authopenid/signin.html:64
+#: templates/blinvite/pos_response.html:45
+#: templates/registration/activate.html:41
+#: templates/registration/registration_form.html:55
+msgid "Sign in with OpenID"
+msgstr "Inloggen met OpenID"
+
+#: templates/blagenda/add_event.html:4
+msgid "Agenda add Event"
+msgstr "Agenda afspraak toevoegen"
+
+#: templates/blagenda/add_event.html:6
+#: templates/blagenda/includes/add_event.html:3
+msgid "Add event"
+msgstr "Afspraak toevoegen"
+
+#: templates/blagenda/add_event.html:11
+#: templates/blagenda/event_detail.html:11
+#: templates/blagenda/includes/add_event.html:7
+#: templates/blagenda/includes/event_detail.html:7
+msgid "Please fix any errors."
+msgstr "Oeps! Er is iets misgegaan. Controleer de velden."
+
+#: templates/blagenda/filter.html:4
+#: templates/blagenda/user/filter.html:4
+msgid "Filter agenda"
+msgstr "Filter agenda"
+
+#: templates/blagenda/filter.html:5
+#: templates/blagenda/user/filter.html:5
+msgid "By type"
+msgstr "Op soort"
+
+#: templates/blagenda/filter.html:7
+#: templates/blagenda/user/filter.html:7
+msgid "Event"
+msgstr "Afspraak"
+
+#: templates/blagenda/filter.html:8
+#: templates/blagenda/monthly_view.html:38
+#: templates/blagenda/week_cal.html:21
+#: templates/blagenda/user/filter.html:8
+#: templates/blagenda/user/monthly_view.html:39
+msgid "Task"
+msgstr "Taak"
+
+#: templates/blagenda/filter.html:11
+msgid "By member"
+msgstr "Op projectleden"
+
+#: templates/blagenda/monthly_view.html:9
+#: templates/blagenda/user/monthly_view.html:10
+msgid "New Event"
+msgstr "Nieuwe afspraak"
+
+#: templates/blagenda/monthly_view.html:42
+#: templates/blagenda/week_cal.html:25
+#: templates/blagenda/user/monthly_view.html:43
+msgid "at"
+msgstr "bij"
+
+#: templates/blagenda/includes/add_event.html:3
+#: templates/blagenda/includes/event_detail.html:3
+msgid "Close"
+msgstr "Sluiten"
+
+#: templates/blagenda/includes/event_detail.html:3
+msgid "Edit event"
+msgstr "Afspraak wijzigen"
+
+#: templates/blagenda/includes/event_detail.html:18
+msgid "or"
+msgstr "of"
+
+#: templates/blagenda/includes/event_detail.html:20
+msgid "Delete this event"
+msgstr "Verwijder afsrpaak"
+
+#: templates/blagenda/user/filter.html:11
+msgid "By project"
+msgstr "Op project"
+
+#: templates/blagenda/user/monthly_view.html:14
+msgid "All projects"
+msgstr "Projecten"
+
+#: templates/blfile/list.html:10
+msgid "+ New file"
+msgstr "+ Nieuw bestand"
+
+#: templates/blfile/list.html:12
+msgid " + New Folder"
+msgstr "+ Nieuwe map"
+
+#: templates/blfile/list.html:32
+msgid "No files found"
+msgstr "Niets gevonden."
+
+#: templates/blfile/include/filter.html:20
+msgid "Filter Files"
+msgstr "Filter bestanden"
+
+#: templates/blgroup/filter.html:5
+msgid "Filter Groups"
+msgstr "Filter groepen"
+
+#: templates/blgroup/group_list.html:8
+#: templates/blgroup/group_list.html:19
+msgid "Overview"
+msgstr "Overzicht"
+
+#: templates/blinvite/index.html:5
+msgid "Invite people"
+msgstr "Nodig mensen uit"
+
+#: templates/blinvite/index.html:9
+msgid "Invite by username"
+msgstr "Uitnodigen via gebruikersnaam"
+
+#: templates/blinvite/index.html:13
+#: templates/blinvite/index.html.py:33
+msgid "invite"
+msgstr "uitnodigen"
+
+#: templates/blinvite/index.html:17
+msgid "Click avatar to invite"
+msgstr "Klik op de avatar om de gebruiker uit te nodigen"
+
+#: templates/blinvite/index.html:28
+msgid "Invite by email"
+msgstr "Uitnodigen via e-mail"
+
+#: templates/blinvite/pos_response.html:4
+#: templates/blinvite/pos_response.html:13
+#: templates/blinvite/pos_response.html:23
+#: templates/registration/registration_form.html:4
+#: templates/registration/registration_form.html:22
+#: templates/registration/registration_form.html:32
+#: templates/static/base.html:65
+#: templates/static/index.html:65
+msgid "Sign up"
+msgstr "Registreren"
+
+#: templates/blinvite/pos_response.html:9
+msgid "To join"
+msgstr "Lid worden van"
+
+#: templates/blinvite/pos_response.html:9
+msgid "please sign up"
+msgstr "inloggen"
+
+#: templates/blinvite/pos_response.html:32
+#: templates/registration/registration_form.html:42
+msgid "Sign up with your OpenID"
+msgstr "Inloggen met OpenID"
+
+#: templates/blmessage/feedback_form.html:6
+#: templates/registration/password_reset_form.html:13
+#: templates/registration/registration_form.html:16
+msgid "Error while submitting form"
+msgstr "Oeps! Er ging iets mis"
+
+#: templates/blmessage/feedback_form.html:11
+msgid "Please give us feedback"
+msgstr "Geef ons feedback"
+
+#: templates/blmessage/feedback_form.html:20
+msgid "Send Feedback"
+msgstr "Geef feedback"
+
+#: templates/blmessage/feedback_success.html:4
+msgid "Feedback"
+msgstr "Feedback"
+
+#: templates/blmessage/feedback_success.html:7
+msgid "Thank you very much"
+msgstr "Dankjewel"
+
+#: templates/blmessage/feedback_success.html:8
+msgid "We really appriciate it. Due to your feedback we can make this product even better"
+msgstr "Je feedback wordt erg op prijs gesteld. Dankzij jouw feedback kunnen wij Busylissy nog  beter maken"
+
+#: templates/blmessage/filter.html:4
+msgid "Filter Messages"
+msgstr "Filter berichten"
+
+#: templates/blmessage/filter.html:10
+#: templates/bltask/filter.html:10
+msgid "Related tags"
+msgstr "Related tags"
+
+#: templates/blmessage/form_thread.html:11
+#: templates/blproject/form.html:41
+#: templates/bltask/task_form.html:11
+msgid "Add tag to task"
+msgstr "Voeg tag toe aan taak"
+
+#: templates/blmessage/form_thread.html:14
+#: templates/blproject/filter.html:16
+#: templates/bltask/task_form.html:14
+msgid "No tags yet"
+msgstr "Nog niks getagged"
+
+#: templates/blmessage/list_model.html:7
+msgid "New Message"
+msgstr "Nieuw bericht"
+
+#: templates/blmessage/list_model.html:43
+msgid "No messages yet"
+msgstr "berichten"
+
+#: templates/blmessage/list_model.html:43
+msgid "Create a new message"
+msgstr "Plaats een nieuw bericht"
+
+#: templates/blog/base_blog.html:9
+msgid "This is were we "
+msgstr "Hier"
+
+#: templates/blog/base_blog.html:9
+msgid "talk about the developments"
+msgstr "kan je de ontwikkelingen volgen"
+
+#: templates/blog/category_detail.html:5
+msgid "Blog"
+msgstr "Blog"
+
+#: templates/blog/category_detail.html:18
+#: templates/blog/post_detail.html:16
+#: templates/blog/post_list.html:17
+#: templates/static/index.html:127
+msgid "comments"
+msgstr "Comment"
+
+#: templates/blog/category_detail.html:21
+#: templates/blog/post_list.html:20
+#: templates/static/index.html:130
+msgid "Read more"
+msgstr "Lees meer"
+
+#: templates/blog/post_detail.html:23
+msgid "Comments"
+msgstr "Comment"
+
+#: templates/blog/post_list.html:4
+msgid "Development blog"
+msgstr "Blog met ontwikkelingen"
+
+#: templates/blog/sidebar.html:6
+msgid "Latest posts"
+msgstr "Laatste artikelen "
+
+#: templates/blog/sidebar.html:15
+msgid "Categories"
+msgstr "Categorien"
+
+#: templates/blprofile/edit.html:4
+#: templates/blprofile/edit.html.py:13
+msgid "Edit profile"
+msgstr "Wijzig Profiel"
+
+#: templates/blproject/base.html:15
+#: templates/blproject/detail.html:12
+#: templates/blproject/tagged_item_list.html:9
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: templates/blproject/detail.html:18
+msgid "This week"
+msgstr "Deze week"
+
+#: templates/blproject/detail.html:20
+msgid "Go to agenda"
+msgstr "Ga naar agenda"
+
+#: templates/blproject/detail.html:24
+msgid "Latest activities "
+msgstr "Laatste activiteiten "
+
+#: templates/blproject/detail.html:34
+msgid "See more"
+msgstr "Bekijk meer"
+
+#: templates/blproject/filter.html:4
+msgid "Filter Projects"
+msgstr "Filter projecten"
+
+#: templates/blproject/form.html:13
+#: templates/blproject/project_list.html:18
+msgid "Accept"
+msgstr "Accepteren"
+
+#: templates/blproject/form.html:13
+#: templates/blproject/project_list.html:18
+msgid "Decline"
+msgstr "Weigeren"
+
+#: templates/blproject/form.html:28
+#: templates/blproject/sidebar.html:3
+msgid "Project info"
+msgstr "Project info"
+
+#: templates/blproject/form.html:37
+msgid "Used tags"
+msgstr "Gebruikte tags"
+
+#: templates/blproject/intro.html:5
+msgid "Hi"
+msgstr "Hi"
+
+#: templates/blproject/intro.html:6
+msgid "Congratulations with your BusyLissy Account"
+msgstr "Gefeliciteerd met jouw BusyLissy account"
+
+#: templates/blproject/intro.html:7
+msgid "You have no projects yet"
+msgstr "Je hebt nog geen projecten"
+
+#: templates/blproject/intro.html:8
+msgid "..so let&#180;s get busy"
+msgstr "..dus let&#180;s get busy"
+
+#: templates/blproject/intro.html:9
+msgid "New Project"
+msgstr "Nieuw project"
+
+#: templates/blproject/project_list.html:36
+msgid "+ New Project"
+msgstr "+ Nieuw project"
+
+#: templates/blproject/project_list.html:45
+msgid "Projects on hold"
+msgstr "Gepauzeerde projecten"
+
+#: templates/blproject/project_list.html:47
+msgid "Finished projects"
+msgstr "Afgeronde projecten"
+
+#: templates/blproject/project_list.html:50
+msgid "Active projects"
+msgstr "Actieve projecten"
+
+#: templates/blproject/project_list.html:62
+msgid "Your tasks"
+msgstr "Mijn taken"
+
+#: templates/blproject/project_list.html:63
+msgid "New messages"
+msgstr "Nieuw bericht"
+
+#: templates/blproject/project_list.html:67
+msgid "Latest activity"
+msgstr "Laatste activiteiten "
+
+#: templates/blproject/project_list.html:67
+msgid "by"
+msgstr "door"
+
+#: templates/blproject/project_list.html:69
+msgid "No activities yet."
+msgstr "Nog geen activiteit."
+
+#: templates/blproject/sidebar.html:9
+msgid "Progress"
+msgstr "Voortgang"
+
+#: templates/blproject/sidebar.html:15
+msgid "Tags"
+msgstr "Tags"
+
+#: templates/blproject/sidebar.html:26
+msgid "no tags yet"
+msgstr "vooralsnog geen tags"
+
+#: templates/blproject/sidebar.html:32
+msgid "Project Team"
+msgstr "Project Team"
+
+#: templates/blproject/sidebar.html:33
+msgid "Add People"
+msgstr "Nieuw projectlid"
+
+#: templates/bltask/filter.html:4
+msgid "Filter tasks"
+msgstr "Filter taken"
+
+#: templates/bltask/list.html:6
+msgid "New Task"
+msgstr "Nieuwe taak"
+
+#: templates/bltask/list.html:14
+msgid "Hide Completed"
+msgstr "Verberg afgeronde taken"
+
+#: templates/bltask/list.html:15
+msgid "Show Completed"
+msgstr "Toon afgeronde taken"
+
+#: templates/bltask/list.html:31
+msgid "left"
+msgstr "te gaan"
+
+#: templates/bltask/list.html:39
+msgid "No tasks yet"
+msgstr "Mijn taken"
+
+#: templates/bltask/list.html:39
+msgid "Create a new task"
+msgstr "Nieuwe taak"
+
+#: templates/bltask/list_user.html:9
+msgid "My tasks"
+msgstr "Mijn taken"
+
+#: templates/comments/approve.html:4
+msgid "Approve a comment"
+msgstr "Keur deze comment goed"
+
+#: templates/comments/approve.html:7
+msgid "Really make this comment public?"
+msgstr "Weet je zeker dat deze comment publiekelijk mag zijn?"
+
+#: templates/comments/approve.html:12
+#: templates/comments/moderation_queue.html:49
+msgid "Approve"
+msgstr "Goedkeuren"
+
+#: templates/comments/approved.html:4
+msgid "Thanks for approving"
+msgstr "Bedankt voor de goedkeuring"
+
+#: templates/comments/approved.html:7
+#: templates/comments/deleted.html:7
+#: templates/comments/flagged.html:7
+msgid "Thanks for taking the time to improve the quality of discussion on our site"
+msgstr "Wij stellen het zeer op prijs dat je aandacht besteed aan het verbeteren van onze website"
+
+#: templates/comments/delete.html:4
+msgid "Remove a comment"
+msgstr "Verwijder comment"
+
+#: templates/comments/delete.html:7
+msgid "Really remove this comment?"
+msgstr "Weet je zeker dat je deze comment wilt verwijderen?"
+
+#: templates/comments/delete.html:12
+#: templates/comments/moderation_queue.html:53
+msgid "Remove"
+msgstr "Verwijder"
+
+#: templates/comments/deleted.html:4
+msgid "Thanks for removing"
+msgstr "Bedankt voor het verwijderen"
+
+#: templates/comments/flag.html:4
+msgid "Flag this comment"
+msgstr "Geef deze comment aan"
+
+#: templates/comments/flag.html:7
+msgid "Really flag this comment?"
+msgstr "Weet je zeker dat je deze comment wilt aangeven?"
+
+#: templates/comments/flag.html:12
+msgid "Flag"
+msgstr "Aangeven voor misbruik"
+
+#: templates/comments/flagged.html:4
+msgid "Thanks for flagging"
+msgstr "Bedankt voor het aangeven van deze comment"
+
+#: templates/comments/form.html:3
+#: templates/comments/preview.html:22
+msgid "Post your comment"
+msgstr "Plaats comment"
+
+#: templates/comments/form.html:18
+#: templates/comments/preview.html:40
+msgid "Email address"
+msgstr "E-mailadres"
+
+#: templates/comments/form.html:22
+#: templates/comments/moderation_queue.html:35
+#: templates/comments/preview.html:44
+msgid "Comment"
+msgstr "Comment"
+
+#: templates/comments/form.html:28
+#: templates/comments/preview.html:50
+msgid "Post"
+msgstr "Post"
+
+#: templates/comments/moderation_queue.html:4
+#: templates/comments/moderation_queue.html:19
+msgid "Comment moderation queue"
+msgstr "Comment beheer status"
+
+#: templates/comments/moderation_queue.html:26
+msgid "No comments to moderate"
+msgstr "Geen comments om te beheren"
+
+#: templates/comments/moderation_queue.html:33
+msgid "Action"
+msgstr "Actie"
+
+#: templates/comments/moderation_queue.html:37
+msgid "URL"
+msgstr "URL"
+
+#: templates/comments/moderation_queue.html:38
+msgid "Authenticated?"
+msgstr "Toegang?"
+
+#: templates/comments/moderation_queue.html:39
+msgid "IP Address"
+msgstr "IP adres"
+
+#: templates/comments/moderation_queue.html:40
+msgid "Date posted"
+msgstr "Datum geplaatst"
+
+#: templates/comments/moderation_queue.html:63
+msgid "yes"
+msgstr "ja"
+
+#: templates/comments/moderation_queue.html:63
+msgid "no"
+msgstr "nee"
+
+#: templates/comments/posted.html:4
+msgid "Thanks for commenting"
+msgstr "Bedankt voor je comment"
+
+#: templates/comments/posted.html:7
+msgid "Thank you for your comment"
+msgstr "Dankjewel voor je comment"
+
+#: templates/comments/preview.html:4
+msgid "Error in your comment"
+msgstr "Fout opgetreden in jouw comment"
+
+#: templates/comments/preview.html:17
+msgid "Please correct the error below"
+msgstr "Oeps! Er is wat mis gegaan, controleer de velden."
+
+#: templates/comments/preview.html:19
+msgid "Preview your comment"
+msgstr "Bekijk je comment"
+
+#: templates/comments/preview.html:22
+msgid "and"
+msgstr "en"
+
+#: templates/comments/preview.html:22
+msgid "or make changes"
+msgstr "of maak veranderingen"
+
+#: templates/registration/activate.html:8
+msgid "Your account is now activated"
+msgstr "Jouw Busylissy account is geactiveerd"
+
+#: templates/registration/activate.html:12
+msgid "Please sign in"
+msgstr "Klik hier om in te loggen"
+
+#: templates/registration/activation_complete.html:4
+msgid "Activation complete"
+msgstr "Geregistreerd"
+
+#: templates/registration/activation_complete.html:8
+msgid "Your account has been activated, please sign in."
+msgstr "Jouw Busylissy account is geactiveerd."
+
+#: templates/registration/logged_out.html:4
+msgid "Logged out"
+msgstr "Uitgelogd"
+
+#: templates/registration/logged_out.html:7
+msgid "You are logged out"
+msgstr "Je bent uitgelogd"
+
+#: templates/registration/logged_out.html:8
+msgid "Thanks for spending some quality time with BusyLissy today"
+msgstr "Bedankt voor het gebruiken van Busylissy vandaag"
+
+#: templates/registration/password_reset_complete.html:4
+#: templates/registration/password_reset_complete.html:6
+#: templates/registration/password_reset_complete.html:10
+msgid "Password reset complete"
+msgstr "Wachtwoord resetten compleet"
+
+#: templates/registration/password_reset_complete.html:12
+msgid "Your password has been set.  You may go ahead and log in now."
+msgstr "Je hebt een nieuw wachtwoord. Ga verder om in te loggen."
+
+#: templates/registration/password_reset_complete.html:14
+msgid "Log in"
+msgstr "Inloggen"
+
+#: templates/registration/password_reset_confirm.html:4
+#: templates/registration/password_reset_confirm.html:6
+#: templates/registration/password_reset_done.html:9
+msgid "Password reset"
+msgstr "Wachtwoord resetten"
+
+#: templates/registration/password_reset_confirm.html:12
+msgid "Enter new password"
+msgstr "Nieuw wachtwoord"
+
+#: templates/registration/password_reset_confirm.html:14
+msgid "Please enter your new password twice so we can verify you typed it in correctly."
+msgstr "Vul je wachtwoord twee maal in zodat wij kunnen verifieren dat het correct is."
+
+#: templates/registration/password_reset_confirm.html:26
+msgid "Password reset unsuccessful"
+msgstr "Wachtwoord resetten mislukt"
+
+#: templates/registration/password_reset_confirm.html:28
+msgid "The password reset link was invalid, possibly because it has already been used.  Please request a new password reset."
+msgstr "De wachtwoord reset link was niet goed, mogelijk is het al gebruikt. Vraag een nieuwe aan."
+
+#: templates/registration/password_reset_done.html:13
+msgid ""
+"\n"
+"<h2>Password reset</h2>\n"
+"<p>We've e-mailed you instructions for setting your password to the e-mail address you submitted. You should be receiving it shortly.</p>\n"
+msgstr ""
+"\n"
+"<h2>Wachtwoord resetten</h2>\n"
+"<p>Er is een e-mail verstuurd met de instructies om het wachtwoord te resetten. Het kan even duren voordat hij binnen is.</p>\n"
+
+#: templates/registration/password_reset_email.html:2
+msgid "You're receiving this e-mail because you requested a password reset"
+msgstr "Je ontvangt deze e-mail om iemand een wachtwoord reset heeft aangevraagd"
+
+#: templates/registration/password_reset_email.html:3
+#, python-format
+msgid "for your user account at %(site_name)s"
+msgstr "voor je profiel op %(site_name)s"
+
+#: templates/registration/password_reset_email.html:5
+msgid "Please go to the following page and choose a new password:"
+msgstr "Ga door naar de volgende pagina om een nieuw wachtwoord te kiezen:"
+
+#: templates/registration/password_reset_email.html:9
+msgid "Your username, in case you've forgotten:"
+msgstr "Jouw gebruikersnaam indien je het vergeten was:"
+
+#: templates/registration/password_reset_form.html:7
+msgid "Back to sign In"
+msgstr "Terug naar inloggen"
+
+#: templates/registration/password_reset_form.html:20
+msgid "Please fill in your e-mailaddress and we will send you your new password"
+msgstr "Vul je e-mailadres in en we sturen je wachtwoord toe"
+
+#: templates/registration/password_reset_form.html:29
+msgid "Send password"
+msgstr "Verstuur"
+
+#: templates/registration/registration_complete.html:4
+#: templates/registration/registration_complete.html:11
+msgid "Sign up complete"
+msgstr "Geregistreerd"
+
+#: templates/registration/registration_complete.html:15
+msgid "Thank you"
+msgstr "Dankjewel"
+
+#: templates/registration/registration_complete.html:16
+msgid "An email has been sent to you. You need to click the link to activate your account"
+msgstr "Wij hebben een bericht naar jouw digitale brievenbus verstuurd. Klik op de link in dit bericht om jouw account te activeren"
+
+#: templates/registration/registration_form.html:9
+msgid "Already an account?"
+msgstr "Heb je al een account?"
+
+#: templates/registration/registration_form.html:9
+msgid "Sign In"
+msgstr "Inloggen"
+
+#: templates/static/base.html:78
+#: templates/static/index.html:77
+msgid "Super simple"
+msgstr "Super simpel"
+
+#: templates/static/base.html:78
+#: templates/static/index.html:77
+msgid "project management"
+msgstr "project management"
+
+#: templates/static/base.html:79
+#: templates/static/index.html:78
+msgid "Sign up now"
+msgstr "Meld je nu aan"
+
+#: templates/static/base.html:80
+#: templates/static/index.html:79
+msgid "Don't worry. It's free."
+msgstr "Waarom niet? Het is gratis."
+
+#: templates/static/base.html:88
+#: templates/static/index.html:85
+msgid "What is it"
+msgstr "Wat is het"
+
+#: templates/static/base.html:89
+#: templates/static/index.html:86
+msgid "BusyLissy is a super simple project management tool. Work together, organise stuff and keep track of the developments within your projects."
+msgstr "BusyLissy is een super simpele project management tool. Werk samen, organiseer van alles en blijf op de hoogte van de ontwikkelingen in jouw projecten."
+
+#: templates/static/base.html:92
+#: templates/static/index.html:89
+msgid "Who is it for"
+msgstr "Voor wie is het"
+
+#: templates/static/base.html:93
+#: templates/static/index.html:90
+msgid "BusyLissy is for everybody who want to organise stuff together. Small businesses, student groups, sports clubs, you name it. Let's get Busy"
+msgstr "BusyLissy is er voor iedereen die samen dingen willen organiseren. Bedrijven, studenten, sportverenigingen noem het maar op. Let's get Busy"
+
+#: templates/static/base.html:96
+#: templates/static/index.html:93
+msgid "Why use it"
+msgstr "Waarom"
+
+#: templates/static/base.html:97
+#: templates/static/index.html:94
+msgid "BusyLissy makes organising and project management super simple. All the messages, tasks and files in one place makes your lve easier."
+msgstr "BusyLissy maakt organiseren een eitje. Alle berichten, taken en bestanden op een plaats. Maak het niet moeilijker dan het is."
+
+#: templates/static/base.html:106
+#: templates/static/index.html:103
+msgid "Task lists"
+msgstr "Taken lijst"
+
+#: templates/static/base.html:107
+#: templates/static/base.html.py:122
+#: templates/static/index.html:104
+msgid "Create tasks and sub-tasks for any project. Assign tasks to certain project members and keep track of what has to be done. "
+msgstr "Taken en subtaken voor elk project. Verdeel de taken over de projectleden en hou het overzicht over wat er moet gebeuren. "
+
+#: templates/static/base.html:112
+#: templates/static/index.html:109
+msgid "Discuss your project and keep al your messages in one place. Keep a good overview of what is happening in your project."
+msgstr "Bespreek de projecten op een plaats. Hou overzicht wat er gebeurt binnen een project. "
+
+#: templates/static/base.html:116
+#: templates/static/index.html:113
+msgid "File sharing"
+msgstr "Deel bestanden"
+
+#: templates/static/base.html:117
+#: templates/static/index.html:114
+msgid "Store all your files and documents in one place. forget emailing eachother with attachements Lissy organises the files for you.  "
+msgstr "Alle bestanden en documenten op een plaats. Geen e-mails meer met bijlagen. Lissy bewaart alle bestanden voor je.  "
+
+#: templates/static/base.html:125
+msgid "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+msgstr ""
+
+#: templates/static/base.html:126
+msgid "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui."
+msgstr ""
+
+#: templates/static/base.html:132
+#: templates/static/index.html:136
+msgid "Start organising stuff together."
+msgstr "Start nu je eerste project"
+
+#: templates/static/base.html:132
+#: templates/static/index.html:136
+msgid "Sign up for free"
+msgstr "Meld je gratis aan"
+
+#: templates/static/index.html:119
+msgid "Create and share events within a project. Milestones automatically appear in your agenda. Use your personal agenda to track events throughout all of your projects. "
+msgstr "Maak en deel je afpraken binnen een project. Deadlines komen automatisch in de agenda te staan. Gebruik de persoonlijke agenda om alle afspraken van je projecten te beheren."
+
+#~ msgid "Errors"
+#~ msgstr "Terror"
+#~ msgid "Event Details"
+#~ msgstr "Afspraak"
+#~ msgid "By view"
+#~ msgstr "Op datum"
+#~ msgid "Month"
+#~ msgstr "Maand"
+#~ msgid "Year"
+#~ msgstr "Jaar"
+#~ msgid "No events occurring in"
+#~ msgstr "Geen afspraak in"
+#~ msgid "Milestones"
+#~ msgstr "Mijlpaal"
+

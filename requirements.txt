@@ -1,0 +1,41 @@
+# Django
+Django==1.1
+
+# Imaging
+http://effbot.org/downloads/Imaging-1.1.6.tar.gz
+
+# STDImage
+-e git+git://github.com/gearheart/django-stdimage.git#egg=stdimage
+
+# Django AuthOpenID
+-e hg+https://wunki@bitbucket.org/benoitc/django-authopenid#egg=django_authopenid
+
+# Django registration
+-e hg+https://wunki@bitbucket.org/ubernostrum/django-registration#egg=registration
+
+# Tagging
+-e svn+http://django-tagging.googlecode.com/svn/trunk#egg=tagging
+
+# Authority
+-e hg+https://wunki@bitbucket.org/jezdez/django-authority#egg=authority
+
+# Filebrowser
+-e svn+http://django-filebrowser.googlecode.com/svn/trunk#egg=filebrowser
+
+# Debug toolbar
+-e git+git://github.com/robhudson/django-debug-toolbar.git#egg=debug_toolbar
+
+# Markdown
+-e git+git://gitorious.org/python-markdown/mainline.git#egg=markdown
+
+# Treebeard
+-e svn+http://django-treebeard.googlecode.com/svn/trunk/#egg=treebeard
+
+# Locale url
+-e svn+http://django-localeurl.googlecode.com/svn/trunk/#egg=localeurl
+
+# Thumbnail
+-e hg+https://sorl-thumbnail.googlecode.com/hg/#egg=sorl-thumbnail
+
+# DateUtil
+http://labix.org/download/python-dateutil/python-dateutil-1.4.1.tar.gz

@@ -1,0 +1,33 @@
+{% extends "blgroup/base.html" %}
+{% load i18n permissions %}
+
+{% block content %}
+<h1>{% trans 'Group' %}: {{ group.name }}</h1>
+<p>
+{% ifhasperm "group_permission.change_group" request.user group %}
+  <a href="{% url group-edit group.slug %}">{% trans 'Edit group' %}</a>
+  {% ifhasperm "group_permission.delete_group" request.user group %}
+  <a href="{% url group-delete group.slug %}">{% trans 'Delete group' %}</a>
+  {% endifhasperm %}
+{% endifhasperm %}
+  <a href="{% url group-start-project group.slug %}">{% trans 'Start project' %}</a>
+</p>
+
+<h2>{% trans 'Members' %}</h2>
+{% ifhasperm "group_permission.change_group" request.user group %}
+<a href="{% url group-member-add group.slug %}">{% trans 'Add member' %}</a>
+{% endifhasperm %}
+<ul>
+  {% for member in group.members.all %}
+  <li>{{ member.username }} 
+      {% ifhasperm "group_permission.change_group" request.user group %}
+      {% get_permission "group_permission.change_group" for member and group as "has_permission" %}
+      {% if not has_permission %}
+      <a href="{% url group-member-admin group.slug member.username %}">{% trans 'Make admin' %}</a>
+      {% endif %}
+      <a href="{% url group-member-delete group.slug member.username %}">{% trans 'Delete' %}</a>
+      {% endifhasperm %}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

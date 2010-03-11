@@ -1,0 +1,13 @@
+{% load i18n %}
+
+{{ all_nodes.count }}
+{% for tag in selected_tags %}
+<a href="{% url task-tag project.slug tag %}">{{ tag }}</a>
+{% endfor %}
+
+<h5>Related tags</h5>
+<ul>
+  {% for tag in task_tags %}
+  <li><a href="{% url task-tag project.slug tag_url %}{{ tag }}">{{ tag.name }}({{ tag.count }})</a></li>
+  {% endfor %}
+</ul>

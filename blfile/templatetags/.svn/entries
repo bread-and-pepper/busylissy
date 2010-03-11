@@ -1,0 +1,52 @@
+8
+
+dir
+416
+http://django-filebrowser.googlecode.com/svn/trunk/filebrowser/templatetags
+http://django-filebrowser.googlecode.com/svn
+
+
+
+2009-06-19T12:50:18.987718Z
+345
+sehmaschine
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b1eb0509-c838-0410-b15c-e5ce2c1b85ca
+
+__init__.py
+file
+
+
+
+
+2009-07-29T11:37:55.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2009-06-19T12:50:18.987718Z
+345
+sehmaschine
+
+fb_tags.py
+file
+
+
+
+
+2009-07-29T11:37:55.000000Z
+c2be4cd73489b0f81864c303fb38a024
+2009-06-19T12:50:18.987718Z
+345
+sehmaschine
+

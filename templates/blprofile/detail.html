@@ -1,0 +1,30 @@
+{% extends "blprofile/base.html" %}
+{% load avatar %}
+
+{% block content %}
+{% if profile %}
+
+<h2 id="content-title">{{ profile.user.username }} </h2>
+<img src="{% avatar profile.user %}" alt="{{ profile.user.username }}" />
+{% if profile.is_public %}
+<h6>Name</h6>
+<p>{{ profile.user.first_name }} {{ profile.user.last_name }}</p>
+<h6>Website</h6>
+<p><a href="http://{{ profile.website }}">{{ profile.website }}</a></p>
+{% comment %}
+<h6>Age</h6>
+<p>{{ profile.age }}</p>
+{% endcomment %}
+<h6>About me</h6>
+<p>{{ profile.about_me }}</p>
+
+
+{% else %}
+<p>This profile is not public</p>
+
+{% endif %}
+{% else %}
+
+{% endif %}
+
+{% endblock %}

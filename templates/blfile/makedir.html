@@ -1,0 +1,24 @@
+{% extends "blfile/base.html" %}
+{% load i18n fb_tags %}
+
+{% block content %}
+{% block breadcrumbs %}{% include "blfile/include/breadcrumbs.html" %}{% endblock %}
+<div>
+    <form action="{% query_string %}" method="post">
+    <div>
+        {% if form.errors %}<p>{% trans 'Please correct the following errors.' %}</p>{% endif %}
+        <fieldset>
+        <div>
+            {% if form.dir_name.errors %}<ul>{{ form.dir_name.errors }}</ul>{% endif %}
+            <label>{{ form.dir_name.label }}</label>
+            {{ form.dir_name }}
+            {% if form.dir_name.help_text %}<p>{{ form.dir_name.help_text|safe }}</p>{% endif %}
+        </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="{% trans 'Submit' %}" />
+        </div>
+    </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+<h2>Hi,</h2>
+{% ifequal actor indirect_object.username %}
+<p>{{ actor }} resigned from {% if object %}"{{ object.name }}"{% else %}a{% endif %} project.</p>
+{% else %}
+<p>{{ actor }} {{ action }} {% if object.username %}"{{ object.username }}"{% else %}"{{ object.name }}"{% endif %}.</p>
+{% endifequal %}
+<p><a href="http://busylissy.com{% url project-detail project.slug %}" title="{{ object }}">Click here</a> to view</p>
+<p>ciao ciao,</p>
+<p>Lissy</p>
+<hr/>
+{% include "blactivity/footer.txt" %}
+<hr/>
+
+<p>This message was sent automatically by <a href="http://busylissy.com">BusyLissy.com</a></p>
+

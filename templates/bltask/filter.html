@@ -1,0 +1,20 @@
+{% load i18n  %}
+
+<div class="filters">
+	<h4>{% trans 'Filter tasks' %}<span> {{ nodes_count }}</span></h4>
+    <div id="selected-tags">
+      {% for tag in selected_tags %}
+      <a href="{% url task-tag project.slug tag %}" class="tag beige">{{ tag }}</a>
+      {% endfor %}
+    </div>
+	<h5>{% trans 'Related tags' %}</h5>
+	<ul>
+	  {% for tag in task_tags %}
+      {% ifnotequal tag.name project.slug %}
+	  <li><a href="{% url task-tag project.slug tag_url %}{{ tag }}" class="tag beige">{{ tag.name }}</a><span>{{ tag.count }}</span></li>
+      {% endifnotequal %}
+	  {% empty %}
+	  <p>No tags yet</p>
+	  {% endfor %}
+	</ul>
+</div>

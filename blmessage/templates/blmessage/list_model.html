@@ -1,0 +1,18 @@
+{% extends 'blproject/base.html' %}
+{% load i18n %}
+
+{% block content %}
+<h2>{% trans 'Messages in' %} {{ project.name }}</h2>
+<ul>
+{% for thread in thread_list %}
+<li><a href="{% url project-thread-detail project.slug thread.id %}">{{ thread.title }}</a><br />
+Total of {{ thread.message_count }} message(s), latest {{ thread.latest_message_time|timesince }} ago.</li>
+<p>
+  <a href="{% url project-thread-edit project.slug thread.id %}">{% trans 'Edit' %}</a>
+  <a href="{% url project-thread-delete project.slug thread.id %}">{% trans 'Delete' %}</a>
+</p>
+{% endfor %}
+</ul>
+<a href="{% url project-thread-add project.slug %}">{% trans 'Add thread' %}</a>
+{% include "blmessage/filter.html" %}
+{% endblock %}

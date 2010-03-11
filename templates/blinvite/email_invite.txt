@@ -1,0 +1,10 @@
+Dear,
+
+{{ created_by }} invited you to join {{ project }}.
+
+To accept click on the link below:
+
+http://busylissy.com/i/{{ sha }}/
+
+Ciao,
+BusyLissy

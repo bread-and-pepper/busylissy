@@ -1,0 +1,5 @@
+{% load i18n %}
+
+{% blocktrans with time|timesince as time %}
+{{ actor }} {{ action }} {{ object }} {{ time }} ago.
+{% endblocktrans %}

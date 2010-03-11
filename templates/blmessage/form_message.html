@@ -1,0 +1,15 @@
+{% extends "blmessage/base.html" %}
+{% load i18n %}
+
+{% block content_title %}
+Add message
+{% endblock %}
+
+{% block content %}
+<form action="" method="post">
+  {{ form.as_p }}
+  <div>
+    <input type="submit" value="{% trans 'submit' %}" />
+  </div>
+</form>
+{% endblock %}

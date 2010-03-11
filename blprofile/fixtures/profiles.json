@@ -1,0 +1,1 @@
+[{"pk": 2, "model": "blprofile.userprofile", "fields": {"website": "", "gender": 2, "about_me": "", "user": 2, "birth_date": null, "is_public": false, "avatar": ""}}, {"pk": 3, "model": "blprofile.userprofile", "fields": {"website": "www.johndoe.com", "gender": 1, "about_me": "about me", "user": 1, "birth_date": "1982-02-09", "is_public": true, "avatar": ""}}]

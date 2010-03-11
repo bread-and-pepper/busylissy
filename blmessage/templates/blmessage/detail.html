@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content_title %}{% endblock %}
+{% block content %}
+<h2>{{ thread.title }} in {{ model }} "{{ object.name }}"</h2>
+{% for m in thread.messages.all %}
+{{ m.body }}
+<p>----------------------------------------</p>
+{% ifequal m.author request.user %}
+  <a href="{% url message-post-edit thread.id m.id %}">Edit</a>
+  <a href="{% url message-post-delete thread.id m.id %}">Delete</a>
+{% endifequal %}
+{% endfor %}
+
+<form action="" method="post">
+  {{ form.as_p }}
+  <div>
+    <input type="submit" value="{% trans 'submit' %}" />
+  </div>
+</form>
+{% endblock %}

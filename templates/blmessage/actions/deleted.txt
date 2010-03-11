@@ -1,0 +1,2 @@
+{% load time i18n %}
+<img src="{{ MEDIA_URL }}img/icons/activity-message.png" alt="message"/><a href="{% url profile-detail actor %}">{{ actor }}</a> {{ action }} {% trans 'a message' %} <span>{% humanize_timesince time %} {% trans 'ago' %}</span>

@@ -1,0 +1,42 @@
+{% extends 'bltask/base.html' %}
+{% load i18n time %}
+
+{% block content %}
+<aside id="content-sidebar">
+		<a href="{% url task-add-list project.slug %}" class="add-button">+ {% trans 'New Task' %}</a>
+		{% include "bltask/filter.html" %}
+</aside>
+
+<h2 id="content-title">{% trans 'Tasks' %} </h2>
+
+{% if nodes %}
+<div id="toggle_tasks">
+  <a href="" class="remove">{% trans 'Hide Completed' %}</a>
+  <a href="" class="show" style="display: none;">{% trans 'Show Completed' %}</a>
+</div>
+{% endif %}
+
+<div class="task-list">
+	
+{% for node, count in nodes %}
+{% if node.new_level %}<ul>{% else %}</li>{% endif %}
+<li>
+{% if node.parent %}<div class="parent{% if node.completed %} done{% endif %}">{% else %}<div class="child{% if node.completed %} done{% endif %}">{% endif %}
+			<div class="actions">
+                <a href="{% url task-delete node.project.slug node.id %}" class="action-delete">Delete</a> 
+                <a href="{% url task-edit node.project.slug node.id %}" class="action-edit">Edit</a>
+				<a href="{% url task-add node.project.slug node.id %}" class="action-add">Add</a>
+		    </div>		
+			<div class="task-info">
+				 {% if node.due_date %}{% humanize_timeuntil node.due_date %} {% trans 'left' %} | {% endif %}{% if node.assigned_to %}{{ node.assigned_to }}{% else %} Everybody {% endif %}
+			</div>
+            <a href="{% url task-toggle node.project.slug node.id %}">{% if node.completed %}<div class="task-done"></div>{% else %}<div class="task-open"></div>{% endif %}</a>{% if node.note %}<a href="#" class="task-note" title="{{ node.note|linebreaks }}"></a>{% endif %}
+            <p><a name="task-{{ node.id }}"></a>{{ node.name }}{% if node.parent %} ({{ count }}){% endif %}</p> 
+		</div>
+      
+{% for level in node.closed_levels %}</li></ul>{% endfor %}
+{% empty %}
+<h6>{% trans 'No tasks yet' %}. <a href="{% url task-add-list project.slug %}"> {% trans 'Create a new task' %}</a></h6>
+{% endfor %}
+</div>
+{% endblock %}

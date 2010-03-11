@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block module-title %}<h2 class="module-title">{{ profile.user.username }}</h2>{% endblock %}
+
+{% block submenu %}
+{% if user.is_authenticated %}
+
+{% endif %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}

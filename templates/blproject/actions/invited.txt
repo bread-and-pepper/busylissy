@@ -1,0 +1,2 @@
+{% load time i18n %}
+<img src="{{ MEDIA_URL }}img/icons/activity-team.png" alt="project"/><a href="{% url profile-detail actor %}">{{ actor }}</a> {{ action }} {% if indirect_object %}<a href="{% url profile-detail indirect_object %}">"{{ indirect_object.username }}"</a>{% else %}{% trans 'new members' %}{% endif %}<span>{% humanize_timesince time %} {% trans 'ago' %}</span>

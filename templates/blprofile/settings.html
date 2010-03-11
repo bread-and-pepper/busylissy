@@ -1,0 +1,16 @@
+{% extends "blprofile/base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans 'Settings' %}{% endblock %}
+{% block module-title %}<h2 class="module-title"><a href="{% url profile-detail request.user %}">{{ request.user }} </a>{% trans 'Settings' %}</h2>{% endblock %}
+
+{% block content %}
+<h2 id="content-title">{% trans 'Settings' %}</h2>
+
+<form action="" method="post">
+  {{ form.as_p }}
+  <div>
+    <input type="submit" value="{% trans 'Submit' %}" />
+  </div>
+</form>
+{% endblock %}

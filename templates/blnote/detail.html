@@ -1,0 +1,33 @@
+{% extends "blnote/base.html" %}
+
+{% block content %}
+<h1>{{ note.name }}</h1>
+
+<p>{{ note.message }}</p>
+
+{% ifequal user note.created_by %}
+<a href="{% url note-edit project.slug note.slug %}">Edit message</a>
+<a href="{% url note-delete project.slug note.slug %}">Delete message</a>
+{% endifequal %}
+
+<h2>Comments</h2>
+{% for comment in note.comments.all %}
+<p>{{ comment.comment }}</p>
+<p>{{ comment.created_by }} at {{ comment.created_at|date:"d M Y" }}</p>
+
+{% ifequal user comment.created_by %}
+<a href="{% url note-comment-edit project.slug comment.id %}">Edit comment</a>
+<a href="{% url note-comment-delete project.slug comment.id %}">Delete comment</a>
+{% endifequal %}
+{% endfor %}
+
+<h3>Place comment</h3>
+<form action="" method="post">
+  {{ form.as_p }}
+  <div>
+    <input type="submit" value="submit" />
+  </div>
+</form>
+
+<a href="{% url note-list project.slug %}">Back to messages</a>
+{% endblock %}

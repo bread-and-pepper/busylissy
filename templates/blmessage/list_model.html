@@ -1,0 +1,49 @@
+{% extends 'blmessage/base.html' %}
+{% load i18n markup message time %}
+{% block content_title %}{% endblock %}
+{% block content %}
+
+<aside id="content-sidebar">
+	<a href="{% url project-thread-add project.slug %}" class="add-button">+ {% trans 'New Message' %}</a>
+	{% include "blmessage/filter.html" %}
+</aside>
+
+<h2 id="content-title">{% trans 'Messages' %} <!--{{ project.name }}--></h2>
+<ul class="messages">
+{% for thread in thread_list %}
+	<li>
+		<div class="post-users">
+			<!--<h6>{{ thread.messages.all.0.author }} </h6>-->
+            {% avatars_in_thread thread.pk %}
+		</div>
+
+		<h3><a href="{% url project-thread-detail project.slug thread.id %}?page=last">{{ thread.title }}</a></h3>
+		
+		<div class="post-tease">
+            {% with thread.messages.all|dictsortreversed:"created_at" as message_list %}
+			<p>{{ message_list.0.body|markdown|truncatewords_html:30 }}</p>
+            {% endwith %}
+		</div>
+		
+		<div class="post-info">
+			
+			<p><b>{% humanize_timesince thread.latest_message_time %}</b> {% trans 'ago' %}</p>
+			{% ifequal request.user thread.messages.all.0.author %}
+	        <div class="thread-action">
+	          <a href="{% url project-thread-edit project.slug thread.id %}" class="message-edit">{% trans 'Edit' %}</a>
+	          <a href="{% url project-thread-delete project.slug thread.id %}" class="message-delete action-delete">{% trans 'Delete' %}</a>
+	        </div>
+	        {% endifequal %}
+		</div>
+		
+		<div class="message-count">{{ thread.message_count }}</div>
+        
+	</li>
+	{% empty %}
+	<h6>{% trans 'No messages yet' %}. <a href="{% url project-thread-add project.slug %}"> {% trans 'Create a new message' %}</a></h6>
+	
+{% endfor %}
+</ul>
+{% if is_paginated %}{% load paginator %}{% paginator 3 %}{% endif %}
+
+{% endblock %}

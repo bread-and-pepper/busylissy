@@ -1,0 +1,13 @@
+{% extends "blgroup/base.html" %}
+{% load i18n %}
+
+{% block content %}
+<h2>{% trans 'Messages in' %} {{ group.name }}</h2>
+<ul>
+{% for thread in thread_list %}
+<li><a href="{% url group-thread-detail group.slug thread.id %}">{{ thread.title }}</a><br />
+Total of {{ thread.message_count }} message(s), latest {{ thread.latest_message_time|timesince }} ago.</li>
+{% endfor %}
+</ul>
+<a href="{% url group-thread-add group.slug %}">{% trans 'Add thread' %}</a>
+{% endblock %}

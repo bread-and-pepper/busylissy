@@ -1,0 +1,23 @@
+{% extends "bltask/base.html" %}
+{% load i18n %}
+
+{% block content %}
+<aside id="content-sidebar">
+<div class="filters">
+	<h4>{% trans 'Tags used in project' %}</h4>
+	<ul id="js-addtask">
+	  {% for tag in tags %}
+      {% ifnotequal tag.name project.slug %}
+      <li><a href="#" title="{% trans "Add tag to task" %}" class="tag beige insert-tag-link">{{ tag.name }}</a><span>{{ tag.count }}</span></li>
+      {% endifnotequal %}
+      {% empty %}
+      <p>{% trans 'No tags yet' %}</p>
+	  {% endfor %}
+	</ul>
+</div>
+</aside>
+<form method="post" action="">
+    {{ form.as_p }} 
+    <input type="submit" value="{% trans 'Add todo' %}"/>
+</form>
+{% endblock %}

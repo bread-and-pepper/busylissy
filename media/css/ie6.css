@@ -1,0 +1,42 @@
+/*========================
+^$(^$($(&^&))&(^)) Microsoft 		
+==========================*/
+
+body, html{
+	background-color: #F5F4EF;
+	background-image: none;
+}
+
+
+#container{
+	width: 960px;
+	margin: 0 auto;
+}
+
+header ul{
+    display: none;
+
+}
+
+section{
+	display: none;
+
+}
+
+footer{
+	display: none;
+}
+
+h3#ie6-hell{
+    height: 310px;
+    padding: 50px 0 0 260px;
+	background: url(../img/promo/lissyie6.png) no-repeat left 25px;
+	font-size: 23px;
+	font-weight: bold;
+}
+
+
+
+
+
+

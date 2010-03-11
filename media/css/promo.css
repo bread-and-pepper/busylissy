@@ -1,0 +1,523 @@
+@charset "utf-8";
+/*==========================================================
+Version:    Beta 
+Author:    	WdeB
+Owner:		Bread&Pepper
+
+Beige:		#cbc0b9
+Brown: 		#8f8f8f
+Dark grey: 	#222
+Red: 		#89020b
+Background: #f4efeb
+
+TABLE OF CONTENT
+00 - Global reset 
+01 - Main Elements
+02 - General Typo
+03 - Header
+
+
+===========================================================*/
+
+
+
+
+/*==========================================================
+		00 - GLOBAL RESET				
+===========================================================*/
+@import url('syntax.css');
+
+/* Normalizes margin, padding */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td 
+{ margin : 0; padding : 0; }
+
+/* Normalizes font-size for headers */
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+}
+
+/* Removes list-style from lists */
+ol,ul,li { list-style : none; }
+
+/* Normalizes font-style and font-weight to normal */
+address, caption, cite, code, dfn, th, var
+{ font-style : normal; font-weight : normal; }
+
+/* Removes list-style from lists */
+table { border-collapse : collapse; border-spacing : 0; }
+
+/* Removes border from fieldset and img */
+fieldset,img { border : 0; }
+
+/* Left-aligns text in caption and th */
+caption,th { text-align : left; }
+
+/* Removes quotation marks from q */
+q:before, q:after { content :''; }
+
+.clear{
+	clear: both;
+}
+
+section, header, nav, footer{display: block;}
+
+body, html{
+	height: 100%;
+	font: normal normal 87.5% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	background: #F5F4EF url(../img/promo/bg-body.jpg) repeat-x center top;
+}
+
+/*========================
+		01 - Main Elements		
+==========================*/
+#wrapper{
+	
+}
+
+#container{
+	width: 960px;
+	margin: 0 auto;
+}
+
+header{
+ background-color: #1a1a1a;
+    height: 50px;
+    -moz-border-radius-bottomleft: 6px;
+    	-webkit-border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+
+}
+
+section{
+	border-bottom: 3px double #d6d6d2;
+	padding: 20px 0 40px;
+
+}
+
+footer{
+	height: 130px;
+	padding: 10px;
+	font-size: 0.8em;
+	text-align: right;
+}
+
+#lang{
+	position: absolute;
+}
+
+
+/*========================
+		02 - typo		
+==========================*/
+a{
+	color: #008ee8;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover{
+	color: #a00f12;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1{
+	font-size: 3.0em;
+}
+
+h2{
+	font-size: 2.5em;
+	color: #8dad48;
+	line-height: 0.8em;
+}
+
+p{
+	font-size: 1.2em;
+	color: #494949;
+}
+
+p.free{
+	color: #7d94a1;
+	font-size: 11px;
+	padding: 6px 0 0 41px;
+}
+
+/*========================
+		03 - Header		
+==========================*/
+
+
+h1#logo{
+	float: left;
+	height: 45px;
+	padding: 5px 0 0 10px;
+	font: normal normal 2.7em Georgia, "Times New Roman", Times, serif;
+	overflow: hidden;
+	width: 260px;
+	background-position: 7px -5px;
+	background-repeat: no-repeat;
+	color: #f5f4ef;
+}
+
+h1#logo span{
+	font-size: 0.5em;
+	color: #ff0a2d;
+	display: block;
+	float: left;
+}
+
+h1#logo a{
+    color: #f5f4ef;
+}
+
+nav{
+    float: right;
+    width: 500px;
+    padding: 0 20px 0 0;
+}
+
+nav ul li{
+    float: right;
+    margin: 0 0 0 20px;
+    line-height: 50px;
+	
+}
+
+nav ul li a{
+	font-weight: bold;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+}
+
+li.selected{
+	display: none;
+}
+
+li.flag{
+	margin: 1px 0 0 20px;
+	padding: 0;
+}
+
+/*========================
+		04 - banner	
+==========================*/
+
+#banner{
+	padding: 20px 0 0 230px;
+	height: 310px;
+	background: url(../img/promo/lissy.png) no-repeat left 25px;
+}
+
+#banner img{
+	float: right;
+	margin: 24px 10px 0 0;
+
+}
+
+#banner h1{
+	padding: 30px 0 24px 0;
+	width: 320px;
+	font-size: 3.0em;
+	line-height: 0.8em;
+}
+
+a.button{
+	background: url(../img/bg-grad-blue.jpg) repeat-x;
+	
+	font-size: 1.2em;
+	color: #c1e5f4;
+	text-shadow: #1f8de6 0 0 0;
+	padding: 0.5em;
+	display: block;
+	border-radius: 3px;  
+       -moz-border-radius: 3px;  
+       -webkit-border-radius: 3px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.3em;
+	width: 190px;
+	border: none;
+	font-weight: bold;
+}
+
+a.button:hover{
+	color: #fff;
+	background-color: #0064a2;
+	background-image: none;
+}
+
+a span{
+	
+	font-size: 30px;
+	vertical-align: -6px;
+}
+
+/*========================
+		05 - blocks	
+==========================*/
+
+.blocks ul{
+	overflow: auto;
+}
+
+.blocks ul li{
+	float: left;
+	width: 300px;
+	padding: 10px;
+	margin: 0 0 15px;
+}
+
+.blocks ul li.blog{
+	width: 610px;
+	overflow: hidden;
+}
+
+.blocks ul li a img{
+	width: 282px;
+	border: 4px solid #545453;
+	height: 140px;
+	border-radius: 3px;  
+       -moz-border-radius: 3px;  
+       -webkit-border-radius: 3px;
+}
+
+.blocks ul li a:hover img{
+	border: 4px solid #111;
+}
+
+/*========================
+		06 - trigger	
+==========================*/
+
+#trigger h4{
+	text-align: center;
+	font-size: 1.8em;
+	margin: 20px 0 0 0;
+}
+
+/*========================
+		07 - facebox	
+==========================*/
+
+
+
+#facebox .b {
+  background:url(../img/promo/facebox/b.png);
+}
+
+#facebox .tl {
+  background:url(../img/promo/facebox/tl.png);
+}
+
+#facebox .tr {
+  background:url(../img/promo/facebox/tr.png);
+}
+
+#facebox .bl {
+  background:url(../img/promo/facebox/bl.png);
+}
+
+#facebox .br {
+  background:url(../img/promo/facebox/br.png);
+}
+
+#facebox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: left;
+}
+
+#facebox .popup {
+  position: relative;
+}
+
+#facebox table {
+  border-collapse: collapse;
+}
+
+#facebox td {
+  border-bottom: 0;
+  padding: 0;
+}
+
+#facebox .body {
+  padding: 0px;
+  background: #fff;
+  width: 800px;
+}
+
+#facebox .loading {
+  text-align: center;
+}
+
+#facebox .image {
+  text-align: center;
+}
+
+#facebox img {
+  border: 0;
+  margin: 0;
+}
+
+#facebox .footer {
+ padding: 0 5px;
+  text-align: right;
+}
+
+#facebox .tl, #facebox .tr, #facebox .bl, #facebox .br {
+  height: 10px;
+  width: 10px;
+  overflow: hidden;
+  padding: 0;
+}
+
+#facebox_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+}
+
+.facebox_hide {
+  z-index:-100;
+}
+
+.facebox_overlayBG {
+  background-color: #000;
+  z-index: 99;
+}
+
+* html #facebox_overlay { /* ie6 hack */
+  position: absolute;
+  height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+/*========================
+		08 - Blog	
+==========================*/
+
+li.blog p {
+    margin: 1em 0;
+}
+
+li.blog li {
+    margin: 0 0 0 1.3em;
+    list-style: disc;
+    padding: 5px 0;
+}
+
+li.blog h2 a {
+    color: #8dad48;
+}
+
+li.blog h3 {
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+
+li.blog .details {
+    border-top: 1px solid #d6d6d2;
+    border-bottom: 1px solid #d6d6d2;
+    margin: 5px 0;
+}
+
+.details p {
+    font-size: 0.9em;
+}
+
+li.blog a.button {
+    font-size: 0.9em;
+    width: 120px;
+    margin-top: 10px;
+}
+
+.comment {
+    border-top: 1px solid #d6d6d2;
+    padding-top: 10px;
+    min-height: 80px;
+}
+
+.comment .post-users {
+    float: left;
+    width: 55px;
+}
+
+.comment .post-users h6 {
+    font-size: 0.9em;
+    color: #8dad48;
+}
+
+.comment p{
+    float: left;
+}
+
+.filters ul li {
+    width: 250px;
+    margin: 5px 0;
+    padding: 0;
+}
+
+aside {
+    width: 300px;
+    float: right;
+    margin-top: 10px;
+}
+
+form p {
+    border-top: 1px solid #d6d6d2;
+    padding: 5px 0;
+}
+
+label {
+    float: left;
+    width: 100px;
+}
+
+input[type=submit] {
+    margin-left: 100px;
+}
+
+input, textarea {
+    border: 0;
+    padding: 4px;
+    width: 300px;
+}
+
+input.button{
+	background: url(../img/bg-grad-blue.jpg) repeat-x;
+	
+	font-size: 0.8em;
+	color: #c1e5f4;
+	text-shadow: #1f8de6 0 0 0;
+	padding: 0.5em;
+	display: block;
+	border-radius: 3px;  
+       -moz-border-radius: 3px;  
+       -webkit-border-radius: 3px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.3em;
+	width: 120px;
+	border: none;
+	font-weight: bold;
+}
+
+input.button:hover{
+	color: #fff;
+	background-color: #0064a2;
+	background-image: none;
+}
+
+p.error {
+    border: 0;
+    color: red;
+}

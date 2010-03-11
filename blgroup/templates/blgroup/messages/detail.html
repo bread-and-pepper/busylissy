@@ -1,0 +1,25 @@
+{% extends "blgroup/base.html" %}
+{% load i18n %}
+
+{% block content %}
+<h2>{{ thread.title }}</h2>
+
+{% for m in message_list %}
+{{ m.body }}
+<p>----------------------------------</p>
+<p>{{ m.created_at|date:"d M Y" }} {% trans 'By' %} {{ m.author }}</p>
+{% ifequal m.author request.user %}
+<p>
+  <a href="{% url group-message-edit group.slug thread.id m.id %}">Edit</a>
+  <a href="{% url group-message-delete group.slug thread.id m.id %}">Delete</a>
+</p>
+{% endifequal %}
+{% endfor %}
+
+<form action="" method="post">
+  {{ form.as_p }}
+  <div>
+    <input type="submit" value="{% trans 'submit' %}" />
+  </div>
+</form>
+{% endblock %}

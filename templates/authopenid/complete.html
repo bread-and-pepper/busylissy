@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+
+
+{% block head %}{% endblock %}
+
+{% block module-title %}<h2 class="module-title">{% trans "Your OpenID is verified! " %}</h2>{% endblock %}
+
+{% block content %}
+	<div id="completetxt">
+	<h2 id='content-title'>{% trans "Associate your OpenID" %} </h2>
+	{% blocktrans %}
+	<h5 class="associate-text">Your OpenID can now be associated with a <strong>new</strong> or <strong>existing</strong> account.</h5>
+	{% endblocktrans %}
+	</div>
+
+	<section id="invite-box">
+			<div class="left">
+			<div class="invite">
+			<h4>{% trans 'Create a new account' %}</h4>
+				{% if form1.errors %}
+				<p class="errors">{% trans "Please correct errors below:" %}<br />
+					{% if form1.username.errors %} 
+						<span class="error">{{ form1.username.errors|join:", " }}</span>
+					{% endif %}
+					{% if form1.email.errors %} 
+						<span class="error">{{ form1.email.errors|join:", " }}</span>
+					{% endif %}
+				</p>
+				{% endif %}
+				 <form name="fregister" action="{% url user_register %}" method="POST" id="associate-new">
+			            <input type="hidden" name="next" value="{{ next }}" />
+						<fieldset>
+							<div class="form-row"><label for="id_username">{% trans "Username" %}</label><br />{{ form1.username }}</div>
+							<div class="form-row"><label for="id_email">{% trans "Email" %}</label><br />{{ form1.email }}</div>
+							<div class="submit-row"><input type="submit" name="bnewaccount" value="Create account"></div>
+			            	</fieldset>
+					</form>
+			</div>
+			</div>
+
+			<div class="right">
+			<div class="invite">
+			<h4>{% trans 'Associate with existing account' %}</h4>
+				{% if form2.errors %}
+				<p class="errors">{% trans "Please correct errors below:" %}<br />
+					{% if form2.username.errors %} 
+						<span class="error">{{ form2.username.errors|join:", " }}</span>
+					{% endif %}
+					{% if form2.password.errors %} 
+						<span class="error">{{ form2.password.errors|join:", " }}</span>
+					{% endif %}
+				</p>
+				{% endif %}
+				<form name="fverify" action="{% url user_register %}" method="POST" id="associate-ex">
+		            <input type="hidden" name="next" value="{{ next }}" />
+					<fieldset>
+						<div class="form-row"><label for="id_username">{% trans "Username" %}</label><br />{{ form2.username }}</div>
+						<div class="form-row"><label for="id_passwordl">{% trans "Password" %}</label><br />{{ form2.password }}</div>
+						<div class="submit-row"><input type="submit" name="bverify" value="Verify"></div>
+					</fieldset>
+				</form>
+			</form>
+			</div></div>
+	</section>
+	
+	
+	
+	
+	
+	
+{% endblock %}

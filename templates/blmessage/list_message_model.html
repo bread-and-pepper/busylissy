@@ -1,0 +1,52 @@
+{% extends 'blmessage/base.html' %}
+{% load i18n markup avatar time %}
+{% block content %}
+
+
+
+<h2 id="content-title"><a href="{% url project-messages project.slug %}">{% trans 'Messages' %}</a>{{ thread.title }}</h2>
+
+{% if is_paginated %}{% load paginator %}{% paginator 3 %}{% endif %}
+
+<ul class="messages  thread">
+	{% for m in message_list %}
+	<li>
+		<div class="post-users">
+			<img src="{% avatar m.author 'True' %}" alt="{{ m.author }}" />
+			<h6>{{ m.author.username }}</h6> 
+		</div>
+		<div class="post-body">
+			
+			{{ m.body|markdown }}
+	{% ifequal m.author request.user %}
+	<p>
+	  <a href="{% url project-message-edit project.slug m.thread.id m.id %}" class="message-edit">{% trans 'Edit' %}</a>
+	  <a href="{% url project-message-delete project.slug m.thread.id m.id %}" class="message-delete  action-delete">{% trans 'Delete' %}</a>
+	</p>
+	{% endifequal %}
+		</div>
+		<div class="post-info">
+		<p><b>{% humanize_timesince m.created_at %}</b> {% trans 'ago' %}</p>
+		</div>
+	</li>
+	{% endfor %}
+	
+	<li>
+		<div class="post-users">
+			<img src="{% avatar request.user %}" alt="{{ request.user.username }}" />
+		</div>
+		<div class="post-body">
+		<form action="" method="post" id="message-form">
+		  {{ form.as_p }}
+		  <div>
+		    <input type="submit" value="{% trans 'submit' %}" />
+		  </div>
+		</form>
+		</div>
+	</li>
+</ul>
+
+{% if is_paginated %}{% load paginator %}{% paginator 3 %}{% endif %}
+
+
+{% endblock %}
