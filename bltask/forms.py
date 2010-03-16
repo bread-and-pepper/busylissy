@@ -2,7 +2,7 @@ from django import forms
 from django.utils.translation import ugettext as _
 from django.contrib.auth.models import User
 
-from busylizzy.bltask.models import Task
+from busylissy.bltask.models import Task
 
 from tagging.forms import TagField
 from tagging.utils import parse_tag_input

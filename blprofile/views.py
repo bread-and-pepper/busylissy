@@ -10,13 +10,13 @@ from django.contrib.contenttypes.models import ContentType
 from authority.models import Permission
 from django.utils.translation import ugettext as _
 
-from busylizzy.blprofile.models import UserProfile
-from busylizzy.blprofile.forms import MemberForm, ProfileForm, InviteForm, SettingsForm
-from busylizzy.blgroup.models import Group
-from busylizzy.blproject.models import Project
-from busylizzy.blproject.permissions import ProjectPermission
-from busylizzy.blgroup.permissions import GroupPermission
-from busylizzy.blactivity.models import Activity
+from busylissy.blprofile.models import UserProfile
+from busylissy.blprofile.forms import MemberForm, ProfileForm, InviteForm, SettingsForm
+from busylissy.blgroup.models import Group
+from busylissy.blproject.models import Project
+from busylissy.blproject.permissions import ProjectPermission
+from busylissy.blgroup.permissions import GroupPermission
+from busylissy.blactivity.models import Activity
 
 @login_required
 def view(request):
@@ -88,7 +88,7 @@ def delete(request):
         profile = None
 
     user.delete()
-    return HttpResponseRedirect(reverse('busylizzy-home'))
+    return HttpResponseRedirect(reverse('busylissy-home'))
 
 @login_required
 def add_member(request, model, model_slug, template='blprofile/includes/form.html'):

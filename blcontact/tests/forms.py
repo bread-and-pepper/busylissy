@@ -1,6 +1,6 @@
 from django.test import TestCase
 
-from busylizzy.blcontact import forms
+from busylissy.blcontact import forms
 
 class FormTest(TestCase):
     """ Test all form functions """

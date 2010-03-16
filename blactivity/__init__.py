@@ -15,7 +15,7 @@ def create_activity(self, actor, action, indirect_object=None):
     to Activities.
 
     """
-    from busylizzy.blactivity.models import Activity
+    from busylissy.blactivity.models import Activity
 
     if self._meta.module_name == "thread":
         project = self.content_type.get_object_for_this_type(pk=self.object_id)

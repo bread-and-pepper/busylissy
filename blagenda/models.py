@@ -7,8 +7,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.conf import settings
 
-from busylizzy.blproject.models import Project
-from busylizzy import blactivity
+from busylissy.blproject.models import Project
+from busylissy import blactivity
 
 from dateutil import rrule
 
@@ -255,8 +255,8 @@ def create_event(
         follow the ``dateutils`` API (see http://labix.org/python-dateutil)
     
     '''
-    from busylizzy.blagenda.conf import settings as agenda_settings
-    from busylizzy.bltask.models import Task
+    from busylissy.blagenda.conf import settings as agenda_settings
+    from busylissy.bltask.models import Task
     
     if isinstance(event_type, tuple):
         event_type, created = EventType.objects.get_or_create(

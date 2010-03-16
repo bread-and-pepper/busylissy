@@ -1,5 +1,5 @@
 from django.test import TestCase
-from busylizzy.blproject.models import Project
+from busylissy.blproject.models import Project
 from django.core.urlresolvers import reverse
 
 class ViewTest(TestCase):

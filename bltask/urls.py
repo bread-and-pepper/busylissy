@@ -1,6 +1,6 @@
 from django.conf.urls.defaults import *
 
-from busylizzy.bltask import views as bltask_views
+from busylissy.bltask import views as bltask_views
 
 urlpatterns = patterns('',
     url(r'^(?P<parent>\d+)/add/$',

@@ -9,10 +9,10 @@ from django.contrib.auth import logout
 from django_authopenid.forms import *
 from registration.forms import RegistrationFormUniqueEmail
 
-from busylizzy.blinvite.models import Invite
-from busylizzy.blinvite.forms import InviteUserForm, InviteEmailForm
-from busylizzy.blproject.permissions import ProjectPermission
-from busylizzy.blproject.models import Project
+from busylissy.blinvite.models import Invite
+from busylissy.blinvite.forms import InviteUserForm, InviteEmailForm
+from busylissy.blproject.permissions import ProjectPermission
+from busylissy.blproject.models import Project
 
 INITIAL_INVITE_PM = _('I would like to add you to my project on BusyLissy.')
 

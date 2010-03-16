@@ -14,13 +14,13 @@ from tagging.views import tagged_object_list
 from tagging.models import Tag, TaggedItem
 from tagging.utils import LOGARITHMIC, calculate_cloud
 
-from busylizzy.blproject.models import Project
-from busylizzy.blproject.forms import ProjectForm
-from busylizzy.blproject.permissions import ProjectPermission
-from busylizzy.blmessage.models import Thread
-from busylizzy.bltask.models import Task
-from busylizzy.blactivity.models import Activity
-from busylizzy.blinvite.models import Invite
+from busylissy.blproject.models import Project
+from busylissy.blproject.forms import ProjectForm
+from busylissy.blproject.permissions import ProjectPermission
+from busylissy.blmessage.models import Thread
+from busylissy.bltask.models import Task
+from busylissy.blactivity.models import Activity
+from busylissy.blinvite.models import Invite
 
 def index(request):
     """ Index page """

@@ -1,6 +1,6 @@
 from django.conf.urls.defaults import *
 
-from busylizzy.blprofile import views as profile_views
+from busylissy.blprofile import views as profile_views
 
 urlpatterns = patterns('',
     # List

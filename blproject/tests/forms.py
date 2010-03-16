@@ -1,6 +1,6 @@
 from django.test import TestCase
 
-from busylizzy.blproject import forms
+from busylissy.blproject import forms
 
 class FormTest(TestCase):
 

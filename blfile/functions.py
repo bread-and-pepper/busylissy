@@ -6,7 +6,7 @@ from django.core.files import File
 import os, re, decimal
 
 # get settings
-from busylizzy.blfile.settings import *
+from busylissy.blfile.settings import *
 
 # PIL import
 if STRICT_PIL:

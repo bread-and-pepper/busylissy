@@ -3,7 +3,7 @@ from django.utils.translation import ugettext as _
 from django.contrib.auth.models import User
 from django.forms.fields import email_re
 
-from busylizzy.blinvite.models import Invite
+from busylissy.blinvite.models import Invite
 
 class MultiUserField(forms.Field):
     def clean(self, value):

@@ -1,6 +1,6 @@
 from django.conf.urls.defaults import *
 
-from busylizzy.blfile import views as blfile_views
+from busylissy.blfile import views as blfile_views
 
 urlpatterns = patterns('',
    url(r'^(?P<dir_name>[_a-zA-Z0-9./-]+)/upload/$',

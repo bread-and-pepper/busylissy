@@ -10,9 +10,9 @@ from tagging.views import tagged_object_list
 from tagging.models import Tag, TaggedItem
 from django.contrib.auth.models import User
 
-from busylizzy.blgroup.models import Group
-from busylizzy.blgroup.forms import GroupForm, GroupProjectForm
-from busylizzy.blgroup.permissions import GroupPermission
+from busylissy.blgroup.models import Group
+from busylissy.blgroup.forms import GroupForm, GroupProjectForm
+from busylissy.blgroup.permissions import GroupPermission
 
 @login_required
 def list(request):

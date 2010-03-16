@@ -6,7 +6,7 @@ from django.conf import settings
 from django.utils.http import urlquote
 from django.http import HttpResponseRedirect
 
-from busylizzy.blproject.models import Project
+from busylissy.blproject.models import Project
 
 def get_project_from_slug(view):
     """

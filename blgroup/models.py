@@ -8,7 +8,7 @@ from authority.models import Permission
 from tagging.models import Tag
 from tagging.fields import TagField
 
-from busylizzy.blmessage.models import Thread
+from busylissy.blmessage.models import Thread
 
 class Group(models.Model):
     name = models.CharField(_(u'name'), max_length=80, unique=True)

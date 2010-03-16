@@ -1,6 +1,6 @@
 from django.conf.urls.defaults import *
 
-from busylizzy.blagenda import views
+from busylissy.blagenda import views
 
 urlpatterns = patterns('',
     url(r'^$',

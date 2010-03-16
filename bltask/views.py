@@ -7,11 +7,11 @@ from django.core.urlresolvers import reverse
 from django.views.generic import list_detail, create_update
 from django.utils.translation import ugettext as _
 
-from busylizzy.bltask.forms import TaskModelForm
-from busylizzy.bltask.models import Task
-from busylizzy.bltask.utils import structure
-from busylizzy.blproject.models import Project
-from busylizzy.blactivity.models import Activity
+from busylissy.bltask.forms import TaskModelForm
+from busylissy.bltask.models import Task
+from busylissy.bltask.utils import structure
+from busylissy.blproject.models import Project
+from busylissy.blactivity.models import Activity
 
 from tagging.models import Tag, TaggedItem
 

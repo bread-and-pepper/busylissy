@@ -1,8 +1,8 @@
 from django.conf.urls.defaults import *
 
-from busylizzy.blproject import views as blproject_views
-from busylizzy.blprofile import views as blprofile_views
-from busylizzy.blmessage import views as blmessage_views
+from busylissy.blproject import views as blproject_views
+from busylissy.blprofile import views as blprofile_views
+from busylissy.blmessage import views as blmessage_views
 
 urlpatterns = patterns('',
     url(r'^add/$',
@@ -67,10 +67,10 @@ urlpatterns = patterns('',
         name='project-message-edit'),
 
     # Invite application
-    (r'^(?P<project_slug>[-\w]+)/invite/', include('busylizzy.blinvite.urls')),
+    (r'^(?P<project_slug>[-\w]+)/invite/', include('busylissy.blinvite.urls')),
 
     # Agenda application
-    (r'^(?P<project_slug>[-\w]+)/agenda/', include('busylizzy.blagenda.urls')),                       
+    (r'^(?P<project_slug>[-\w]+)/agenda/', include('busylissy.blagenda.urls')),                       
                        
     # Members
     url(r'^(?P<model_slug>[-\w]+)/members/(?P<member_slug>[-\w]+)/delete/$',
@@ -83,8 +83,8 @@ urlpatterns = patterns('',
         {'model': 'blproject.project'},
         name='project-member-admin'),
 
-    (r'^(?P<project_slug>[-\w]+)/tasks/', include('busylizzy.bltask.urls')),
-    (r'^(?P<project_slug>[-\w]+)/files/', include('busylizzy.blfile.urls')),
+    (r'^(?P<project_slug>[-\w]+)/tasks/', include('busylissy.bltask.urls')),
+    (r'^(?P<project_slug>[-\w]+)/files/', include('busylissy.blfile.urls')),
 
     # Activities
     url(r'^(?P<slug>[-\w]+)/activities/(?P<type>[-\w]+)/$',

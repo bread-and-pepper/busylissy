@@ -1,7 +1,7 @@
 from django.test import TestCase
-from busylizzy.blcontact.models import Contact
-from busylizzy.blproject.models import Project
-from busylizzy.blgroup.models import Group
+from busylissy.blcontact.models import Contact
+from busylissy.blproject.models import Project
+from busylissy.blgroup.models import Group
 from django.core.urlresolvers import reverse
 
 class ViewTest(TestCase):

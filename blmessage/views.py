@@ -12,11 +12,11 @@ from django.utils.translation import ugettext as _
 from tagging.views import tagged_object_list
 from tagging.models import Tag, TaggedItem
 
-from busylizzy.blmessage.models import Thread, Message
-from busylizzy.blmessage.forms import ThreadForm, EditThreadForm, MessageForm, FeedbackForm
-from busylizzy.blgroup.models import Group
-from busylizzy.blproject.models import Project
-from busylizzy.blactivity.models import Activity
+from busylissy.blmessage.models import Thread, Message
+from busylissy.blmessage.forms import ThreadForm, EditThreadForm, MessageForm, FeedbackForm
+from busylissy.blgroup.models import Group
+from busylissy.blproject.models import Project
+from busylissy.blactivity.models import Activity
 
 @login_required
 def list_for_model(request, model, object_slug, template='blmessage/list_model.html'):

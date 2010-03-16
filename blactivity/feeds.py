@@ -4,8 +4,8 @@ from django.contrib.auth.models import User
 from django.shortcuts import get_object_or_404
 from django.utils.hashcompat import md5_constructor
 
-from busylizzy.blproject.models import Project
-from busylizzy.blactivity.models import Activity
+from busylissy.blproject.models import Project
+from busylissy.blactivity.models import Activity
 
 class UserFeed(Feed):
     title = "Busylissy activity feed"

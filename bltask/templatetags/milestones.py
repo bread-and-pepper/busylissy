@@ -2,12 +2,12 @@ from django import template
 from django.db import models
 from django.db.models import Q
 from django.conf import settings
-from busylizzy.bltask.models import Task
+from busylissy.bltask.models import Task
 from django.utils.translation import ugettext as _
 from django.shortcuts import get_object_or_404
 
-from busylizzy.blagenda.models import Occurrence
-from busylizzy.blproject.models import Project
+from busylissy.blagenda.models import Occurrence
+from busylissy.blproject.models import Project
 
 import datetime, re, itertools
 
