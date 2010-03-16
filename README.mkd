@@ -9,6 +9,25 @@ Recently Busylissy was blogged about and reached a new high of 2.000 users.
 Because we are very busy working on other web applications we have decided to
 open source it.
 
+# F.A.Q.
+
+## Are you going to ask money to use Busylissy?
+
+No. We will keep Busylissy in the public domain and pay for the hosting by
+ourselves. When the costs of hosting keep going up we will have to consider
+placing banners or asking for donations.
+
+## Can I have Busylissy in language X Yes. 
+
+We would love to have as many languages as possible. That's one of the reasons
+the application is open source. It would be great if you would be willing to
+translate the translation file found in ``locales`` to your own language.
+
+## Why have you open-sourced Busylissy?
+
+We didn't have the time to make Busylissy the web application it could be. So
+we hope that the community can take Busylissy to the next level.
+
 # Credits
 - [Django](www.djangoproject.com) is the foundation on which Busylissy is
 build.
