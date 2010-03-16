@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from busylizzy.bltask.models import Task
+from busylissy.bltask.models import Task
 
 class TaskAdmin(admin.ModelAdmin):
     """ 

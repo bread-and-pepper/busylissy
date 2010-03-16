@@ -48,7 +48,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.media',
     'django.core.context_processors.request',
     'django_authopenid.context_processors.authopenid',
-    'busylizzy.blprofile.context_processors.settings',
+    'busylissy.blprofile.context_processors.settings',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -63,7 +63,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.cache.FetchFromCacheMiddleware',
 )
 
-ROOT_URLCONF = 'busylizzy.urls'
+ROOT_URLCONF = 'busylissy.urls'
 
 TEMPLATE_DIRS = (
     relative_path('templates')
@@ -83,15 +83,15 @@ INSTALLED_APPS = (
     'sorl.thumbnail',
     'tagging',
     'authority',
-    'busylizzy.blactivity',
-    'busylizzy.blprofile',
-    'busylizzy.blgroup',
-    'busylizzy.blproject',
-    'busylizzy.bltask',
-    'busylizzy.blfile',
-    'busylizzy.blmessage',
-    'busylizzy.blinvite',
-    'busylizzy.blagenda',
+    'busylissy.blactivity',
+    'busylissy.blprofile',
+    'busylissy.blgroup',
+    'busylissy.blproject',
+    'busylissy.bltask',
+    'busylissy.blfile',
+    'busylissy.blmessage',
+    'busylissy.blinvite',
+    'busylissy.blagenda',
 )
 
 LOGIN_REDIRECT_URL = '/projects/'

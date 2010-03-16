@@ -9,11 +9,11 @@ from django.utils.translation import ugettext_lazy as _
 from django.forms.extras.widgets import SelectDateWidget
 
 from dateutil import rrule
-from busylizzy.blagenda.conf import settings as agenda_settings
-from busylizzy.blagenda import utils
-from busylizzy.blagenda.models import *
-from busylizzy.blproject.models import Project
-from busylizzy.bltask.models import Task
+from busylissy.blagenda.conf import settings as agenda_settings
+from busylissy.blagenda import utils
+from busylissy.blagenda.models import *
+from busylissy.blproject.models import Project
+from busylissy.bltask.models import Task
 
 WEEKDAY_SHORT = (
     (7, _(u'Sun')),

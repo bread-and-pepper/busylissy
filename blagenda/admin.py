@@ -1,6 +1,6 @@
 from django.contrib.contenttypes import generic
 from django.contrib import admin
-from busylizzy.blagenda.models import *
+from busylissy.blagenda.models import *
 
 #===============================================================================
 class EventTypeAdmin(admin.ModelAdmin):

@@ -3,7 +3,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.utils import translation
 from django.contrib.auth.models import User
 
-from busylizzy.blprofile.models import UserProfile
+from busylissy.blprofile.models import UserProfile
 
 def settings(request):
     """ Set the language correct for the user """

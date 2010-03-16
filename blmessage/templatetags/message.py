@@ -3,9 +3,9 @@ from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
 from django.contrib.contenttypes.models import ContentType
 
-from busylizzy.blmessage.models import Thread, Message
-from busylizzy.blprofile.templatetags.avatar import avatar
-from busylizzy.blactivity.models import Activity
+from busylissy.blmessage.models import Thread, Message
+from busylissy.blprofile.templatetags.avatar import avatar
+from busylissy.blactivity.models import Activity
 
 register = template.Library()
 

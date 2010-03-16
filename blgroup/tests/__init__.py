@@ -1,2 +1,2 @@
-from busylizzy.blgroup.tests.views import *
-from busylizzy.blgroup.tests.forms import *
+from busylissy.blgroup.tests.views import *
+from busylissy.blgroup.tests.forms import *

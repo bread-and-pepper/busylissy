@@ -1,6 +1,6 @@
 from django.test import TestCase
 
-from busylizzy.blprofile import forms
+from busylissy.blprofile import forms
 
 class FormTest(TestCase):
     """ Test the forms for profiles """

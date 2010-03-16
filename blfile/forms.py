@@ -4,9 +4,9 @@ from django.utils.translation import ugettext as _
 import re, os
 
 # get settings
-from busylizzy.blfile.settings import *
+from busylissy.blfile.settings import *
 # get functions
-from busylizzy.blfile.functions import _get_file_type
+from busylissy.blfile.functions import _get_file_type
 
 alnum_name_re = re.compile(r'^[\sa-zA-Z0-9._/-]+$')
 

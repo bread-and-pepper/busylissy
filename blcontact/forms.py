@@ -6,7 +6,7 @@ from django.template.defaultfilters import slugify
 
 import re
 
-from busylizzy.blcontact.models import Contact
+from busylissy.blcontact.models import Contact
 
 attrs_dict = {'class': 'required' }
 alnum_re = re.compile(r'^\w+$')

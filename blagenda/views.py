@@ -10,12 +10,12 @@ from django.core.urlresolvers import reverse
 from django.contrib.auth.decorators import login_required
 from django.utils.translation import ugettext as _
 
-from busylizzy.blagenda.models import Event, Occurrence
-from busylizzy.blagenda import utils, forms
-from busylizzy.blagenda.forms import EventForm, SingleOccurrenceForm
-from busylizzy.blagenda.conf import settings as agenda_settings
-from busylizzy.blproject.models import Project
-from busylizzy.blactivity.models import Activity
+from busylissy.blagenda.models import Event, Occurrence
+from busylissy.blagenda import utils, forms
+from busylissy.blagenda.forms import EventForm, SingleOccurrenceForm
+from busylissy.blagenda.conf import settings as agenda_settings
+from busylissy.blproject.models import Project
+from busylissy.blactivity.models import Activity
 
 from dateutil import parser
 

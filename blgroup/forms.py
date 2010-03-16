@@ -12,9 +12,9 @@ from authority.models import Permission
 from tagging.models import Tag
 from tagging.utils import parse_tag_input
 
-from busylizzy.blgroup.models import Group
-from busylizzy.blproject.models import Project
-from busylizzy.blmessage.widgets import WMDEditor
+from busylissy.blgroup.models import Group
+from busylissy.blproject.models import Project
+from busylissy.blmessage.widgets import WMDEditor
 
 def _grant_permission(codename, model, model_object, user, approved=True):
     permission = Permission(codename=codename,

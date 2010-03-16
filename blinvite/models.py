@@ -9,7 +9,7 @@ from django.utils.hashcompat import sha_constructor
 from registration.signals import user_registered
 from django_authopenid.signals import oid_associate
 
-from busylizzy.blproject.models import Project
+from busylissy.blproject.models import Project
 
 import random
 

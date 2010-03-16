@@ -9,7 +9,7 @@ import itertools
 from django.db.models.query import QuerySet
 from django.utils.safestring import mark_safe
 from dateutil import rrule
-from busylizzy.blagenda.conf import settings as agenda_settings
+from busylissy.blagenda.conf import settings as agenda_settings
 
 
 #-------------------------------------------------------------------------------
@@ -55,7 +55,7 @@ def css_class_cycler():
     iterable or cycle of CSS class names.
     
     '''
-    from busylizzy.blagenda.models import EventType
+    from busylissy.blagenda.models import EventType
     return defaultdict(
         lambda: itertools.cycle(('evt-even', 'evt-odd')).next,
         ((e.abbr, itertools.cycle((
@@ -142,7 +142,7 @@ def create_timeslot_table(
       handle the custom output via its __unicode__ method.
     
     '''
-    from busylizzy.blagenda.models import Occurrence
+    from busylissy.blagenda.models import Occurrence
     dt = dt or datetime.now()
     dtstart = datetime.combine(dt.date(), start_time)
     dtend = dtstart + end_time_delta

@@ -1,6 +1,6 @@
 from django import template
 from django.db import models
-from busylizzy.blactivity.models import Activity
+from busylissy.blactivity.models import Activity
 
 import re
 

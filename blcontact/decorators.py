@@ -1,7 +1,7 @@
 from django.utils.functional import wraps
 from django.http import Http404
 
-from busylizzy.blproject.models import Project
+from busylissy.blproject.models import Project
 
 def get_contact(view):
     """

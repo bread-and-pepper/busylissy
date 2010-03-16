@@ -1,6 +1,6 @@
 from django import template
 from django.db import models
-from busylizzy.blproject.models import Project
+from busylissy.blproject.models import Project
 
 import datetime
 import re

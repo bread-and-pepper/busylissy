@@ -1,7 +1,7 @@
 from django.test import TestCase
 
-from busylizzy.blprofile.forms import MemberForm
-from busylizzy.blgroup import forms
+from busylissy.blprofile.forms import MemberForm
+from busylissy.blgroup import forms
 
 class GroupFormTest(TestCase):
     """ Test group forms """

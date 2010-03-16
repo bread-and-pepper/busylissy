@@ -2,9 +2,9 @@ from django import forms
 from django.contrib.contenttypes.models import ContentType
 from django.utils.translation import ugettext as _
 
-from busylizzy.blmessage.models import Thread, Message
-from busylizzy.blmessage.widgets import WMDEditor
-from busylizzy.blproject.models import Project
+from busylissy.blmessage.models import Thread, Message
+from busylissy.blmessage.widgets import WMDEditor
+from busylissy.blproject.models import Project
 
 from tagging.utils import parse_tag_input
 

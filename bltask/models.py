@@ -4,9 +4,9 @@ from django.utils.translation import ugettext as _
 from django.db.models.signals import post_save
 from django.contrib.contenttypes.models import ContentType
 
-from busylizzy.blproject.models import Project
-from busylizzy import blactivity
-from busylizzy.blagenda.models import create_event, EventType, Event
+from busylissy.blproject.models import Project
+from busylissy import blactivity
+from busylissy.blagenda.models import create_event, EventType, Event
 
 from treebeard.mp_tree import MP_Node
 import tagging

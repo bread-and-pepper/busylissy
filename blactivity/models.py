@@ -8,7 +8,7 @@ from django.template.loader import render_to_string
 from django.template import loader, Context
 from django.core.mail import send_mass_mail, EmailMessage
 
-from busylizzy.blproject.models import Project
+from busylissy.blproject.models import Project
 
 class ActivityManager(models.Manager):
     """ Manager for retrieving activities """

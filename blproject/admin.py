@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.contenttypes import generic
 
-from busylizzy.blproject.models import Project
+from busylissy.blproject.models import Project
 
 class ProjectAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("name",)}

@@ -5,7 +5,7 @@ from django.contrib.contenttypes import generic
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save, pre_delete
 
-from busylizzy import blactivity
+from busylissy import blactivity
 from tagging.fields import TagField
 
 class Thread(models.Model):

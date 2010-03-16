@@ -12,11 +12,11 @@ from django.http import Http404
 from tagging.models import Tag, TaggedItem
 from tagging.views import tagged_object_list
 
-from busylizzy.blproject.models import Project
-from busylizzy.blgroup.models import Group
-from busylizzy.blcontact.models import Contact
-from busylizzy.blcontact.forms import ContactForm
-from busylizzy.blcontact.decorators import get_contact
+from busylissy.blproject.models import Project
+from busylissy.blgroup.models import Group
+from busylissy.blcontact.models import Contact
+from busylissy.blcontact.forms import ContactForm
+from busylissy.blcontact.decorators import get_contact
 
 @login_required
 def list_for_model(request, model, slug, template='blcontact/contact_list.html'):

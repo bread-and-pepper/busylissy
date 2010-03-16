@@ -1,4 +1,4 @@
-from busylizzy.blmessage.models import Thread, Message
+from busylissy.blmessage.models import Thread, Message
 from django.contrib import admin
 
 class MessageInline(admin.TabularInline):

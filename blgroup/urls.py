@@ -1,8 +1,8 @@
 from django.conf.urls.defaults import *
 
-from busylizzy.blgroup import views as blgroup_views
-from busylizzy.blprofile import views as blprofile_views
-from busylizzy.blmessage import views as blmessage_views
+from busylissy.blgroup import views as blgroup_views
+from busylissy.blprofile import views as blprofile_views
+from busylissy.blmessage import views as blmessage_views
 
 urlpatterns = patterns('',
         url(r'^add/$',

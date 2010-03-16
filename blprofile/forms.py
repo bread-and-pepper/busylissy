@@ -9,7 +9,7 @@ from django.contrib.contenttypes.models import ContentType
 
 import re
 
-from busylizzy.blprofile.models import UserProfile
+from busylissy.blprofile.models import UserProfile
 from django.contrib.auth.models import User
 
 attrs_dict = {'class': 'required' }

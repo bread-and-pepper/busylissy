@@ -42,6 +42,6 @@ class ViewTest(TestCase):
 
         response = self.client.get(reverse('profile-delete'))
 
-        self.assertRedirects(response, reverse('busylizzy-home'), target_status_code=200)
+        self.assertRedirects(response, reverse('busylissy-home'), target_status_code=200)
 
         

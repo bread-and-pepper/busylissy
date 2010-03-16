@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from busylizzy.blinvite.models import Invite
+from busylissy.blinvite.models import Invite
 
 class InviteAdmin(admin.ModelAdmin):
     pass

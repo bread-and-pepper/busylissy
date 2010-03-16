@@ -11,12 +11,12 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404
 from django import forms
 from django.conf import settings
-from busylizzy.blfile.settings import *
-from busylizzy.blfile.functions import _get_path, _get_file_type, _get_filterdate, _sort_by_attr, _get_settings_var, _get_breadcrumbs, _url_join, _handle_file_upload, _redirect_to_path
+from busylissy.blfile.settings import *
+from busylissy.blfile.functions import _get_path, _get_file_type, _get_filterdate, _sort_by_attr, _get_settings_var, _get_breadcrumbs, _url_join, _handle_file_upload, _redirect_to_path
 
-from busylizzy.blfile.templatetags.fb_tags import query_helper
-from busylizzy.blfile.forms import MakeDirForm, UploadForm, RenameForm, BaseUploadFormSet
-from busylizzy.blproject.models import Project
+from busylissy.blfile.templatetags.fb_tags import query_helper
+from busylissy.blfile.forms import MakeDirForm, UploadForm, RenameForm, BaseUploadFormSet
+from busylissy.blproject.models import Project
 
 # PIL import
 if STRICT_PIL:

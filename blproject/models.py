@@ -10,7 +10,7 @@ from django.db.models.signals import post_save
 
 from tagging.models import Tag
 from authority.models import Permission
-from busylizzy import blactivity
+from busylissy import blactivity
 
 from stdimage import StdImageField
 from tagging.fields import TagField
@@ -87,7 +87,7 @@ class Project(models.Model):
 
     def progress_value(self, completed=False):
         """ Progress value """
-        from busylizzy.bltask.models import Task
+        from busylissy.bltask.models import Task
 
         if completed:
             all_nodes = Task.objects.filter(project__slug=self.slug, completed=True)
@@ -107,8 +107,8 @@ class Project(models.Model):
 
     def project_value(self, user):
         """ Give project a value for this user """
-        from busylizzy.bltask.models import Task
-        from busylizzy.blmessage.models import Thread
+        from busylissy.bltask.models import Task
+        from busylissy.blmessage.models import Thread
 
         ctype = ContentType.objects.get_for_model(self)
         thread_count = Thread.objects.filter(content_type__pk=ctype.pk,
@@ -125,7 +125,7 @@ class Project(models.Model):
     @property
     def latest_activity(self):
         """ Return latest activity """
-        from busylizzy.blactivity.models import Activity
+        from busylissy.blactivity.models import Activity
 
         act = Activity.objects.get_activities_for_project(self.slug)
         if act:

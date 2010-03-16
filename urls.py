@@ -6,19 +6,19 @@ from django.views.generic.simple import direct_to_template
 import authority
 from registration.forms import RegistrationFormUniqueEmail
 
-from busylizzy.bltask import views as bltask_views
-from busylizzy.blproject import views as blproject_views
-from busylizzy.blinvite import views as blinvite_views
-from busylizzy.blprofile.models import UserProfile
-from busylizzy.blmessage import views as blmessage_views
-from busylizzy.blactivity.feeds import UserFeed, ProjectFeed
+from busylissy.bltask import views as bltask_views
+from busylissy.blproject import views as blproject_views
+from busylissy.blinvite import views as blinvite_views
+from busylissy.blprofile.models import UserProfile
+from busylissy.blmessage import views as blmessage_views
+from busylissy.blactivity.feeds import UserFeed, ProjectFeed
 
 admin.autodiscover()
 authority.autodiscover()
 
 urlpatterns = patterns('',
-    (r'^profiles/', include('busylizzy.blprofile.urls')),
-    (r'^groups/', include('busylizzy.blgroup.urls')),
+    (r'^profiles/', include('busylissy.blprofile.urls')),
+    (r'^groups/', include('busylissy.blgroup.urls')),
 
     #TODO: Monkey-patch, remove after new release of django_authopenid
     url(r'^activate/complete/$',
@@ -34,9 +34,9 @@ urlpatterns = patterns('',
          name='registration_register'),
 
     (r'^account/', include('django_authopenid.urls')),
-    (r'^agenda/', include('busylizzy.blagenda.urls')),
-    (r'^projects/', include('busylizzy.blproject.urls')),
-    (r'^messages/', include('busylizzy.blmessage.urls')),
+    (r'^agenda/', include('busylissy.blagenda.urls')),
+    (r'^projects/', include('busylissy.blproject.urls')),
+    (r'^messages/', include('busylissy.blmessage.urls')),
     (r'^language/', include('localeurl.urls')),
     (r'^comments/', include('django.contrib.comments.urls')),
 
@@ -50,7 +50,7 @@ urlpatterns = patterns('',
 
     url(r'^$',
         blproject_views.index,
-        name='busylizzy-home'),
+        name='busylissy-home'),
 
     (r'^admin/doc/', include('django.contrib.admindocs.urls')),
     (r'^admin/', include(admin.site.urls)),

@@ -1,6 +1,6 @@
 from django.test import TestCase
 
-from busylizzy.blprofile.models import UserProfile
+from busylissy.blprofile.models import UserProfile
 
 class ModelTest(TestCase):
     """ Test the models of the profile application """

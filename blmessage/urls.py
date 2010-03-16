@@ -1,7 +1,7 @@
 from django.conf.urls.defaults import *
 from django.views.generic.simple import direct_to_template
 
-from busylizzy.blmessage import views as blmessage_views
+from busylissy.blmessage import views as blmessage_views
 
 urlpatterns = patterns('',
     url(r'^tags/(?P<tags>[-+\w]*)$',

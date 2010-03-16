@@ -1,6 +1,6 @@
 from django.conf.urls.defaults import *
 
-from busylizzy.blinvite.views import *
+from busylissy.blinvite.views import *
 
 urlpatterns = patterns('',
     url('^$',

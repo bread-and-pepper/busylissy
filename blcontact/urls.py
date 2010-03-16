@@ -1,7 +1,7 @@
 from django.conf.urls.defaults import *
 from django.views.generic.simple import direct_to_template
 
-from busylizzy.blcontact import views as blcontact_views
+from busylissy.blcontact import views as blcontact_views
 
 urlpatterns = patterns('',
     url(r'^add/$',
