@@ -251,8 +251,6 @@ def month_view(
     )
 
     if project_slug:
-        authSubUrl = GetAuthSubUrl(project_slug);
-        data['google_link'] = authSubUrl
         data['project'] = project
     else:
         data['projects'] = projects
