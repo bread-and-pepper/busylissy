@@ -45,7 +45,9 @@ class ProjectForm(forms.ModelForm):
                 tags += tag + ","
 
         # Project name must always be a tag
-        project_tag = slugify(self.cleaned_data['name'])
+        # getting name field if not cleaned
+        name = self.fields["name"] or self.cleaned_data["name"]
+        project_tag = slugify(name) # getting name field
         if project_tag not in tag_list:
             tags = project_tag + ',' + tags
                 

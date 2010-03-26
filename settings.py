@@ -34,7 +34,7 @@ MEDIA_URL = 'http://localhost:8000/media/'
 
 ADMIN_MEDIA_PREFIX = '/media/admin/'
 
-SECRET_KEY = '9*1^o17$q*3f*a63gc)pavb+8h3nf#$&)tcx5_a2n^u^kgxf!c'
+SECRET_KEY = 'dummy'
 
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.load_template_source',
