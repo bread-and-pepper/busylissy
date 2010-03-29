@@ -1,0 +1,2377 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-29 09:27+0200\n"
+"PO-Revision-Date: 2010-03-29 09:28+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: settings.py:24
+msgid "English"
+msgstr "Inglés"
+
+#: settings.py:25
+msgid "Dutch"
+msgstr "Neerlandés"
+
+#: settings.py:26
+msgid "Spanish"
+msgstr "Español"
+
+#: blactivity/__init__.py:47
+#, python-format
+msgid "The model %s has already been registered."
+msgstr "El modelo %s ya ha sido registrado"
+
+#: blactivity/models.py:32 blagenda/models.py:30
+msgid "created"
+msgstr "creado"
+
+#: blactivity/models.py:33
+msgid "updated"
+msgstr "modificado"
+
+#: blactivity/models.py:34
+msgid "deleted"
+msgstr "borrado"
+
+#: blactivity/models.py:35 blmessage/models.py:14
+msgid "closed"
+msgstr "cerrado"
+
+#: blactivity/models.py:36
+msgid "commented on"
+msgstr "commentado en"
+
+#: blactivity/models.py:37
+msgid "invited"
+msgstr "invitado"
+
+#: blactivity/models.py:38
+msgid "started"
+msgstr "empezado"
+
+#: blactivity/models.py:39
+msgid "permissions"
+msgstr "permisos"
+
+#: blactivity/models.py:40
+msgid "joined"
+msgstr "entrado"
+
+#: blactivity/models.py:44
+msgid "action"
+msgstr "acción"
+
+#: blactivity/models.py:46
+msgid "time"
+msgstr "fecha"
+
+#: blactivity/models.py:75
+msgid "activity"
+msgstr "actividad"
+
+#: blactivity/models.py:76
+msgid "activities"
+msgstr "actividades"
+
+#: blagenda/forms.py:19 templates/blagenda/monthly_view.html:21
+#: templates/blagenda/user/monthly_view.html:22
+msgid "Sun"
+msgstr "Dom"
+
+#: blagenda/forms.py:20 templates/blagenda/monthly_view.html:21
+#: templates/blagenda/user/monthly_view.html:22
+msgid "Mon"
+msgstr "Lun"
+
+#: blagenda/forms.py:21 templates/blagenda/monthly_view.html:21
+#: templates/blagenda/user/monthly_view.html:22
+msgid "Tue"
+msgstr "Mar"
+
+#: blagenda/forms.py:22 templates/blagenda/monthly_view.html:21
+#: templates/blagenda/user/monthly_view.html:22
+msgid "Wed"
+msgstr "Mier"
+
+#: blagenda/forms.py:23 templates/blagenda/monthly_view.html:21
+#: templates/blagenda/user/monthly_view.html:22
+msgid "Thu"
+msgstr "Jue"
+
+#: blagenda/forms.py:24 templates/blagenda/monthly_view.html:21
+#: templates/blagenda/user/monthly_view.html:22
+msgid "Fri"
+msgstr "Vier"
+
+#: blagenda/forms.py:25 templates/blagenda/monthly_view.html:21
+#: templates/blagenda/user/monthly_view.html:22
+msgid "Sat"
+msgstr "Sab"
+
+#: blagenda/forms.py:29
+msgid "Sunday"
+msgstr "Domingo"
+
+#: blagenda/forms.py:30
+msgid "Monday"
+msgstr "Lunes"
+
+#: blagenda/forms.py:31
+msgid "Tuesday"
+msgstr "Martes"
+
+#: blagenda/forms.py:32
+msgid "Wednesday"
+msgstr "Miércoles"
+
+#: blagenda/forms.py:33
+msgid "Thursday"
+msgstr "Jueves"
+
+#: blagenda/forms.py:34
+msgid "Friday"
+msgstr "Viernes"
+
+#: blagenda/forms.py:35
+msgid "Saturday"
+msgstr "Sábado"
+
+#: blagenda/forms.py:39
+msgid "January"
+msgstr "Enero"
+
+#: blagenda/forms.py:40
+msgid "February"
+msgstr "Febrero"
+
+#: blagenda/forms.py:41
+msgid "March"
+msgstr "Marzo"
+
+#: blagenda/forms.py:42
+msgid "April"
+msgstr "Abril"
+
+#: blagenda/forms.py:43 blagenda/forms.py:58
+msgid "May"
+msgstr "Mayo"
+
+#: blagenda/forms.py:44
+msgid "June"
+msgstr "Junio"
+
+#: blagenda/forms.py:45
+msgid "July"
+msgstr "Julio"
+
+#: blagenda/forms.py:46
+msgid "August"
+msgstr "Augosto"
+
+#: blagenda/forms.py:47
+msgid "September"
+msgstr "Septiembre"
+
+#: blagenda/forms.py:48
+msgid "October"
+msgstr "Octubre"
+
+#: blagenda/forms.py:49
+msgid "November"
+msgstr "Noviembre"
+
+#: blagenda/forms.py:50
+msgid "December"
+msgstr "Diciembre"
+
+#: blagenda/forms.py:54
+msgid "Jan"
+msgstr "Ene"
+
+#: blagenda/forms.py:55
+msgid "Feb"
+msgstr "Feb"
+
+#: blagenda/forms.py:56
+msgid "Mar"
+msgstr "Mar"
+
+#: blagenda/forms.py:57
+msgid "Apr"
+msgstr "Abr"
+
+#: blagenda/forms.py:59
+msgid "Jun"
+msgstr "Jun"
+
+#: blagenda/forms.py:60
+msgid "Jul"
+msgstr "Jul"
+
+#: blagenda/forms.py:61
+msgid "Aug"
+msgstr "Ago"
+
+#: blagenda/forms.py:62
+msgid "Sep"
+msgstr "Sep"
+
+#: blagenda/forms.py:63
+msgid "Oct"
+msgstr "Oct"
+
+#: blagenda/forms.py:64
+msgid "Nov"
+msgstr "Nov"
+
+#: blagenda/forms.py:65
+msgid "Dec"
+msgstr "Dic"
+
+#: blagenda/forms.py:70
+msgid "first"
+msgstr "primero"
+
+#: blagenda/forms.py:71
+msgid "second"
+msgstr "segundo"
+
+#: blagenda/forms.py:72
+msgid "third"
+msgstr "tercero"
+
+#: blagenda/forms.py:73
+msgid "fourth"
+msgstr "cuarto"
+
+#: blagenda/forms.py:74
+msgid "last"
+msgstr "anterior"
+
+#: blagenda/forms.py:78
+msgid "Day(s)"
+msgstr "Día(s)"
+
+#: blagenda/forms.py:79
+msgid "Week(s)"
+msgstr "Semana(s)"
+
+#: blagenda/forms.py:80
+msgid "Month(s)"
+msgstr "Mes(es)"
+
+#: blagenda/forms.py:81
+msgid "Year(s)"
+msgstr "Año(s)"
+
+#: blagenda/forms.py:85
+msgid "By count"
+msgstr "Por cuenta"
+
+#: blagenda/forms.py:86
+msgid "Until date"
+msgstr "hasta la fecha"
+
+#: blagenda/forms.py:199 blagenda/forms.py:420
+#: blfile/templates/blfile/include/tableheader.html:26
+#: blfile/templates/blfile/include/tableheader.html:27
+#: templates/blfile/include/tableheader.html:26
+#: templates/blfile/include/tableheader.html:27
+msgid "Date"
+msgstr "Fecha"
+
+#: blagenda/forms.py:205 blagenda/forms.py:425
+msgid "Start time"
+msgstr "Comienzo"
+
+#: blagenda/forms.py:210
+msgid "End time"
+msgstr "Fin"
+
+#: blagenda/forms.py:218
+msgid "Occurrences"
+msgstr "Coincidencias"
+
+#: blagenda/forms.py:223
+msgid "Total Occurrences"
+msgstr "Total de coincidencias"
+
+#: blagenda/forms.py:236
+msgid "Frequency"
+msgstr "Frecuencia"
+
+#: blagenda/forms.py:250
+msgid "Weekly options"
+msgstr "Opciones semanales"
+
+#: blagenda/forms.py:256
+msgid "On the"
+msgstr "En el"
+
+#: blagenda/forms.py:256
+msgid "Each:"
+msgstr "Cada:"
+
+#: blagenda/forms.py:259
+msgid "Monthly options"
+msgstr "Opciones mensuales:"
+
+#: blagenda/forms.py:272
+msgid "Yearly options"
+msgstr "Opciones anuales"
+
+#: blagenda/forms.py:371
+#, python-format
+msgid "Unknown interval rule %s"
+msgstr "Desconocido el intervalo para la regla %s"
+
+#: blagenda/forms.py:389
+msgid "Project"
+msgstr "Proyecto"
+
+#: blagenda/models.py:29 blagenda/models.py:37 bltask/models.py:58
+msgid "note"
+msgstr "nota"
+
+#: blagenda/models.py:32 blagenda/models.py:75 blcontact/models.py:19
+#: blmessage/models.py:18
+msgid "content type"
+msgstr "tipo de contenido"
+
+#: blagenda/models.py:33 blcontact/models.py:20 blmessage/models.py:19
+msgid "object id"
+msgstr "identificador del objeto"
+
+#: blagenda/models.py:38 blagenda/models.py:67 blagenda/models.py:192
+msgid "notes"
+msgstr "notas"
+
+#: blagenda/models.py:49
+msgid "abbreviation"
+msgstr "abreviación"
+
+#: blagenda/models.py:50
+msgid "label"
+msgstr "etiqueta"
+
+#: blagenda/models.py:53 blagenda/models.py:66
+msgid "event type"
+msgstr "tipo de evento"
+
+#: blagenda/models.py:54
+msgid "event types"
+msgstr "tipos de evento"
+
+#: blagenda/models.py:64 blmessage/models.py:13
+msgid "title"
+msgstr "título"
+
+#: blagenda/models.py:65
+msgid "location"
+msgstr "localización"
+
+#: blagenda/models.py:69 blproject/models.py:62 bltask/models.py:81
+msgid "project"
+msgstr "proyecto"
+
+#: blagenda/models.py:80 blagenda/models.py:191
+msgid "event"
+msgstr "evento"
+
+#: blagenda/models.py:81
+msgid "events"
+msgstr "eventos"
+
+#: blagenda/models.py:189
+msgid "start time"
+msgstr "comienzo"
+
+#: blagenda/models.py:190
+msgid "end time"
+msgstr "fin"
+
+#: blagenda/models.py:197
+msgid "occurrence"
+msgstr "coincidencias"
+
+#: blagenda/models.py:198
+msgid "occurrences"
+msgstr "coincidencias"
+
+#: blagenda/views.py:65
+#, python-format
+msgid "Event '%(event)s' has been updated"
+msgstr "El evento '%(event)s' ha sido modificado"
+
+#: blagenda/views.py:112
+#, python-format
+msgid "Event '%(event)s' has been created"
+msgstr "El evento '%(event)s' ha sido creado"
+
+#: blagenda/views.py:285
+#, python-format
+msgid "Event '%(event)s' has been deleted"
+msgstr "El evento '%(event)s' ha sido borrado"
+
+#: blcontact/models.py:10
+msgid "first name"
+msgstr "Nombre"
+
+#: blcontact/models.py:11
+msgid "last name"
+msgstr "Apellidos"
+
+#: blcontact/models.py:12 blgroup/models.py:15 blproject/models.py:48
+msgid "slug"
+msgstr "babosa"
+
+#: blcontact/models.py:13
+msgid "phone"
+msgstr "teléfono"
+
+#: blcontact/models.py:14
+msgid "email"
+msgstr "e-mail"
+
+#: blcontact/models.py:15
+msgid "extra information"
+msgstr "información adicional"
+
+#: blcontact/templates/blcontact/contact_list.html:5
+#: blcontact/templates/blcontact/includes/list.html:3
+msgid "Contacts"
+msgstr "Contactos"
+
+#: blcontact/templates/blcontact/detail.html:6
+#: blcontact/templates/blcontact/includes/detail.html:4
+msgid "Phone"
+msgstr "Telefóno"
+
+#: blcontact/templates/blcontact/detail.html:7
+#: blcontact/templates/blcontact/includes/detail.html:5 blprofile/forms.py:36
+#: templates/authopenid/complete.html:36
+#: templates/comments/moderation_queue.html:36
+msgid "Email"
+msgstr "E-mail"
+
+#: blcontact/templates/blcontact/detail.html:8
+#: blcontact/templates/blcontact/includes/detail.html:6
+#: blmessage/templates/blmessage/list_model.html:11
+#: blmessage/templates/blmessage/thread_list.html:11
+#: templates/blmessage/list_message_model.html:23
+#: templates/blmessage/list_model.html:33 templates/blproject/sidebar.html:5
+msgid "Edit"
+msgstr "Editar"
+
+#: blcontact/templates/blcontact/detail.html:8
+#: blcontact/templates/blcontact/includes/detail.html:6
+#: blgroup/templates/blgroup/detail.html:28
+#: blmessage/templates/blmessage/list_model.html:12
+#: blmessage/templates/blmessage/thread_list.html:12
+#: blproject/templates/blproject/detail.html:46
+#: templates/blgroup/detail.html:28
+#: templates/blmessage/list_message_model.html:24
+#: templates/blmessage/list_model.html:34 templates/blproject/sidebar.html:45
+#: templates/blproject/sidebar.html:50
+msgid "Delete"
+msgstr "Borrar"
+
+#: blcontact/templates/blcontact/filter.html:3
+#: blmessage/templates/blmessage/filter.html:3
+#: blmessage/templates/blmessage/includes/filter.html:3
+msgid "Filters"
+msgstr "Filtros"
+
+#: blcontact/templates/blcontact/includes/form.html:7
+#: blgroup/templates/blgroup/form.html:8
+#: blgroup/templates/blgroup/form_project.html:8
+#: blgroup/templates/blgroup/messages/detail.html:22
+#: blgroup/templates/blgroup/messages/form_thread.html:8
+#: blmessage/templates/blmessage/detail.html:18
+#: blmessage/templates/blmessage/form_message.html:8
+#: blmessage/templates/blmessage/list_message_model.html:18
+#: blprofile/templates/blprofile/edit.html:8
+#: blprofile/templates/blprofile/includes/form.html:6
+#: blproject/templates/blproject/form.html:8
+#: blproject/templates/blproject/message_list.html:22
+#: templates/blgroup/form.html:8 templates/blgroup/form_project.html:8
+#: templates/blgroup/messages/detail.html:22
+#: templates/blgroup/messages/form_thread.html:8
+#: templates/blmessage/form_message.html:12
+#: templates/blmessage/list_message_model.html:42
+#: templates/blproject/form.html:51
+msgid "submit"
+msgstr "Guardar"
+
+#: blcontact/templates/blcontact/includes/list.html:9
+msgid "Add contact"
+msgstr "Añadir contacto"
+
+#: blfile/forms.py:20 templates/comments/form.html:15
+#: templates/comments/moderation_queue.html:34
+#: templates/comments/preview.html:37
+msgid "Name"
+msgstr "Nombres"
+
+#: blfile/forms.py:20 blfile/forms.py:108
+msgid ""
+"The Name will automatically be converted to lowercase. Only letters, "
+"numbers, underscores and hyphens are allowed."
+msgstr ""
+"El nombre será convertido a minúsculas. Sólo están permitidas letras, "
+"números y signos."
+
+#: blfile/forms.py:27 blfile/forms.py:115
+msgid "Only letters, numbers, underscores and hyphens are allowed."
+msgstr "Sólo están permitidas letras, números y signos."
+
+#: blfile/forms.py:30
+msgid "The Folder already exists."
+msgstr "La carpeta ya existe."
+
+#: blfile/forms.py:33
+msgid "Disallowed Folder Name."
+msgstr "Nombre de carpeta no permitido."
+
+#: blfile/forms.py:69
+msgid "File"
+msgstr "Archivo"
+
+#: blfile/forms.py:70
+msgid "Use Image Generator"
+msgstr "Usar generador de imagen"
+
+#: blfile/forms.py:79
+msgid "File already exists."
+msgstr "El archivo ya existe."
+
+#: blfile/forms.py:85
+msgid "Filename is not allowed."
+msgstr "El nombre de archivo no está permitido."
+
+#: blfile/forms.py:90
+msgid "File extension is not allowed."
+msgstr "La extensión del archivo no está permitida."
+
+#: blfile/forms.py:95
+msgid "Filesize exceeds allowed Upload Size."
+msgstr "El tamaño del archivo excede el máximo permitido."
+
+#: blfile/forms.py:108
+msgid "New Name"
+msgstr "Nuevo nombre"
+
+#: blfile/forms.py:118
+msgid "The File/Folder already exists."
+msgstr "El archivo/carpeta ya existe."
+
+#: blfile/functions.py:105 blfile/templates/blfile/base.html:4
+#: blproject/templates/blproject/base.html:12 templates/blfile/base.html:4
+#: templates/blfile/list.html:19 templates/blproject/base.html:19
+msgid "Files"
+msgstr "Archivos"
+
+#: blfile/views.py:187
+msgid "FileBrowser"
+msgstr "Navegador de archivos"
+
+#: blfile/views.py:208
+#, python-format
+msgid "The Folder %s was successfully created."
+msgstr "La carpeta %s fue creada satisfactoriamente."
+
+#: blfile/views.py:219
+msgid "Permission denied."
+msgstr "Permiso denegado."
+
+#: blfile/views.py:221
+msgid "Error creating directory."
+msgstr "Ocurrió un error creando el directorio."
+
+#: blfile/views.py:230 blfile/views.py:231 blfile/templates/blfile/list.html:8
+msgid "New Folder"
+msgstr "Nueva carpeta"
+
+#: blfile/views.py:266
+msgid "Upload successful."
+msgstr "Subido satisfactoriamente."
+
+#: blfile/views.py:284 blfile/templates/blfile/list.html:9
+#: blfile/templates/blfile/upload.html:37 templates/blfile/upload.html:37
+msgid "Upload"
+msgstr "Subir"
+
+#: blfile/views.py:285
+msgid "Select files to upload"
+msgstr "Seleccione los archivos a subir"
+
+#: blfile/views.py:313
+#, python-format
+msgid "The file %s was successfully deleted."
+msgstr "El archivo %s fue borrado."
+
+#: blfile/views.py:329
+#, python-format
+msgid "The directory %s was successfully deleted."
+msgstr "El directorio %s fue borrado."
+
+#: blfile/views.py:370
+msgid "Renaming was successful."
+msgstr "El renombramiento se realizó satisfactoriamente."
+
+#: blfile/views.py:378
+msgid "Error."
+msgstr "Error."
+
+#: blfile/views.py:388 blfile/templates/blfile/include/filelisting.html:19
+#: templates/blfile/include/filelisting.html:22
+msgid "Rename"
+msgstr "Renombrar"
+
+#: blfile/views.py:389
+#, python-format
+msgid "Rename \"%s\""
+msgstr "Renombrar \\\"%s\\\""
+
+#: blfile/templates/blfile/makedir.html:9
+#: blfile/templates/blfile/rename.html:9 templates/blfile/makedir.html:9
+#: templates/blfile/rename.html:9
+msgid "Please correct the following errors."
+msgstr "Por favor corrige los siguientes errores."
+
+#: blfile/templates/blfile/makedir.html:19
+#: blfile/templates/blfile/rename.html:20 templates/blagenda/add_event.html:17
+#: templates/blagenda/event_detail.html:18
+#: templates/blagenda/includes/add_event.html:13
+#: templates/blagenda/includes/event_detail.html:14
+#: templates/blfile/makedir.html:19 templates/blfile/rename.html:20
+#: templates/blprofile/edit.html:17 templates/blprofile/settings.html:13
+msgid "Submit"
+msgstr "Guardar"
+
+#: blfile/templates/blfile/upload.html:22 templates/blfile/upload.html:22
+msgid "Help"
+msgstr "Ayuda"
+
+#: blfile/templates/blfile/upload.html:26 templates/blfile/upload.html:26
+msgid "Allowed"
+msgstr "Permitido"
+
+#: blfile/templates/blfile/upload.html:32 templates/blfile/upload.html:32
+msgid "Max. Filesize"
+msgstr "Tamaño máximo"
+
+#: blfile/templates/blfile/include/filelisting.html:9
+#: templates/blfile/include/filelisting.html:11
+msgid "View Image"
+msgstr "Ver imagen"
+
+#: blfile/templates/blfile/include/filelisting.html:28
+#: templates/blfile/include/filelisting.html:31
+msgid "Are you sure you want to delete this file?"
+msgstr "¿Está seguro que desea borrar este archivo?"
+
+#: blfile/templates/blfile/include/filelisting.html:28
+#: templates/blfile/include/filelisting.html:31
+msgid "Delete File"
+msgstr "Borrar archivo"
+
+#: blfile/templates/blfile/include/filelisting.html:31
+#: templates/blfile/include/filelisting.html:34
+msgid "Are you sure you want to delete this Folder?"
+msgstr "¿Está seguro que desea borrar esta carpeta?"
+
+#: blfile/templates/blfile/include/filelisting.html:31
+#: templates/blfile/include/filelisting.html:34
+msgid "Delete Folder"
+msgstr "Borrar carpeta"
+
+#: blfile/templates/blfile/include/filter.html:17
+msgid "Filter"
+msgstr "Filtrar"
+
+#: blfile/templates/blfile/include/filter.html:23
+#: templates/blfile/include/filter.html:26
+msgid "By Date"
+msgstr "Por fecha"
+
+#: blfile/templates/blfile/include/filter.html:25
+#: templates/blfile/include/filter.html:28
+msgid "Any Date"
+msgstr "Cualquier fecha"
+
+#: blfile/templates/blfile/include/filter.html:27
+#: templates/blfile/include/filter.html:30
+msgid "Today"
+msgstr "Hoy"
+
+#: blfile/templates/blfile/include/filter.html:29
+#: templates/blfile/include/filter.html:32
+msgid "Past 7 days"
+msgstr "Pasados 7 días"
+
+#: blfile/templates/blfile/include/filter.html:31
+#: templates/blfile/include/filter.html:34
+msgid "Past 30 days"
+msgstr "Pasados 30 días"
+
+#: blfile/templates/blfile/include/filter.html:33
+#: templates/blfile/include/filter.html:36
+msgid "This year"
+msgstr "Este año"
+
+#: blfile/templates/blfile/include/filter.html:41
+#: templates/blfile/include/filter.html:44
+msgid "By Type"
+msgstr "Por Tipo"
+
+#: blfile/templates/blfile/include/filter.html:43
+#: blproject/templates/blproject/detail.html:19
+#: templates/blfile/include/filter.html:46
+msgid "All"
+msgstr "Todo"
+
+#: blfile/templates/blfile/include/paginator.html:5
+#: templates/blfile/include/paginator.html:5
+msgid "No Items Found."
+msgstr "No se han encontrado."
+
+#: blfile/templates/blfile/include/paginator.html:10
+#: templates/blfile/include/paginator.html:10
+#, python-format
+msgid "%(counter)s Item"
+msgid_plural "%(counter)s Items"
+msgstr[0] "%(counter)s registro"
+msgstr[1] ""
+
+#: blfile/templates/blfile/include/paginator.html:16
+#: templates/blfile/include/paginator.html:16
+msgid "No Items."
+msgstr "Ningun registro."
+
+#: blfile/templates/blfile/include/tableheader.html:16
+#: blfile/templates/blfile/include/tableheader.html:17
+#: templates/blfile/include/tableheader.html:16
+#: templates/blfile/include/tableheader.html:17
+msgid "Filename"
+msgstr "Nombre de archivo"
+
+#: blfile/templates/blfile/include/tableheader.html:23
+#: blfile/templates/blfile/include/tableheader.html:24
+#: templates/blfile/include/tableheader.html:23
+#: templates/blfile/include/tableheader.html:24
+msgid "Size"
+msgstr "Tamaño"
+
+#: blfile/templates/blfile/include/toolbar.html:16
+#: templates/blfile/include/toolbar.html:16
+msgid "Go"
+msgstr "Vamos"
+
+#: blfile/templates/blfile/include/toolbar.html:19
+#: templates/blfile/include/toolbar.html:19
+#, python-format
+msgid "%(counter)s Item found"
+msgid_plural "%(counter)s Items found"
+msgstr[0] "%(counter)s registro encontrado"
+msgstr[1] ""
+
+#: blfile/templates/blfile/include/toolbar.html:20
+#: templates/blfile/include/toolbar.html:20
+#, python-format
+msgid "%(counter)s Item total"
+msgid_plural "%(counter)s Items total"
+msgstr[0] "%(counter)s registro en total"
+msgstr[1] ""
+
+#: blgroup/forms.py:66 blproject/forms.py:27 blproject/models.py:49
+#: templates/blproject/sidebar.html:12
+msgid "description"
+msgstr "descripción"
+
+#: blgroup/models.py:14 blproject/models.py:47 bltask/models.py:57
+msgid "name"
+msgstr "nombre"
+
+#: blgroup/models.py:16 blproject/models.py:52
+msgid "members"
+msgstr "miembros"
+
+#: blgroup/models.py:21
+msgid "group"
+msgstr "grupo"
+
+#: blgroup/models.py:22
+msgid "groups"
+msgstr "grupos"
+
+#: blgroup/views.py:54
+#, python-format
+msgid "Group '%(group)s' has been updated"
+msgstr "El grupo '%(group)s' ha sido modificado"
+
+#: blgroup/views.py:55
+#, python-format
+msgid "Group '%(group)s' has been created"
+msgstr "El grupo '%(group)s' ha sido creado"
+
+#: blgroup/views.py:74
+#, python-format
+msgid "Group '%(group)s' has been deleted"
+msgstr "El grupo '%(group)s' ha sido creado"
+
+#: blgroup/templates/blgroup/base.html:4 templates/blgroup/base.html:4
+msgid "Groups"
+msgstr "Grupos"
+
+#: blgroup/templates/blgroup/base.html:7 templates/blgroup/detail.html:39
+msgid "Group dashboard"
+msgstr "Tablón de grupo"
+
+#: blgroup/templates/blgroup/base.html:8
+#: blproject/templates/blproject/base.html:14 templates/blgroup/detail.html:40
+#: templates/blmessage/base.html:4
+#: templates/blmessage/list_message_model.html:7
+#: templates/blmessage/list_model.html:11 templates/blproject/base.html:18
+#: templates/static/base.html:115 templates/static/index.html:107
+msgid "Messages"
+msgstr "Mensajes"
+
+#: blgroup/templates/blgroup/detail.html:5 templates/blgroup/detail.html:5
+msgid "Group"
+msgstr "Grupo"
+
+#: blgroup/templates/blgroup/detail.html:8 templates/blgroup/detail.html:8
+msgid "Edit group"
+msgstr "Editar grupo"
+
+#: blgroup/templates/blgroup/detail.html:10 templates/blgroup/detail.html:10
+msgid "Delete group"
+msgstr "Borrar grupo"
+
+#: blgroup/templates/blgroup/detail.html:13 templates/blgroup/detail.html:13
+msgid "Start project"
+msgstr "Comenzar proyecto"
+
+#: blgroup/templates/blgroup/detail.html:16 templates/blgroup/detail.html:16
+msgid "Members"
+msgstr "Miembros"
+
+#: blgroup/templates/blgroup/detail.html:18
+#: blproject/templates/blproject/detail.html:36
+#: templates/blgroup/detail.html:18
+msgid "Add member"
+msgstr "Añadir miembro"
+
+#: blgroup/templates/blgroup/detail.html:26
+#: blproject/templates/blproject/detail.html:44
+#: templates/blgroup/detail.html:26 templates/blproject/sidebar.html:43
+msgid "Make admin"
+msgstr "Hacerlo administrador"
+
+#: blgroup/templates/blgroup/group_list.html:5
+#: templates/blgroup/group_list.html:15
+msgid "Add group"
+msgstr "Añadir grupo"
+
+#: blgroup/templates/blgroup/messages/detail.html:10
+#: blproject/templates/blproject/message_list.html:10
+#: templates/blgroup/messages/detail.html:10
+msgid "By"
+msgstr "Por"
+
+#: blgroup/templates/blgroup/messages/list.html:5
+#: blmessage/templates/blmessage/list_model.html:5
+#: templates/blgroup/messages/list.html:5
+msgid "Messages in"
+msgstr "Mensajes en"
+
+#: blgroup/templates/blgroup/messages/list.html:12
+#: blmessage/templates/blmessage/list_model.html:16
+#: templates/blgroup/messages/list.html:12
+msgid "Add thread"
+msgstr "Añadir hilo"
+
+#: blinvite/forms.py:16
+msgid "Enter at least one username"
+msgstr "Introduzca al menos un/a usuario/a"
+
+#: blinvite/forms.py:23
+#, python-format
+msgid "%(username)s is not registered at BusyLissy"
+msgstr "%(username)s no está registrado/a en BusyLissy"
+
+#: blinvite/forms.py:28
+msgid "usernames"
+msgstr "Usuarios/as"
+
+#: blinvite/forms.py:38
+#, python-format
+msgid "%(username)s is already a member of %(project)s."
+msgstr "%(username)s ya es miembro del proyecto %(project)s."
+
+#: blinvite/forms.py:42
+#, python-format
+msgid "%(username)s already got an invite for this project."
+msgstr "%(username)s ya tiene una invitación para este proyecto."
+
+#: blinvite/forms.py:64
+#, python-format
+msgid "%(email)s is not a valid e-mail address."
+msgstr "%(email)s no es una dirección de e-mail válida."
+
+#: blinvite/forms.py:71
+msgid "email_addresses"
+msgstr "direcciones de correo"
+
+#: blinvite/forms.py:72
+msgid "personal message"
+msgstr "Mensaje privado"
+
+#: blinvite/forms.py:83
+#, python-format
+msgid "%(email)s already got an invite for this project."
+msgstr "%(email)s ya tiene una invitación a este proyecto."
+
+#: blinvite/forms.py:86
+#, python-format
+msgid "%(email)s is already a member of this project"
+msgstr "%(email)s es ya miembro de este proyecto"
+
+#: blinvite/models.py:17
+msgid "None"
+msgstr "Nada"
+
+#: blinvite/models.py:18
+msgid "Accepted"
+msgstr "Aceptado"
+
+#: blinvite/models.py:19
+msgid "Declined"
+msgstr "Declinada"
+
+#: blinvite/models.py:49 blinvite/models.py:68
+#, python-format
+msgid "You received an invitation to join %(project)s"
+msgstr "Has recibido una invitación para unirte a %(project)s"
+
+#: blinvite/models.py:102
+msgid "sha"
+msgstr "sha"
+
+#: blinvite/models.py:103 blproject/models.py:53
+msgid "date"
+msgstr "fecha"
+
+#: blinvite/views.py:17
+msgid "I would like to add you to my project on BusyLissy."
+msgstr "Me gustaría añadirte a mi proyecto en BusyLissy."
+
+#: blinvite/views.py:44
+#, python-format
+msgid "%(amount)s invite(s) has been sent out."
+msgstr "%(amount)s invitacion(es) han sido enviadas."
+
+#: blinvite/views.py:52
+#, python-format
+msgid "Your invite to %(invited)s has been sent out."
+msgstr "Tu invitación a %(invited)s ha sido enviada."
+
+#: blinvite/views.py:54
+#, python-format
+msgid "%(amount)s invites has been sent out."
+msgstr "%(amount)s invitaciones han sido enviadas."
+
+#: blinvite/views.py:77
+#, python-format
+msgid "You have been added to %(project)s."
+msgstr "Ahora formas parte del proyecto %(project)s."
+
+#: blinvite/views.py:82
+#, python-format
+msgid ""
+"%(username)s has been added to %(project)"
+"s.                                                       Login as him to go "
+"to this project."
+msgstr ""
+"%(username)s ha sido añadido/a a %(project)s. Autentifícate para empezar."
+
+#: blinvite/views.py:104
+#, python-format
+msgid "You have declined the invitation to %(project)s."
+msgstr "Has rechazado la invitación a %(project)s."
+
+#: blmessage/forms.py:12 blmessage/models.py:91
+msgid "message"
+msgstr "mensaje"
+
+#: blmessage/forms.py:16 blmessage/forms.py:82
+msgid "Message should be longer than 5 characters."
+msgstr "El mensaje debe ser al menos de 5 caracteres."
+
+#: blmessage/forms.py:74 blmessage/forms.py:100 blmessage/models.py:44
+msgid "body"
+msgstr "contenido"
+
+#: blmessage/models.py:15
+msgid "latest message time"
+msgstr "Últimos mensajes en el tiempo"
+
+#: blmessage/models.py:16
+msgid "total amount of messages"
+msgstr "Cantidad total de mensajes"
+
+#: blmessage/models.py:37
+msgid "thread"
+msgstr "hilo"
+
+#: blmessage/models.py:38
+msgid "threads"
+msgstr "hilos"
+
+#: blmessage/models.py:45
+msgid "created_at"
+msgstr "creado el"
+
+#: blmessage/models.py:92
+msgid "messages"
+msgstr "mensajes"
+
+#: blmessage/views.py:77
+msgid "Your message has been posted"
+msgstr "Tu mensaje ha sido publicado"
+
+#: blmessage/views.py:160
+#, python-format
+msgid "Thread '%(thread)s' has been created"
+msgstr "Hilo '%(thread)s' ha sido creado"
+
+#: blmessage/views.py:163 blmessage/views.py:337
+#, python-format
+msgid "Thread '%(thread)s' has been updated"
+msgstr "Hilo '%(thread)s' ha sido modificado"
+
+#: blmessage/views.py:195 blmessage/views.py:355
+#, python-format
+msgid "Thread '%(thread)s' has been deleted"
+msgstr "Hilo '%(thread)s' ha sido borrado"
+
+#: blmessage/views.py:225 blmessage/views.py:371
+msgid "Your message has been updated"
+msgstr "Tu mensaje ha sido modificado"
+
+#: blmessage/views.py:246 blmessage/views.py:387
+msgid "Your message has been deleted"
+msgstr "Tu mensaje ha sido borrado"
+
+#: blmessage/templates/blmessage/thread_list.html:5
+msgid "Messages for"
+msgstr "Mensaje por"
+
+#: blprofile/forms.py:21 blprofile/forms.py:28
+msgid "Can only contain letters, numbers and spaces"
+msgstr "Sólo puede contener letras, número y espacios"
+
+#: blprofile/forms.py:25
+msgid "First name"
+msgstr "Nombre"
+
+#: blprofile/forms.py:32
+msgid "Last name"
+msgstr "Apellidos"
+
+#: blprofile/forms.py:65
+msgid "Username contains only letters and numbers"
+msgstr "El nombre de usuario/a sólo puede contener letras y números"
+
+#: blprofile/forms.py:67
+msgid "username"
+msgstr "nombre de usuario/a"
+
+#: blprofile/forms.py:88
+msgid "One of the usernames does not exist"
+msgstr "Uno de los usuarios/as no existe"
+
+#: blprofile/forms.py:89
+msgid "Username does not exist"
+msgstr "Este usuario/a no existe"
+
+#: blprofile/forms.py:110
+msgid "email address"
+msgstr "Dirección de correo electrónico"
+
+#: blprofile/forms.py:120
+msgid "BusyLissy: Invite for"
+msgstr "BusyLissy: Invitado por"
+
+#: blprofile/models.py:38
+msgid "Male"
+msgstr "Masculino"
+
+#: blprofile/models.py:39
+msgid "Female"
+msgstr "Femenino"
+
+#: blprofile/models.py:44
+msgid "gender"
+msgstr "género"
+
+#: blprofile/models.py:48
+msgid "website"
+msgstr "sitio web"
+
+#: blprofile/models.py:49
+msgid "birth date"
+msgstr "fecha de cumpleaños"
+
+#: blprofile/models.py:50
+msgid "about me"
+msgstr "sobre mi"
+
+#: blprofile/models.py:51
+msgid "notifications"
+msgstr "notificaciones"
+
+#: blprofile/models.py:51
+msgid "I want to receive notifications of activities in my projects"
+msgstr "Quiero recibir notificaciones de actividades sobre el proyecto"
+
+#: blprofile/models.py:52
+msgid "language"
+msgstr "lenguaje"
+
+#: blprofile/models.py:53
+msgid "is public"
+msgstr "es público"
+
+#: blprofile/models.py:53
+msgid "Profile is visible for others."
+msgstr "El perfil es visible para todos."
+
+#: blprofile/models.py:56
+msgid "avatar"
+msgstr "avatar"
+
+#: blprofile/views.py:70
+msgid "Your profile has been updated"
+msgstr "Tu perfil ha sido modificado"
+
+#: blprofile/views.py:130
+#, python-format
+msgid "Invite for '%(project)s' has been send to '%(invite)s'"
+msgstr "Invitación para '%(project)s' ha sido enviada a '%(invite)s'"
+
+#: blprofile/views.py:140
+#, python-format
+msgid "Members '%(member)s' have been invited to '%(project)s'"
+msgstr "Los miembros '%(member)s' han sido invitados a '%(project)s'"
+
+#: blprofile/views.py:143
+#, python-format
+msgid "Member '%(member)s' has been invited to '%(project)s'"
+msgstr "El miembro '%(member)s' ha sido invitado a '%(project)s'"
+
+#: blprofile/views.py:169
+#, python-format
+msgid "Member '%(member)s' has been removed from '%(project)s'"
+msgstr "El mimebro '%(member)s' ha sido removido de '%(project)s'"
+
+#: blprofile/views.py:185
+#, python-format
+msgid "You have resigned from '%(project)s'"
+msgstr "Has sido reasignado a '%(project)s'"
+
+#: blprofile/views.py:231
+#, python-format
+msgid ""
+"Member '%(member)s' has been granted admin permissions for '%(project)s'"
+msgstr ""
+"Miembro '%(member)s' tiene permisos de administración sobre '%(project)s'"
+
+#: blprofile/views.py:252
+msgid "Your settings have been updated"
+msgstr "Tu configuración ha sido actualizada"
+
+#: blprofile/templates/blprofile/base.html:7
+msgid "Edit my profile"
+msgstr "Editar mi perfil"
+
+#: blprofile/templates/blprofile/base.html:8 templates/base.html:49
+#: templates/authopenid/password_change_form.html:4
+msgid "Change password"
+msgstr "Cambiar contraseña"
+
+#: blprofile/templates/blprofile/base.html:9
+msgid "Delete my profile"
+msgstr "Borrar mi perfil"
+
+#: blprofile/templates/blprofile/detail.html:8
+msgid "Profile of"
+msgstr "Perfil de"
+
+#: blprofile/templates/blprofile/detail.html:16
+msgid "Gender"
+msgstr "Género"
+
+#: blprofile/templates/blprofile/detail.html:20
+msgid "Website"
+msgstr "Sitio web"
+
+#: blprofile/templates/blprofile/detail.html:24
+msgid "Age"
+msgstr "Edad"
+
+#: blprofile/templates/blprofile/detail.html:28
+msgid "About me"
+msgstr "Sobre mi"
+
+#: blprofile/templates/blprofile/detail.html:35
+msgid "User has no profile"
+msgstr "El/la usuario/a no tine perfil"
+
+#: blproject/forms.py:35
+msgid "Project name is not allowed"
+msgstr "El nombre de proyecto no es permitido"
+
+#: blproject/models.py:20 templates/blproject/form.html:10
+#: templates/blproject/project_list.html:14
+msgid "On Hold"
+msgstr "En el olvido"
+
+#: blproject/models.py:20
+msgid "In Progress"
+msgstr "En progreso"
+
+#: blproject/models.py:20 templates/blproject/form.html:11
+#: templates/blproject/project_list.html:15
+msgid "Finished"
+msgstr "Finalizado"
+
+#: blproject/models.py:50
+msgid "url"
+msgstr "url"
+
+#: blproject/models.py:54
+msgid "status"
+msgstr "estado"
+
+#: blproject/models.py:63
+msgid "projects"
+msgstr "proyectos"
+
+#: blproject/views.py:104
+#, python-format
+msgid "Project '%(project)s' has been updated"
+msgstr "Proyecto '%(project)s' ha sido modificado"
+
+#: blproject/views.py:107
+#, python-format
+msgid "Project '%(project)s' has been created"
+msgstr "Proyecto '%(project)s' ha sido creado"
+
+#: blproject/views.py:127
+#, python-format
+msgid "Project '%(project)s' has been deleted"
+msgstr "Proyecto '%(project)s' ha sido borrado"
+
+#: blproject/templates/blproject/base.html:3 templates/base.html:41
+#: templates/blproject/form.html:5 templates/blproject/project_list.html:4
+#: templates/blproject/project_list.html:6
+msgid "Projects"
+msgstr "Proyectos"
+
+#: blproject/templates/blproject/base.html:6
+msgid "Back to all projects"
+msgstr "Volver a todos los proyectos"
+
+#: blproject/templates/blproject/base.html:11
+msgid "Project dashboard"
+msgstr "Tablón del proyecto"
+
+#: blproject/templates/blproject/base.html:13
+#: bltask/templates/bltask/base.html:4 templates/blproject/base.html:17
+#: templates/bltask/base.html:4 templates/bltask/list.html:10
+msgid "Tasks"
+msgstr "Tareas"
+
+#: blproject/templates/blproject/detail.html:9
+msgid "Edit project"
+msgstr "Editar proyecto"
+
+#: blproject/templates/blproject/detail.html:11
+#: templates/blproject/form.html:33 templates/blproject/sidebar.html:7
+msgid "Delete project"
+msgstr "Borrar proyecto"
+
+#: blproject/templates/blproject/detail.html:16
+msgid "Activities"
+msgstr "Actividades"
+
+#: blproject/templates/blproject/detail.html:28
+#: templates/blmessage/list_message_model.html:29
+#: templates/blmessage/list_model.html:30
+#: templates/blproject/project_list.html:67
+msgid "ago"
+msgstr "hace"
+
+#: blproject/templates/blproject/detail.html:34
+msgid "Project members"
+msgstr "Miembros del proyecto"
+
+#: blproject/templates/blproject/filter.html:9 templates/blproject/form.html:9
+#: templates/blproject/project_list.html:13
+msgid "Active"
+msgstr "Activado"
+
+#: blproject/templates/blproject/project_list.html:5
+msgid "Add project"
+msgstr "Añadir proyecto"
+
+#: blproject/templatetags/time.py:11
+msgid "year"
+msgstr "año"
+
+#: blproject/templatetags/time.py:13
+msgid "week"
+msgstr "semana"
+
+#: blproject/templatetags/time.py:15
+msgid "day"
+msgstr "día"
+
+#: blproject/templatetags/time.py:17
+msgid "hour"
+msgstr "hora"
+
+#: blproject/templatetags/time.py:19
+msgid "minute"
+msgstr "minuto"
+
+#: blproject/templatetags/time.py:22
+msgid "years"
+msgstr "años"
+
+#: blproject/templatetags/time.py:24
+msgid "weeks"
+msgstr "semanas"
+
+#: blproject/templatetags/time.py:26
+msgid "days"
+msgstr "días"
+
+#: blproject/templatetags/time.py:28
+msgid "hours"
+msgstr "horas"
+
+#: blproject/templatetags/time.py:30
+msgid "minutes"
+msgstr "minutos"
+
+#: blproject/templatetags/time.py:57 blproject/templatetags/time.py:84
+msgid "a few seconds"
+msgstr "hace pocos segundos"
+
+#: bltask/models.py:59
+msgid "completed"
+msgstr "completado"
+
+#: bltask/models.py:60
+msgid "completed date"
+msgstr "completado en la fecha"
+
+#: bltask/models.py:62
+msgid "due date"
+msgstr "fecha límite"
+
+#: bltask/models.py:73
+msgid "assigned to"
+msgstr "asignado a"
+
+#: bltask/models.py:77
+msgid "created by"
+msgstr "creado por"
+
+#: bltask/views.py:71
+#, python-format
+msgid "Task '%(name)s' has been updated"
+msgstr "Tarea '%(name)s' ha sido modificada"
+
+#: bltask/views.py:74
+#, python-format
+msgid "Task '%(name)s' has been created"
+msgstr "Tasrea '%(name)s' ha sido creada"
+
+#: bltask/views.py:106
+#, python-format
+msgid "Task '%(name)s' has been deleted"
+msgstr "Tarea '%(name)s' ha sido borrada"
+
+#: bltask/views.py:143
+#, python-format
+msgid "Task '%(name)s' has been completed"
+msgstr "Tarea '%(name)s' ha sido completada"
+
+#: bltask/views.py:153
+#, python-format
+msgid "Task '%(name)s' has been marked as incomplete"
+msgstr "Tarea '%(name)s' ha sido marcada como incompleta"
+
+#: bltask/templates/bltask/task_form.html:6
+#: templates/blmessage/form_thread.html:7 templates/bltask/task_form.html:7
+msgid "Tags used in project"
+msgstr "Etiquetas usadas en este proyecto"
+
+#: bltask/templates/bltask/task_form.html:17
+#: templates/bltask/task_form.html:21
+msgid "Add todo"
+msgstr "Añadir todo"
+
+#: bltask/templatetags/milestones.py:69
+msgid " days left"
+msgstr " días restantes"
+
+#: bltask/templatetags/milestones.py:72
+msgid " days late"
+msgstr " días faltantes"
+
+#: bltask/templatetags/milestones.py:74
+msgid "no milestones"
+msgstr " no hay eventos"
+
+#: templates/404.html:6
+msgid "Back to"
+msgstr "Volver a"
+
+#: templates/404.html:6
+msgid "home"
+msgstr "Inicio"
+
+#: templates/404.html:12
+msgid "Oops! Something went wrong!"
+msgstr "Oops! algo extraño falló!"
+
+#: templates/base.html:42 templates/blagenda/add_event.html:6
+#: templates/blagenda/event_detail.html:4
+#: templates/blagenda/event_detail.html:6
+#: templates/blagenda/monthly_view.html:6
+#: templates/blagenda/monthly_view.html:13
+#: templates/blagenda/user/monthly_view.html:6
+#: templates/blagenda/user/monthly_view.html:7
+#: templates/blproject/base.html:16 templates/static/base.html:125
+#: templates/static/index.html:117
+msgid "Agenda"
+msgstr "Agenda"
+
+#: templates/base.html:48
+msgid "Edit Profile"
+msgstr "Editar perfil"
+
+#: templates/base.html:50 templates/blprofile/settings.html:4
+#: templates/blprofile/settings.html:5 templates/blprofile/settings.html:8
+msgid "Settings"
+msgstr "Configuración"
+
+#: templates/base.html:51
+msgid "Sign out"
+msgstr "Cerrar sesión"
+
+#: templates/base.html:82
+msgid "BusyLissy is created by"
+msgstr "BusyLissy es obra de los pensamiento de"
+
+#: templates/authopenid/associate.html:4
+msgid "Associate account"
+msgstr "Cuenta asociada"
+
+#: templates/authopenid/associate.html:21
+msgid "Add a new OpenID URL"
+msgstr "Añadir un nuevo OpenID URL"
+
+#: templates/authopenid/associate.html:23
+msgid "Please click your account provider"
+msgstr "Por favor selecciona tu proveedor"
+
+#: templates/authopenid/associate.html:27 templates/authopenid/signin.html:62
+#: templates/blinvite/pos_response.html:43
+#: templates/registration/activate.html:39
+#: templates/registration/registration_form.html:53
+msgid "OpenId URL :"
+msgstr "OpenId URL :"
+
+#: templates/authopenid/associate.html:28
+msgid "Add OpenID"
+msgstr "Añade OpenID"
+
+#: templates/authopenid/complete.html:8
+msgid "Your OpenID is verified! "
+msgstr "Tu OpenID está verificado! "
+
+#: templates/authopenid/complete.html:12
+msgid "Associate your OpenID"
+msgstr "Asocia tu OpenID"
+
+#: templates/authopenid/complete.html:13
+msgid ""
+"\n"
+"\t<h5 class=\"associate-text\">Your OpenID can now be associated with a "
+"<strong>new</strong> or <strong>existing</strong> account.</h5>\n"
+"\t"
+msgstr ""
+"\n"
+"\\t<h5 class=\"associate-text\">Tu OpenID puede ser ahora asociado con "
+"<strong>una nueva</strong> o <strong>existente</strong> cuenta.</h5>\n"
+"\\t"
+
+#: templates/authopenid/complete.html:21
+msgid "Create a new account"
+msgstr "Crea una nueva cuenta"
+
+#: templates/authopenid/complete.html:23 templates/authopenid/complete.html:47
+#: templates/authopenid/signin.html:17
+#: templates/registration/activation_complete.html:17
+msgid "Please correct errors below:"
+msgstr "Por favor corrija los siguientes errores:"
+
+#: templates/authopenid/complete.html:35 templates/authopenid/complete.html:59
+#: templates/authopenid/signin.html:40 templates/registration/activate.html:16
+#: templates/registration/activation_complete.html:40
+msgid "Username"
+msgstr "Usuario/a"
+
+#: templates/authopenid/complete.html:45
+msgid "Associate with existing account"
+msgstr "Asociar con cuenta existente"
+
+#: templates/authopenid/complete.html:60 templates/authopenid/signin.html:41
+#: templates/registration/activate.html:17
+#: templates/registration/activation_complete.html:41
+msgid "Password"
+msgstr "Contraseña"
+
+#: templates/authopenid/dissociate.html:21
+msgid "Dissociate OpenID URL"
+msgstr "Desvincular OpenID URL"
+
+#: templates/authopenid/dissociate.html:23
+msgid "Dissociate OpenID"
+msgstr "Desvincular OpenID"
+
+#: templates/authopenid/password_change_form.html:16
+#: templates/authopenid/password_change_form.html:32
+#: templates/registration/password_reset_confirm.html:18
+msgid "New password:"
+msgstr "Nueva contraseña:"
+
+#: templates/authopenid/password_change_form.html:18
+#: templates/authopenid/password_change_form.html:34
+#: templates/registration/password_reset_confirm.html:20
+msgid "Confirm password:"
+msgstr "Confirmar contraseña:"
+
+#: templates/authopenid/password_change_form.html:19
+#: templates/authopenid/password_change_form.html:36
+#: templates/registration/password_reset_confirm.html:21
+msgid "Change my password"
+msgstr "Cambiar mi contraseña"
+
+#: templates/authopenid/password_change_form.html:24
+msgid "Password change"
+msgstr "Cambiar contraseña"
+
+#: templates/authopenid/password_change_form.html:25
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+"Por favor introduzca su antigua contraseña, por seguridad, e introduzca por "
+"duplicado su nueva contraseña."
+
+#: templates/authopenid/password_change_form.html:30
+msgid "Old password:"
+msgstr "Antigua contraseña:"
+
+#: templates/authopenid/signin.html:4 templates/authopenid/signin.html:35
+#: templates/authopenid/signin.html:42 templates/registration/activate.html:4
+#: templates/registration/activate.html:18
+#: templates/registration/activation_complete.html:35
+#: templates/registration/activation_complete.html:42
+#: templates/static/base.html:65 templates/static/index.html:64
+msgid "Sign in"
+msgstr "Entrar"
+
+#: templates/authopenid/signin.html:8
+msgid "Not yet an account?"
+msgstr "¿No tiene cuenta todavía?"
+
+#: templates/authopenid/signin.html:8
+msgid "Sign Up"
+msgstr "Registrarse"
+
+#: templates/authopenid/signin.html:41
+#: templates/registration/activation_complete.html:41
+#: templates/registration/password_reset_form.html:4
+#: templates/registration/password_reset_form.html:19
+msgid "Forgot password"
+msgstr "Contraseña olvidada"
+
+#: templates/authopenid/signin.html:48 templates/blinvite/pos_response.html:28
+#: templates/registration/activate.html:25
+#: templates/registration/registration_form.html:38
+msgid "or even easier"
+msgstr "o así de fácil"
+
+#: templates/authopenid/signin.html:51 templates/registration/activate.html:28
+msgid "Sign in with your OpenID"
+msgstr "Entre con su OpenID"
+
+#: templates/authopenid/signin.html:64 templates/blinvite/pos_response.html:45
+#: templates/registration/activate.html:41
+#: templates/registration/registration_form.html:55
+msgid "Sign in with OpenID"
+msgstr "Entre con OpenID"
+
+#: templates/blagenda/add_event.html:4
+msgid "Agenda add Event"
+msgstr "Agenda añadir evento"
+
+#: templates/blagenda/add_event.html:6
+#: templates/blagenda/includes/add_event.html:3
+msgid "Add event"
+msgstr "Añadir evento"
+
+#: templates/blagenda/add_event.html:11
+#: templates/blagenda/event_detail.html:11
+#: templates/blagenda/includes/add_event.html:7
+#: templates/blagenda/includes/event_detail.html:7
+msgid "Please fix any errors."
+msgstr "Por favor corrije algunos errores."
+
+#: templates/blagenda/filter.html:4 templates/blagenda/user/filter.html:4
+msgid "Filter agenda"
+msgstr "Filtrar agenda"
+
+#: templates/blagenda/filter.html:5 templates/blagenda/user/filter.html:5
+msgid "By type"
+msgstr "Por tipo"
+
+#: templates/blagenda/filter.html:7 templates/blagenda/user/filter.html:7
+msgid "Event"
+msgstr "Evento"
+
+#: templates/blagenda/filter.html:8 templates/blagenda/monthly_view.html:39
+#: templates/blagenda/week_cal.html:22 templates/blagenda/user/filter.html:8
+#: templates/blagenda/user/monthly_view.html:40
+msgid "Task"
+msgstr "Tarea"
+
+#: templates/blagenda/filter.html:11
+msgid "By member"
+msgstr "Por miembro"
+
+#: templates/blagenda/monthly_view.html:9
+#: templates/blagenda/user/monthly_view.html:10
+msgid "New Event"
+msgstr "Nuevo evento"
+
+#: templates/blagenda/monthly_view.html:44 templates/blagenda/week_cal.html:27
+#: templates/blagenda/user/monthly_view.html:45
+msgid "at"
+msgstr "el"
+
+#: templates/blagenda/includes/add_event.html:3
+#: templates/blagenda/includes/event_detail.html:3
+msgid "Close"
+msgstr "Cerrar"
+
+#: templates/blagenda/includes/event_detail.html:3
+msgid "Edit event"
+msgstr "Editar evento"
+
+#: templates/blagenda/includes/event_detail.html:18
+msgid "or"
+msgstr "o"
+
+#: templates/blagenda/includes/event_detail.html:20
+msgid "Delete this event"
+msgstr "Borrar este evento"
+
+#: templates/blagenda/user/filter.html:11
+msgid "By project"
+msgstr "Por proyecto"
+
+#: templates/blagenda/user/monthly_view.html:14
+msgid "All projects"
+msgstr "Todos los proyectos"
+
+#: templates/blfile/list.html:10
+msgid "+ New file"
+msgstr "+ Nuevo archivo"
+
+#: templates/blfile/list.html:12
+msgid " + New Folder"
+msgstr " + Nueva carpeta"
+
+#: templates/blfile/list.html:32
+msgid "No files found"
+msgstr "Ningun archivo encontrado"
+
+#: templates/blfile/include/filter.html:20
+msgid "Filter Files"
+msgstr "Filtrar archivos"
+
+#: templates/blgroup/filter.html:5
+msgid "Filter Groups"
+msgstr "Filtrar por grupos"
+
+#: templates/blgroup/group_list.html:8 templates/blgroup/group_list.html:19
+msgid "Overview"
+msgstr "Visión general"
+
+#: templates/blinvite/index.html:5
+msgid "Invite people"
+msgstr "Invitar a alguien"
+
+#: templates/blinvite/index.html:9
+msgid "Invite by username"
+msgstr "Invitar a usuario/a"
+
+#: templates/blinvite/index.html:13 templates/blinvite/index.html.py:33
+msgid "invite"
+msgstr "invitar"
+
+#: templates/blinvite/index.html:17
+msgid "Click avatar to invite"
+msgstr "Seleccione el avatar que desea invitar"
+
+#: templates/blinvite/index.html:28
+msgid "Invite by email"
+msgstr "Invitar por correo electrónico"
+
+#: templates/blinvite/pos_response.html:4
+#: templates/blinvite/pos_response.html:13
+#: templates/blinvite/pos_response.html:23
+#: templates/registration/registration_form.html:4
+#: templates/registration/registration_form.html:22
+#: templates/registration/registration_form.html:32
+#: templates/static/base.html:66 templates/static/index.html:65
+msgid "Sign up"
+msgstr "Registrarse"
+
+#: templates/blinvite/pos_response.html:9
+msgid "To join"
+msgstr "Unirse"
+
+#: templates/blinvite/pos_response.html:9
+msgid "please sign up"
+msgstr "Por favor registrese"
+
+#: templates/blinvite/pos_response.html:32
+#: templates/registration/registration_form.html:42
+msgid "Sign up with your OpenID"
+msgstr "Registrate con tu OpenID"
+
+#: templates/blmessage/filter.html:4
+msgid "Filter Messages"
+msgstr "Filtrar mensajes"
+
+#: templates/blmessage/filter.html:10 templates/bltask/filter.html:10
+msgid "Related tags"
+msgstr "Etiquetas relacionadas"
+
+#: templates/blmessage/form_thread.html:11 templates/blproject/form.html:41
+#: templates/bltask/task_form.html:11
+msgid "Add tag to task"
+msgstr "Añadir etiqueta a tarea"
+
+#: templates/blmessage/form_thread.html:14 templates/blproject/filter.html:16
+#: templates/bltask/task_form.html:14
+msgid "No tags yet"
+msgstr "Sin etiquetas todavía"
+
+#: templates/blmessage/list_model.html:7
+msgid "New Message"
+msgstr "Nuevo mensaje"
+
+#: templates/blmessage/list_model.html:43
+msgid "No messages yet"
+msgstr "Ningun mensaje todavía"
+
+#: templates/blmessage/list_model.html:43
+msgid "Create a new message"
+msgstr "Crear un nuevo mensaje"
+
+#: templates/blprofile/edit.html:4 templates/blprofile/edit.html.py:13
+msgid "Edit profile"
+msgstr "Editar perfil"
+
+#: templates/blproject/base.html:15 templates/blproject/detail.html:12
+#: templates/blproject/tagged_item_list.html:9
+msgid "Dashboard"
+msgstr "Tablón"
+
+#: templates/blproject/detail.html:18
+msgid "This week"
+msgstr "Esta semana"
+
+#: templates/blproject/detail.html:20
+msgid "Go to agenda"
+msgstr "Ir a la agenda"
+
+#: templates/blproject/detail.html:24
+msgid "Latest activities "
+msgstr "Actividades recientes "
+
+#: templates/blproject/detail.html:34
+msgid "See more"
+msgstr "Ver más"
+
+#: templates/blproject/filter.html:4
+msgid "Filter Projects"
+msgstr "Filtrar Proyectos"
+
+#: templates/blproject/form.html:13 templates/blproject/project_list.html:18
+msgid "Accept"
+msgstr "Aceptar"
+
+#: templates/blproject/form.html:13 templates/blproject/project_list.html:18
+msgid "Decline"
+msgstr "Rechazar"
+
+#: templates/blproject/form.html:28 templates/blproject/sidebar.html:3
+msgid "Project info"
+msgstr "Infromación del proyecto"
+
+#: templates/blproject/form.html:37
+msgid "Used tags"
+msgstr "Etiquetas usadas"
+
+#: templates/blproject/intro.html:5
+msgid "Hi"
+msgstr "Hola"
+
+#: templates/blproject/intro.html:6
+msgid "Congratulations with your BusyLissy Account"
+msgstr "Enhorabuena por tu cuenta BusyLissy"
+
+#: templates/blproject/intro.html:7
+msgid "You have no projects yet"
+msgstr "No tienes proyectos todavía"
+
+#: templates/blproject/intro.html:8
+msgid "..so let&#180;s get busy"
+msgstr "..así que estás ocupado"
+
+#: templates/blproject/intro.html:9
+msgid "New Project"
+msgstr "Nuevo proyecto"
+
+#: templates/blproject/project_list.html:36
+msgid "+ New Project"
+msgstr "+ Nuevo proyecto"
+
+#: templates/blproject/project_list.html:45
+msgid "Projects on hold"
+msgstr "Proyectos en el olvido"
+
+#: templates/blproject/project_list.html:47
+msgid "Finished projects"
+msgstr "Proyectos finalizados"
+
+#: templates/blproject/project_list.html:50
+msgid "Active projects"
+msgstr "Proyectos activos"
+
+#: templates/blproject/project_list.html:62
+msgid "Your tasks"
+msgstr "Tus tareas"
+
+#: templates/blproject/project_list.html:63
+msgid "New messages"
+msgstr "Mensajes nuevos"
+
+#: templates/blproject/project_list.html:67
+msgid "Latest activity"
+msgstr "Actividad reciente"
+
+#: templates/blproject/project_list.html:67
+msgid "by"
+msgstr "por"
+
+#: templates/blproject/project_list.html:69
+msgid "No activities yet."
+msgstr "Sin actividades todavía."
+
+#: templates/blproject/sidebar.html:9
+msgid "Progress"
+msgstr "Progreso"
+
+#: templates/blproject/sidebar.html:15
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: templates/blproject/sidebar.html:26
+msgid "no tags yet"
+msgstr "Sin etiquetas todavía"
+
+#: templates/blproject/sidebar.html:32
+msgid "Project Team"
+msgstr "Grupo de proyecto"
+
+#: templates/blproject/sidebar.html:33
+msgid "Add People"
+msgstr "Añadir personas"
+
+#: templates/bltask/filter.html:4
+msgid "Filter tasks"
+msgstr "Filtrar tareas"
+
+#: templates/bltask/list.html:6
+msgid "New Task"
+msgstr "Nueva tarea"
+
+#: templates/bltask/list.html:14
+msgid "Hide Completed"
+msgstr "Ocultación completada"
+
+#: templates/bltask/list.html:15
+msgid "Show Completed"
+msgstr "Muestra completada"
+
+#: templates/bltask/list.html:31
+msgid "left"
+msgstr "izquierda"
+
+#: templates/bltask/list.html:39
+msgid "No tasks yet"
+msgstr "Sin etiquetas todavía"
+
+#: templates/bltask/list.html:39
+msgid "Create a new task"
+msgstr "Crear una nueva tarea"
+
+#: templates/bltask/list_user.html:9
+msgid "My tasks"
+msgstr "Mis tareas"
+
+#: templates/comments/approve.html:4
+msgid "Approve a comment"
+msgstr "Aprobar un comentario"
+
+#: templates/comments/approve.html:7
+msgid "Really make this comment public?"
+msgstr "¿Realmente deseas hacer este comentario público?"
+
+#: templates/comments/approve.html:12
+#: templates/comments/moderation_queue.html:49
+msgid "Approve"
+msgstr "Aprobado"
+
+#: templates/comments/approved.html:4
+msgid "Thanks for approving"
+msgstr "Gracias por su aprobación "
+
+#: templates/comments/approved.html:7 templates/comments/deleted.html:7
+#: templates/comments/flagged.html:7
+msgid ""
+"Thanks for taking the time to improve the quality of discussion on our site"
+msgstr "Gracias por tomarse un tiempo para valorar nuestro trabajo"
+
+#: templates/comments/delete.html:4
+msgid "Remove a comment"
+msgstr "Borrar un comentario"
+
+#: templates/comments/delete.html:7
+msgid "Really remove this comment?"
+msgstr "¿Realmente desea borrar este comentario?"
+
+#: templates/comments/delete.html:12
+#: templates/comments/moderation_queue.html:53
+msgid "Remove"
+msgstr "Borrar"
+
+#: templates/comments/deleted.html:4
+msgid "Thanks for removing"
+msgstr "Gracias por borrarlo"
+
+#: templates/comments/flag.html:4
+msgid "Flag this comment"
+msgstr ""
+
+#: templates/comments/flag.html:7
+msgid "Really flag this comment?"
+msgstr ""
+
+#: templates/comments/flag.html:12
+msgid "Flag"
+msgstr ""
+
+#: templates/comments/flagged.html:4
+msgid "Thanks for flagging"
+msgstr ""
+
+#: templates/comments/form.html:3 templates/comments/preview.html:22
+msgid "Post your comment"
+msgstr ""
+
+#: templates/comments/form.html:18 templates/comments/preview.html:40
+msgid "Email address"
+msgstr ""
+
+#: templates/comments/form.html:22 templates/comments/moderation_queue.html:35
+#: templates/comments/preview.html:44
+msgid "Comment"
+msgstr ""
+
+#: templates/comments/form.html:28 templates/comments/preview.html:50
+msgid "Post"
+msgstr ""
+
+#: templates/comments/moderation_queue.html:4
+#: templates/comments/moderation_queue.html:19
+msgid "Comment moderation queue"
+msgstr ""
+
+#: templates/comments/moderation_queue.html:26
+msgid "No comments to moderate"
+msgstr ""
+
+#: templates/comments/moderation_queue.html:33
+msgid "Action"
+msgstr ""
+
+#: templates/comments/moderation_queue.html:37
+msgid "URL"
+msgstr ""
+
+#: templates/comments/moderation_queue.html:38
+msgid "Authenticated?"
+msgstr ""
+
+#: templates/comments/moderation_queue.html:39
+msgid "IP Address"
+msgstr ""
+
+#: templates/comments/moderation_queue.html:40
+msgid "Date posted"
+msgstr ""
+
+#: templates/comments/moderation_queue.html:63
+msgid "yes"
+msgstr ""
+
+#: templates/comments/moderation_queue.html:63
+msgid "no"
+msgstr ""
+
+#: templates/comments/posted.html:4
+msgid "Thanks for commenting"
+msgstr ""
+
+#: templates/comments/posted.html:7
+msgid "Thank you for your comment"
+msgstr ""
+
+#: templates/comments/preview.html:4
+msgid "Error in your comment"
+msgstr ""
+
+#: templates/comments/preview.html:17
+msgid "Please correct the error below"
+msgid_plural "Please correct the errors below"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/comments/preview.html:19
+msgid "Preview your comment"
+msgstr ""
+
+#: templates/comments/preview.html:22
+msgid "and"
+msgstr ""
+
+#: templates/comments/preview.html:22
+msgid "or make changes"
+msgstr ""
+
+#: templates/registration/activate.html:8
+msgid "Your account is now activated"
+msgstr "Tu cuenta está ahora activada"
+
+#: templates/registration/activate.html:12
+msgid "Please sign in"
+msgstr "Por favor autentifíquese"
+
+#: templates/registration/activation_complete.html:4
+msgid "Activation complete"
+msgstr "Activación completada"
+
+#: templates/registration/activation_complete.html:8
+msgid "Your account has been activated, please sign in."
+msgstr "Su cuenta ha sido activada, por favor autentifíquese."
+
+#: templates/registration/logged_out.html:4
+msgid "Logged out"
+msgstr "Cerrar sesión"
+
+#: templates/registration/logged_out.html:7
+msgid "You are logged out"
+msgstr "Has salido de la sesión"
+
+#: templates/registration/logged_out.html:8
+msgid "Thanks for spending some quality time with BusyLissy today"
+msgstr "Gracias por su tiempo en BusyLissy hoy"
+
+#: templates/registration/password_reset_complete.html:4
+#: templates/registration/password_reset_complete.html:6
+#: templates/registration/password_reset_complete.html:10
+msgid "Password reset complete"
+msgstr "Cambio de contraseña completado"
+
+#: templates/registration/password_reset_complete.html:12
+msgid "Your password has been set.  You may go ahead and log in now."
+msgstr "Vuelva y autentifíquese."
+
+#: templates/registration/password_reset_complete.html:14
+msgid "Log in"
+msgstr "Entrar"
+
+#: templates/registration/password_reset_confirm.html:4
+#: templates/registration/password_reset_confirm.html:6
+#: templates/registration/password_reset_done.html:9
+msgid "Password reset"
+msgstr "Resetear contraseña"
+
+#: templates/registration/password_reset_confirm.html:12
+msgid "Enter new password"
+msgstr "Introduzca nueva contraseña"
+
+#: templates/registration/password_reset_confirm.html:14
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr "Por favor introduzca su nueva contraseña dos veces."
+
+#: templates/registration/password_reset_confirm.html:26
+msgid "Password reset unsuccessful"
+msgstr "Reseteo de contraseña no ha llegado a buen puerto"
+
+#: templates/registration/password_reset_confirm.html:28
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a new password reset."
+msgstr ""
+"El enlace para resetear su contraseña es inválido, posiblemente ya ha sido "
+"usado, resetee su contraseña de nuevo."
+
+#: templates/registration/password_reset_done.html:13
+msgid ""
+"\n"
+"<h2>Password reset</h2>\n"
+"<p>We've e-mailed you instructions for setting your password to the e-mail "
+"address you submitted. You should be receiving it shortly.</p>\n"
+msgstr ""
+"\n"
+"<h2>Resetear contraseña</h2>\n"
+"<p>Te hemos enviado al correo electrónico las instrucciones para configurar "
+"su contraseña. Revise su correo.</p>\n"
+
+#: templates/registration/password_reset_email.html:2
+msgid "You're receiving this e-mail because you requested a password reset"
+msgstr "Ha recibido este e-mail porque solicitó un reseteo de contraseña"
+
+#: templates/registration/password_reset_email.html:3
+#, python-format
+msgid "for your user account at %(site_name)s"
+msgstr "Para tu cuenta de usuario en %(site_name)s"
+
+#: templates/registration/password_reset_email.html:5
+msgid "Please go to the following page and choose a new password:"
+msgstr "Por favor entre en el siguiente enlace y reinicie su contraseña:"
+
+#: templates/registration/password_reset_email.html:9
+msgid "Your username, in case you've forgotten:"
+msgstr "tu nombre de usuario/a, en caso que lo hayas olvidado:"
+
+#: templates/registration/password_reset_form.html:7
+msgid "Back to sign In"
+msgstr "Volver a autentificarse"
+
+#: templates/registration/password_reset_form.html:13
+#: templates/registration/registration_form.html:16
+msgid "Error while submitting form"
+msgstr ""
+
+#: templates/registration/password_reset_form.html:20
+msgid ""
+"Please fill in your e-mailaddress and we will send you your new password"
+msgstr ""
+"Por favor, revise su correo electrónico, le hemos enviado su nueva contraseña"
+
+#: templates/registration/password_reset_form.html:29
+msgid "Send password"
+msgstr "Enviar contraseña"
+
+#: templates/registration/registration_complete.html:4
+#: templates/registration/registration_complete.html:11
+msgid "Sign up complete"
+msgstr "Registro de alta completado"
+
+#: templates/registration/registration_complete.html:15
+msgid "Thank you"
+msgstr "Gracias"
+
+#: templates/registration/registration_complete.html:16
+msgid ""
+"An email has been sent to you. You need to click the link to activate your "
+"account"
+msgstr ""
+"Un correo electrónico le ha sido enviado. Necesitas entrar en el enlace para "
+"activar su cuenta"
+
+#: templates/registration/registration_form.html:9
+msgid "Already an account?"
+msgstr "¿Quiere ya una cuenta?"
+
+#: templates/registration/registration_form.html:9
+msgid "Sign In"
+msgstr "Entrar"
+
+#: templates/static/base.html:68
+msgid "Back to Projects"
+msgstr ""
+
+#: templates/static/base.html:82 templates/static/index.html:76
+msgid "Super simple"
+msgstr "Muy simple"
+
+#: templates/static/base.html:82 templates/static/index.html:76
+msgid "project management"
+msgstr "gestor de proyectos"
+
+#: templates/static/base.html:83 templates/static/index.html:77
+msgid "Sign up now"
+msgstr "Entrar ahora"
+
+#: templates/static/base.html:84 templates/static/index.html:78
+msgid "Don't worry. It's free."
+msgstr "No se preocupe, es libre/gratis."
+
+#: templates/static/base.html:92 templates/static/index.html:84
+msgid "What is it"
+msgstr "Qué es esto"
+
+#: templates/static/base.html:93 templates/static/index.html:85
+msgid ""
+"BusyLissy is a super simple project management tool. Work together, organise "
+"stuff and keep track of the developments within your projects."
+msgstr ""
+"BusyLissy es un simple gestor de proyectos. Trabaja en equipo, y desarrolla "
+"tus proyectos de una manera fácil y eficaz."
+
+#: templates/static/base.html:96 templates/static/index.html:88
+msgid "Who is it for"
+msgstr "Quién está ahí"
+
+#: templates/static/base.html:97 templates/static/index.html:89
+msgid ""
+"BusyLissy is for everybody who want to organise stuff together. Small "
+"businesses, student groups, sports clubs, you name it. Let's get Busy"
+msgstr ""
+"BusyLissy es para todas aquellas personas que quieren organizarse juntos. "
+"Pequeñas empresas, grupos de estudiantes, clubs deportivos, "
+"organizaciones...  para que no estés tan ocupado"
+
+#: templates/static/base.html:100 templates/static/index.html:92
+msgid "Why use it"
+msgstr "Por qué usarlo"
+
+#: templates/static/base.html:101 templates/static/index.html:93
+msgid ""
+"BusyLissy makes organising and project management super simple. All the "
+"messages, tasks and files in one place makes your lve easier."
+msgstr ""
+"BusyLissy hace que la gestión de proyectos sea muy fácil. Todos los "
+"mensajes, tareas, eventos y archivos en un mismo lugar hacen que sea la "
+"primera en su especie."
+
+#: templates/static/base.html:110 templates/static/index.html:102
+msgid "Task lists"
+msgstr "Lista de tareas"
+
+#: templates/static/base.html:111 templates/static/base.html.py:126
+#: templates/static/index.html:103
+msgid ""
+"Create tasks and sub-tasks for any project. Assign tasks to certain project "
+"members and keep track of what has to be done. "
+msgstr ""
+"Crear tareas y subtareas para cualquier proyecto. Asignar tareas a cierta "
+"persona, hacen que puedas hacer lo que quieres hacer. "
+
+#: templates/static/base.html:116 templates/static/index.html:108
+msgid ""
+"Discuss your project and keep al your messages in one place. Keep a good "
+"overview of what is happening in your project."
+msgstr ""
+"Debate tus proyectos en el mismo lugar. Ten una vista general de como se "
+"está incubando tu proyecto."
+
+#: templates/static/base.html:120 templates/static/index.html:112
+msgid "File sharing"
+msgstr "Compartiendo archivos"
+
+#: templates/static/base.html:121 templates/static/index.html:113
+msgid ""
+"Store all your files and documents in one place. forget emailing eachother "
+"with attachements Lissy organises the files for you.  "
+msgstr ""
+"Almacena todos tus archivos en el mismo lugar. Olvida tener que mandar "
+"archivos por correo electrónico, todo está aquí.  "
+
+#: templates/static/base.html:129
+msgid "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+msgstr ""
+
+#: templates/static/base.html:130
+msgid ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
+"ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis "
+"parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, "
+"pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec "
+"pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, "
+"rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede "
+"mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper "
+"nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, "
+"consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra "
+"quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. "
+"Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur "
+"ullamcorper ultricies nisi. Nam eget dui."
+msgstr ""
+
+#: templates/static/base.html:136 templates/static/index.html:124
+msgid "Start organising stuff together."
+msgstr "Comencemos a organizarnos juntos."
+
+#: templates/static/base.html:136 templates/static/index.html:124
+msgid "Sign up for free"
+msgstr "Registrarse es libre"
+
+#: templates/static/index.html:118
+msgid ""
+"Create and share events within a project. Milestones automatically appear in "
+"your agenda. Use your personal agenda to track events throughout all of your "
+"projects. "
+msgstr ""
+"Crea y comparte eventos. Los eventos aparecerán automáticamente en tu "
+"agenda. Use su agenda personal para saber por donde hay que seguir. "
