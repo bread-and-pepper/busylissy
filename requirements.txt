@@ -29,10 +29,10 @@ http://effbot.org/downloads/Imaging-1.1.6.tar.gz
 -e svn+http://django-treebeard.googlecode.com/svn/trunk/#egg=treebeard
 
 # Locale url
--e svn+http://django-localeurl.googlecode.com/svn/trunk/#egg=localeurl
+django-localeurl
 
 # Thumbnail
--e hg+https://sorl-thumbnail.googlecode.com/hg/#egg=sorl-thumbnail
+sorl-thumbnail
 
 # DateUtil
 http://labix.org/download/python-dateutil/python-dateutil-1.4.1.tar.gz
